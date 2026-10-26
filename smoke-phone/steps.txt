@@ -4,7 +4,7 @@ shot 01-home
 tapped /.*Srbija/
 shot 02-serbia
 shot 03-serbia-scroll
-tapped /Nova|RTS 2|IDJTV|Newsmax Balkans|TVCG MNE|Pannon TV/
+not found: /Nova|RTS 2|IDJTV|Newsmax Balkans|TVCG MNE|Pannon TV/
 shot 04-player
 shot 05-player-landscape
 shot 06-player-landscape-info
