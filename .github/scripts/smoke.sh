@@ -107,12 +107,13 @@ else
   key KEYCODE_DPAD_UP 20; shot 04-tv-zap
   key KEYCODE_DPAD_CENTER 2; shot 05-tv-info
   key KEYCODE_DPAD_CENTER 2; shot 06-tv-list
-  key KEYCODE_BACK 2
+  key KEYCODE_BACK 2; shot 061-tv-after-back-list
   key KEYCODE_DPAD_RIGHT 2; shot 07-tv-options
-  key KEYCODE_BACK 2
+  key KEYCODE_BACK 2; shot 071-tv-after-back-options
   key KEYCODE_BACK 3; shot 08-tv-back-home
-  key KEYCODE_DPAD_LEFT; key KEYCODE_DPAD_DOWN; key KEYCODE_DPAD_DOWN; key KEYCODE_DPAD_DOWN 3; shot 09-tv-rail
-  for _ in 1 2 3 4 5 6 7 8; do key KEYCODE_DPAD_UP 0.5; done
+  adb shell dumpsys activity activities | grep -m1 -E "topResumedActivity|mResumedActivity" >> "$OUT/steps.txt"
+  key KEYCODE_DPAD_LEFT; key KEYCODE_DPAD_DOWN; key KEYCODE_DPAD_DOWN 2; shot 09-tv-rail
+  for _ in 1 2 3 4 5 6; do key KEYCODE_DPAD_UP 0.5; done
   shot 095-tv-country-button
   key KEYCODE_DPAD_CENTER 3; shot 096-tv-picker
   key KEYCODE_DPAD_DOWN; key KEYCODE_DPAD_DOWN; key KEYCODE_DPAD_DOWN; key KEYCODE_DPAD_DOWN; key KEYCODE_DPAD_DOWN 1
