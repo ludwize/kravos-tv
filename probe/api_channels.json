@@ -1,0 +1,90 @@
+{
+ "count": 31674,
+ "sample": [
+  {
+   "id": "002RadioTV.do",
+   "name": "002 Radio TV",
+   "alt_names": [],
+   "network": null,
+   "owners": [],
+   "country": "DO",
+   "categories": [
+    "general"
+   ],
+   "is_nsfw": false,
+   "launched": null,
+   "closed": null,
+   "replaced_by": null,
+   "website": "https://www.002radio.com/"
+  },
+  {
+   "id": "00sReplay.us",
+   "name": "00s Replay",
+   "alt_names": [],
+   "network": "Pluto TV",
+   "owners": [
+    "Pluto Inc.",
+    "Paramount Skydance Corporation"
+   ],
+   "country": "US",
+   "categories": [
+    "movies"
+   ],
+   "is_nsfw": false,
+   "launched": null,
+   "closed": null,
+   "replaced_by": null,
+   "website": "https://pluto.tv/live-tv/00s-replay/details"
+  },
+  {
+   "id": "0TV.dk",
+   "name": "0-TV",
+   "alt_names": [],
+   "network": null,
+   "owners": [],
+   "country": "DK",
+   "categories": [
+    "general"
+   ],
+   "is_nsfw": false,
+   "launched": null,
+   "closed": null,
+   "replaced_by": null,
+   "website": "https://0-tv.dk/"
+  },
+  {
+   "id": "10.au",
+   "name": "10",
+   "alt_names": [],
+   "network": null,
+   "owners": [],
+   "country": "AU",
+   "categories": [
+    "news"
+   ],
+   "is_nsfw": false,
+   "launched": null,
+   "closed": null,
+   "replaced_by": null,
+   "website": "http://10play.com.au/"
+  },
+  {
+   "id": "1000xHoraTV.uy",
+   "name": "1000xHora TV",
+   "alt_names": [],
+   "network": null,
+   "owners": [
+    "Omar Toledo"
+   ],
+   "country": "UY",
+   "categories": [
+    "auto"
+   ],
+   "is_nsfw": false,
+   "launched": null,
+   "closed": "2026-06-19",
+   "replaced_by": null,
+   "website": "https://www.1000xhoratv.com/"
+  }
+ ]
+}

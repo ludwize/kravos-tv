@@ -1,0 +1,59 @@
+{
+ "count": 18067,
+ "sample": [
+  {
+   "channel": null,
+   "feed": null,
+   "title": "TV Publica",
+   "url": "http://playcom.trapemn.tv:1935/transcoderip/tvpublica.stream/playlist.m3u8",
+   "quality": "1080p",
+   "labels": [],
+   "user_agent": null,
+   "referrer": null
+  },
+  {
+   "channel": null,
+   "feed": null,
+   "title": "Race Central TV",
+   "url": "https://nrpus.bozztv.com/36bay2/gusa-racecentral/index.m3u8",
+   "quality": "720p",
+   "labels": [
+    "Not 24/7"
+   ],
+   "user_agent": null,
+   "referrer": null
+  },
+  {
+   "channel": null,
+   "feed": null,
+   "title": "Travel & Food TV",
+   "url": "https://nrpus.bozztv.com/36bay2/gusa-moviemagictv/index.m3u8",
+   "quality": "720p",
+   "labels": [],
+   "user_agent": null,
+   "referrer": null
+  },
+  {
+   "channel": null,
+   "feed": null,
+   "title": "8 Out of 10 Cats",
+   "url": "https://amg00627-amg00627c37-samsung-au-4294.playouts.now.amagi.tv/playlist/amg00627-banijayfast-8outof10cats-samsungau/playlist.m3u8",
+   "quality": "1080p",
+   "labels": [
+    "Geo-blocked"
+   ],
+   "user_agent": null,
+   "referrer": null
+  },
+  {
+   "channel": null,
+   "feed": null,
+   "title": "Action Hollywood Movies",
+   "url": "https://amg01076-lightningintern-actionhollywood-samsungau-rs69y.amagi.tv/playlist/amg01076-lightningintern-actionhollywood-samsungau/playlist.m3u8",
+   "quality": "1080p",
+   "labels": [],
+   "user_agent": null,
+   "referrer": null
+  }
+ ]
+}

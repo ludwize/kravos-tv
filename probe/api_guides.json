@@ -1,0 +1,50 @@
+{
+ "count": 180678,
+ "sample": [
+  {
+   "channel": "Channel9.il",
+   "feed": "SD",
+   "site": "9tv.co.il",
+   "site_id": "#",
+   "site_name": "9 канал",
+   "lang": "ru",
+   "sources": []
+  },
+  {
+   "channel": null,
+   "feed": null,
+   "site": "abc.net.au",
+   "site_id": "Adelaide#7",
+   "site_name": "7",
+   "lang": "en",
+   "sources": []
+  },
+  {
+   "channel": null,
+   "feed": null,
+   "site": "abc.net.au",
+   "site_id": "Adelaide#7bravo",
+   "site_name": "7bravo",
+   "lang": "en",
+   "sources": []
+  },
+  {
+   "channel": null,
+   "feed": null,
+   "site": "abc.net.au",
+   "site_id": "Adelaide#7flix",
+   "site_name": "7flix",
+   "lang": "en",
+   "sources": []
+  },
+  {
+   "channel": null,
+   "feed": null,
+   "site": "abc.net.au",
+   "site_id": "Adelaide#7HD",
+   "site_name": "7HD",
+   "lang": "en",
+   "sources": []
+  }
+ ]
+}
