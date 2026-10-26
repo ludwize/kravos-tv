@@ -7,8 +7,11 @@ shot 03-tv-player
 shot 04-tv-zap
 shot 05-tv-info
 shot 06-tv-list
+shot 061-tv-after-back-list
 shot 07-tv-options
+shot 071-tv-after-back-options
 shot 08-tv-back-home
+    mResumedActivity: ActivityRecord{510accf u0 com.google.android.tvlauncher/.MainActivity t4}
 shot 09-tv-rail
 shot 095-tv-country-button
 shot 096-tv-picker
