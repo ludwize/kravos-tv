@@ -39,6 +39,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.focus.focusRequester
+import androidx.compose.ui.focus.onFocusChanged
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -235,15 +236,31 @@ fun ChannelList(group: Group, modifier: Modifier = Modifier, focusTick: Int = 0,
     val targetIdx = group.channels.indexOfFirst { it.id == target }
     val state = remember(group.id) { LazyListState((targetIdx - 3).coerceAtLeast(0)) }
     val focusTarget = remember { FocusRequester() }
-    val focusId = if (targetIdx >= 0) target else group.channels.firstOrNull()?.id
+    // Row that owns the focus requester: the channel we came back to, else the first one.
+    var wantId by remember(group.id) { mutableStateOf(if (targetIdx >= 0) target else group.channels.firstOrNull()?.id) }
+    var focusedId by remember(group.id) { mutableStateOf<String?>(null) }
+    var focusedIdx by remember(group.id) { mutableIntStateOf(0) }
 
-    // On TV the remote starts in the channel list. The list may still be composing, so retry briefly.
-    LaunchedEffect(focusTick, group.channels.isNotEmpty()) {
-        if (!app.isTv || group.channels.isEmpty()) return@LaunchedEffect
-        repeat(15) {
+    suspend fun grabFocus() {
+        repeat(20) {
             delay(80)
-            if (runCatching { focusTarget.requestFocus() }.isSuccess) return@LaunchedEffect
+            if (runCatching { focusTarget.requestFocus() }.getOrDefault(false) != false) return
         }
+    }
+
+    // On TV the remote starts in the channel list.
+    LaunchedEffect(focusTick, group.id) {
+        if (!app.isTv || group.channels.isEmpty()) return@LaunchedEffect
+        if (wantId == null || group.channels.none { it.id == wantId }) wantId = group.channels.first().id
+        grabFocus()
+    }
+
+    // A dead channel disappearing under the cursor must not drop the remote's focus: move it to the row that took its place.
+    LaunchedEffect(group.channels) {
+        val f = focusedId ?: return@LaunchedEffect
+        if (!app.isTv || group.channels.isEmpty() || group.channels.any { it.id == f }) return@LaunchedEffect
+        wantId = group.channels[focusedIdx.coerceIn(0, group.channels.lastIndex)].id
+        grabFocus()
     }
 
     if (group.channels.isEmpty()) {
@@ -258,7 +275,10 @@ fun ChannelList(group: Group, modifier: Modifier = Modifier, focusTick: Int = 0,
     }
 
     val checking by app.health.listProgress.collectAsState()
-    LazyColumn(modifier, state = state, contentPadding = PaddingValues(horizontal = 12.dp, vertical = 8.dp), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+    LazyColumn(
+        modifier.onFocusChanged { if (!it.hasFocus) focusedId = null },
+        state = state, contentPadding = PaddingValues(horizontal = 12.dp, vertical = 8.dp), verticalArrangement = Arrangement.spacedBy(2.dp),
+    ) {
         if (checking.running && checking.total > 0) item(key = "checking") {
             Row(Modifier.fillMaxWidth().padding(horizontal = 10.dp, vertical = 6.dp), verticalAlignment = Alignment.CenterVertically) {
                 Spinner(Modifier.size(14.dp), color = K.Dim, stroke = 2.dp)
@@ -266,15 +286,15 @@ fun ChannelList(group: Group, modifier: Modifier = Modifier, focusTick: Int = 0,
                 Text("Proveravam koji kanali rade sa tvoje mreže… ${checking.done}/${checking.total}", color = K.Dim, fontSize = 12.sp)
             }
         }
-        itemsIndexed(group.channels, key = { _, c -> c.id }) { _, c ->
+        itemsIndexed(group.channels, key = { _, c -> c.id }) { i, c ->
             epgV; healthV
-            val fr = if (c.id == focusId) Modifier.focusRequester(focusTarget) else Modifier
+            val fr = if (c.id == wantId) Modifier.focusRequester(focusTarget) else Modifier
             ChannelRow(
                 c = c, now = now, fav = c.id in favs,
                 modifier = fr,
                 onClick = { nav.play(c, group.channels) },
                 onLong = { menu = c },
-                onFocus = { onFocus(c) },
+                onFocus = { focusedId = c.id; focusedIdx = i; onFocus(c) },
             )
         }
     }
