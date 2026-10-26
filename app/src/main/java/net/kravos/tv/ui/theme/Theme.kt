@@ -63,5 +63,8 @@ private val Type = Typography().let { t ->
 
 @Composable
 fun KravosTheme(content: @Composable () -> Unit) {
-    MaterialTheme(colorScheme = Scheme, typography = Type, content = content)
+    MaterialTheme(colorScheme = Scheme, typography = Type) {
+        // No Surface at the root, so set the default text/icon color explicitly (otherwise it is black).
+        androidx.compose.runtime.CompositionLocalProvider(androidx.compose.material3.LocalContentColor provides K.Text, content = content)
+    }
 }

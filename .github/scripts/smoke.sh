@@ -93,9 +93,9 @@ if [ "$MODE" = "phone" ]; then
   adb shell input text "RTS"; sleep 4; key KEYCODE_BACK 1; shot 11-search
   tap_re 'Podešavanja'; sleep 3; shot 12-settings
   scroll; shot 13-settings-scroll
-  tap_re 'Kanali'; sleep 2
-  tap_re '.*Nemačka'; sleep 3; shot 14-germany
-  tap_re 'Das Erste|ZDF|Arte|DW.*|Euronews.*' ; sleep 20; shot 15-player-de
+  tap_re 'Pretraga'; sleep 2
+  adb shell input text "ZDF"; sleep 4; key KEYCODE_BACK 1; shot 14-search-zdf
+  tap_re 'ZDF.*' ; sleep 20; shot 15-player-de
   key KEYCODE_BACK 3
 else
   shot 01-tv-home

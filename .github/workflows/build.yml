@@ -92,6 +92,7 @@ jobs:
             api: 30
             target: android-tv
             arch: x86
+            profile: tv_1080p
     steps:
       - uses: actions/checkout@v4
 
@@ -113,6 +114,7 @@ jobs:
           api-level: ${{ matrix.api }}
           target: ${{ matrix.target }}
           arch: ${{ matrix.arch }}
+          profile: ${{ matrix.profile }}
           disable-animations: true
           emulator-options: -no-window -gpu swiftshader_indirect -no-boot-anim -camera-back none -no-audio
           script: bash .github/scripts/smoke.sh ${{ matrix.name }}
