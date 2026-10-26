@@ -2,16 +2,16 @@
  {
   "url": "https://best-str.umn.cdn.united.cloud/stream?stream=hp7000&sp=novas&channel=novashd&u=novas&p=n0v43!23t001&player=m3u8",
   "code": 200,
-  "final": "https://n1-bg-ku-h3-1.umn.cdn.united.cloud/stream/?i=Q12CxwhX6drriLK0_HC_Ow&a=nsrvZzawl_Op_HtakQHr_Xj6VNqv7YTNqdcvsBZ_7fuz7lVIg-pKsMSN37kMzzDeevMfoFB_t9NpObaubrYParE01fiDatT2SRCAKpzuFCJUFUUzKPYYlX7ql9luBj-SoGXeFm0lWbqz1M2VwiR6DM3ikyAzFW5gqxIKAl1L8vSBzM5HpOF0NL1s6drO5yKskhQo0Tf3qJtHWpbRB10haw&sp=novas&u=novas&player=m3u8",
+  "final": "https://n1-bg-ku-r1-1.umn.cdn.united.cloud/stream/?i=ZOSGyWPeXgSEe3OBKA0Geg&a=tSsxnDr0wb-ZeZ_96Xa3j_M5ciRW_W6p7VzXt_aDz5P83kCgmif2IcoY04s2xutgX93bSrFR5sngo80yP_-PyRYIjFHEWHLrEKhbfGy4DBM3KzPeZuvGGtAITSzPHgcreRLuBsma2Kt3fv3Ck-bsEE_ZwBs2ASGp0LQI1hTC-VorRQsX5duT1e9mx-9LIiNpzu2gpovpBcScgjydKePh5Q&sp=novas&u=novas&player=m3u8",
   "maxH": 1080,
-  "head": "#EXTM3U\r\n#EXT-X-VERSION:3\r\n#EXT-X-ALLOW-CACHE:NO\r\n\r\n#EXT-X-STREAM-INF:BANDWIDTH=7096000,FRAME-RATE=50.000,RESOLUTION=1920x1080,CODECS=\"avc1.64002A,mp4a.40.2\"\r\nhttps://n1-bg-ku-h3-1.umn.cdn.united.cloud/stream?i=QNsf7P5e1OxzMQxUxSXUgg&a=TppNDAd3cI9nR0qrAjNEhk6VylZ_WUKs6xWsPD-eha45UkfpE6ANvUcKooOIsJhtGuOnDI-1MYWdoT5wLr_Ju8wXGpgOHs9-4mEAjv1Jdego6e6Y-ClDpCEh0AF6rgaOQZyzjjRO3liTaLoYyma0IGLfUZMiOx8Ug-MR"
+  "head": "#EXTM3U\r\n#EXT-X-VERSION:3\r\n#EXT-X-ALLOW-CACHE:NO\r\n\r\n#EXT-X-STREAM-INF:BANDWIDTH=7096000,FRAME-RATE=50.000,RESOLUTION=1920x1080,CODECS=\"avc1.64002A,mp4a.40.2\"\r\nhttps://n1-bg-ku-r1-1.umn.cdn.united.cloud/stream?i=V0PXbdaUOPPIl6nURlDr-A&a=ADuqKqYh3YRRWMipTg8uq4w7c7AxZaHKZiPaJl_H2gBhHVNAQmsmexxmOAARIZ961ylw5O0qQA_-h02WQXoEqwDNCcxkNmRad-gjEq0cwizhkDB6AY0Dywws5AV5ith3kKV_GVo6ktP4t_CgkonhOqXjvLZySAJ8FlBU"
  },
  {
   "url": "https://best-str.umn.cdn.united.cloud/stream?stream=sp1400&sp=n1info&channel=n1srp&u=n1info&p=n1Sh4redSecre7iNf0&player=m3u8",
   "code": 200,
-  "final": "https://n1-bg-ku-h3-1.umn.cdn.united.cloud/stream/?i=AFP6mGhTbCMRcuq-_4DZEQ&a=yQiIlymRtS3xn-GboFk87kJC7szbsIj77RERCwJBLfDpRgs6h-6awLCzRChznqNK0jMsxE-WNhcq0zAymLn40DyXen10vAUBSE7mJf1RAXYQYpK_wjLiODZcZvzpY54n_OlhagpKSmQK5f4IdnanlpRNGPaZn-RlE-ZwD0shTfVBD-041LOaEAOEbMjE7eCfpHf1-1APjUb9mLEDdE52iA&sp=n1info&u=n1info&player=m3u8",
+  "final": "https://n1-bg-ku-h3-1.umn.cdn.united.cloud/stream/?i=iX5N0emLjnLHXM4Nla1ujg&a=tLnaocFe10hMf46etGFeodMYepxBWQHPulgB-O8yH3BDGh9IOQliBoo4JPFhmWzlHwEsgvkQbLE257bTeS3srLqfjFQibLBIosu4J2_pOWtg6OEY7P1RAhKsQOorFIG4WqBDCAgT4oq-EvchnktO43_lCMCeb9PSi0PUvOkkBRzZbb-M3SasyfMWjzfK8Ic3bw8nlsRbq1ZkmiN8B-CoHA&sp=n1info&u=n1info&player=m3u8",
   "maxH": 576,
-  "head": "#EXTM3U\r\n#EXT-X-VERSION:3\r\n#EXT-X-ALLOW-CACHE:NO\r\n\r\n#EXT-X-STREAM-INF:BANDWIDTH=1496000,FRAME-RATE=25.000,RESOLUTION=720x576,CODECS=\"avc1.4D4029,mp4a.40.2\"\r\nhttps://n1-bg-ku-h3-1.umn.cdn.united.cloud/stream?i=wZcCV55pbRuqsw3a_P2wbQ&a=f3f7P3NJUvE9BHBuYkTv7yHM8nM9PWDiWhNG0HLMADJjm0s2yc3-vgl6SDfyUiGyoXyhNfOqdTnCuphqVbnjE3LL_W8XXHgc6e7UFpmnpsKK2LU04mhH7RBc_wW4i9-PT_UrDjRxD4tDMcBZ5ZlvN8jhcw9Q-4eyooeQme"
+  "head": "#EXTM3U\r\n#EXT-X-VERSION:3\r\n#EXT-X-ALLOW-CACHE:NO\r\n\r\n#EXT-X-STREAM-INF:BANDWIDTH=1496000,FRAME-RATE=25.000,RESOLUTION=720x576,CODECS=\"avc1.4D4029,mp4a.40.2\"\r\nhttps://n1-bg-ku-h3-1.umn.cdn.united.cloud/stream?i=BG7I3w33qWeoYoYWNO9qkw&a=1b6dKPZGWV2UhnX6oOUBl8Ejj99Kh7zvGxnDdzyc2TQmNO6riDxItr2LahI-AQx-BSUYllGCWSsomSKC8ek7OJr8pahMcnnn-2wuxKvrfQINOJmsIkjEUis1P2ZTSYLpexIVQH2XTXxCT-BfXfefV4IqT0JU0qgCUWCyzT"
  },
  {
   "url": "https://datatracker.ietf.org/doc/html/draft-pantos-hls-rfc8216bis-09#section-4.4.3.7.",
