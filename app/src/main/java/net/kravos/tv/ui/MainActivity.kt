@@ -35,6 +35,18 @@ import net.kravos.tv.ui.theme.KravosTheme
 class MainActivity : AppCompatActivity() {
     private val nav = Navigator()
 
+    /**
+     * Compose uses the remote's Back key to move focus out of a focused item instead of going back.
+     * Route Back straight to the back handlers so it always closes the overlay / goes back one screen.
+     */
+    override fun dispatchKeyEvent(event: android.view.KeyEvent): Boolean {
+        if (event.keyCode == android.view.KeyEvent.KEYCODE_BACK) {
+            if (event.action == android.view.KeyEvent.ACTION_UP && !event.isCanceled) onBackPressedDispatcher.onBackPressed()
+            return true
+        }
+        return super.dispatchKeyEvent(event)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val app = application as App
