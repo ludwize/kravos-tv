@@ -2,6 +2,6 @@ Starting: Intent { cmp=net.kravos.tv/.ui.MainActivity }
 Status: ok
 LaunchState: COLD
 Activity: net.kravos.tv/.ui.MainActivity
-TotalTime: 2093
-WaitTime: 2105
+TotalTime: 2923
+WaitTime: 2927
 Complete
