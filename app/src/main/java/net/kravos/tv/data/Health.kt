@@ -32,6 +32,18 @@ class Health(context: Context, private val prefs: Prefs) {
     private val _progress = MutableStateFlow(Progress())
     val progress: StateFlow<Progress> = _progress
 
+    /** Bumped whenever a batch of checks finishes, so lists can drop dead channels without jumping mid-scroll. */
+    private val _settled = MutableStateFlow(0)
+    val settled: StateFlow<Int> = _settled
+
+    /** Progress of the on-demand check of the group the user just opened. */
+    private val _listProgress = MutableStateFlow(Progress())
+    val listProgress: StateFlow<Progress> = _listProgress
+
+    /** Background sweep and the on-screen group get separate limits, so the group never waits behind the sweep. */
+    private val gate = Semaphore(10)
+    private val listGate = Semaphore(12)
+
     init { load() }
 
     fun get(url: String): StreamStatus? = map[url]
@@ -85,14 +97,43 @@ class Health(context: Context, private val prefs: Prefs) {
         save()
     }
 
-    suspend fun checkAll(channels: List<Channel>, maxAgeMs: Long = 20 * HOUR, parallel: Int = 16) = coroutineScope {
+    /** Checks just these channels (the group on screen), unchecked/stale ones only. */
+    suspend fun checkList(channels: List<Channel>, maxAgeMs: Long = 20 * HOUR) = coroutineScope {
+        val now = System.currentTimeMillis()
+        val todo = channels.filter { c -> c.srcs.any { s -> map[s.url]?.let { now - it.checkedAt > maxAgeMs } ?: true } }
+        if (todo.isEmpty()) return@coroutineScope
+        _listProgress.value = Progress(true, 0, todo.size, 0)
+        val done = AtomicInteger()
+        val lenient = prefs.settings.value.lenientTls
+        try {
+            todo.map { c ->
+                async(Dispatchers.IO) {
+                    listGate.withPermit {
+                        for (s in c.srcs) {
+                            val st = map[s.url]
+                            if (st == null || now - st.checkedAt > maxAgeMs) map[s.url] = probe(s, lenient)
+                            if (map[s.url]?.ok == true) break
+                        }
+                    }
+                    val d = done.incrementAndGet()
+                    _listProgress.value = Progress(true, d, todo.size, 0)
+                }
+            }.awaitAll()
+        } finally {
+            _listProgress.value = Progress()
+            _version.value++
+            _settled.value++
+            save()
+        }
+    }
+
+    suspend fun checkAll(channels: List<Channel>, maxAgeMs: Long = 20 * HOUR) = coroutineScope {
         if (_progress.value.running) return@coroutineScope
         val now = System.currentTimeMillis()
         val todo = channels.filter { c -> c.srcs.any { s -> map[s.url]?.let { now - it.checkedAt > maxAgeMs } ?: true } }
         _progress.value = Progress(true, 0, todo.size, 0)
         val done = AtomicInteger()
         val okCount = AtomicInteger()
-        val gate = Semaphore(parallel)
         val lenient = prefs.settings.value.lenientTls
         try {
             todo.map { c ->
@@ -110,13 +151,14 @@ class Health(context: Context, private val prefs: Prefs) {
                             _progress.value = Progress(true, d, todo.size, okCount.get())
                             _version.value++
                         }
-                        if (d % 200 == 0) save()
+                        if (d % 200 == 0) { save(); _settled.value++ }
                     }
                 }
             }.awaitAll()
         } finally {
             _progress.value = _progress.value.copy(running = false)
             _version.value++
+            _settled.value++
             save()
             Log.i(Http.TAG, "health: checked ${todo.size} channels, ${okCount.get()} work")
         }
@@ -131,6 +173,7 @@ class Health(context: Context, private val prefs: Prefs) {
             if (r.ok) any = true
         }
         _version.value++
+        _settled.value++
         save()
         any
     }

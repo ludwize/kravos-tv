@@ -42,7 +42,8 @@ class Catalog(context: Context, private val prefs: Prefs, private val health: He
         }.onFailure { Log.w(Http.TAG, "catalog cache: ${it.message}") }
     }
 
-    fun isStale() = !cache.exists() || System.currentTimeMillis() - cache.lastModified() > 20 * 3_600_000L
+    // A cache from before the official streams existed counts as stale too.
+    fun isStale() = !cache.exists() || System.currentTimeMillis() - cache.lastModified() > 20 * 3_600_000L || pinned.size < Official.entries.size
 
     suspend fun refresh() = withContext(Dispatchers.IO) {
         if (_status.value.loading) return@withContext
@@ -65,7 +66,7 @@ class Catalog(context: Context, private val prefs: Prefs, private val health: He
                 _status.value = _status.value.copy(message = "Preuzimam kanale iz celog sveta…")
                 IptvOrg.load()
             } else emptyList()
-            val list = own + sortIptv(iptv)
+            val list = own + sortIptv(Official.merge(iptv).first)
             publish(list)
             writeCache(list)
             _status.value = Status(false, "", null, System.currentTimeMillis())
@@ -83,7 +84,12 @@ class Catalog(context: Context, private val prefs: Prefs, private val health: He
             .thenBy { it.name.lowercase() },
     )
 
+    /** Curated official channels: shown even when the check from this network fails (e.g. geo-blocked, watched over VPN). */
+    @Volatile private var pinned: Set<String> = emptySet()
+
     private fun publish(list: List<Channel>) {
+        val official = Official.entries.map { it.src.url }.toSet()
+        pinned = list.filter { c -> c.srcs.any { it.url in official } }.map { it.id }.toSet()
         list.forEachIndexed { i, c -> c.num = i + 1 }
         index = list.associateBy { it.id }
         _all.value = list
@@ -93,7 +99,7 @@ class Catalog(context: Context, private val prefs: Prefs, private val health: He
     fun groups(favs: List<String>, recent: List<String>, s: Prefs.Settings): List<Group> {
         val all = _all.value
         val now = System.currentTimeMillis()
-        fun keep(c: Channel) = !(s.hideDead && health.isDead(c, now)) && c.country !in s.hiddenCountries
+        fun keep(c: Channel) = (c.id in pinned || !(s.hideDead && health.isDead(c, now))) && c.country !in s.hiddenCountries
         val visible = all.filter(::keep)
         val out = ArrayList<Group>()
         out += Group("fav", "Omiljeni", GroupKind.FAVORITES, "Moje", "★", favs.mapNotNull { index[it] })

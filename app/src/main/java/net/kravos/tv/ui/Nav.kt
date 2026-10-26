@@ -49,9 +49,9 @@ fun rememberGroups(app: App): List<Group> {
     val favs by app.prefs.favs.collectAsState()
     val recent by app.prefs.recent.collectAsState()
     val s by app.prefs.settings.collectAsState()
-    val running by app.health.progress.collectAsState()
+    val settled by app.health.settled.collectAsState()
     val pls by app.prefs.playlists.collectAsState()
-    val v = produceState(emptyList<Group>(), all, favs, recent, s, running.running, pls) {
+    val v = produceState(emptyList<Group>(), all, favs, recent, s, settled, pls) {
         value = withContext(Dispatchers.Default) { app.catalog.groups(favs, recent, s) }
     }
     return v.value

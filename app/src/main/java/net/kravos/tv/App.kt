@@ -60,6 +60,8 @@ class App : Application(), ImageLoaderFactory {
             if (catalog.all.value.isEmpty() || catalog.isStale()) catalog.refresh()
             launch { refreshEpg(false) }
             checkPriority()
+            // The box is always on and on Wi-Fi/Ethernet: sweep the whole world so dead channels disappear everywhere.
+            if (isTv) health.checkAll(catalog.all.value, maxAgeMs = 20 * Health.HOUR)
         }
     }
 
@@ -79,6 +81,14 @@ class App : Application(), ImageLoaderFactory {
         val favs = prefs.favs.value.toSet()
         val list = catalog.all.value.filter { it.id in favs || it.origin != "iptv" || Geo.tier(it.country) <= 1 }
         health.checkAll(list, maxAgeMs = 12 * Health.HOUR)
+    }
+
+    private var groupCheck: Job? = null
+
+    /** Check the channels of the group the user just opened (only unchecked/stale ones). */
+    fun checkGroup(list: List<net.kravos.tv.data.Channel>) {
+        groupCheck?.cancel()
+        groupCheck = scope.launch { health.checkList(list) }
     }
 
     fun checkEverything() = scope.launch {

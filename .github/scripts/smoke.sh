@@ -88,6 +88,9 @@ if [ "$MODE" = "phone" ]; then
   adb shell settings put system user_rotation 0; sleep 4
   key KEYCODE_BACK 3
   tap_re '.*Ceo region'; sleep 3; shot 07-region
+  tap_re 'ZEMLJA'; sleep 3; shot 08-country-picker
+  tap_re 'Traži zemlju'; adb shell input text "Nem"; sleep 2; key KEYCODE_BACK 1; shot 08b-picker-search
+  tap_re '.*Nemačka'; sleep 30; shot 09-germany-checked
   tap_re 'Vodič'; sleep 4; shot 10-guide
   tap_re 'Pretraga'; sleep 2
   adb shell input text "RTS"; sleep 4; key KEYCODE_BACK 1; shot 11-search
@@ -109,8 +112,13 @@ else
   key KEYCODE_BACK 2
   key KEYCODE_BACK 3; shot 08-tv-back-home
   key KEYCODE_DPAD_LEFT; key KEYCODE_DPAD_DOWN; key KEYCODE_DPAD_DOWN; key KEYCODE_DPAD_DOWN 3; shot 09-tv-rail
-  key KEYCODE_DPAD_UP; key KEYCODE_DPAD_UP; key KEYCODE_DPAD_UP; key KEYCODE_DPAD_UP; key KEYCODE_DPAD_UP; key KEYCODE_DPAD_UP
-  key KEYCODE_DPAD_RIGHT; key KEYCODE_DPAD_CENTER 5; shot 10-tv-guide
+  for _ in 1 2 3 4 5 6 7 8; do key KEYCODE_DPAD_UP 0.5; done
+  shot 095-tv-country-button
+  key KEYCODE_DPAD_CENTER 3; shot 096-tv-picker
+  key KEYCODE_DPAD_DOWN; key KEYCODE_DPAD_DOWN; key KEYCODE_DPAD_DOWN; key KEYCODE_DPAD_DOWN; key KEYCODE_DPAD_DOWN 1
+  key KEYCODE_DPAD_CENTER 30; shot 097-tv-country-picked
+  for _ in 1 2 3 4 5 6 7 8 9 10; do key KEYCODE_DPAD_UP 0.5; done
+  key KEYCODE_DPAD_UP; key KEYCODE_DPAD_RIGHT; key KEYCODE_DPAD_CENTER 5; shot 10-tv-guide
   key KEYCODE_DPAD_DOWN 2; key KEYCODE_DPAD_RIGHT 2; shot 11-tv-guide-nav
 fi
 

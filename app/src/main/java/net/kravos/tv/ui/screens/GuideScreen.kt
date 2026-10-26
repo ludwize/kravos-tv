@@ -60,17 +60,22 @@ fun GuideTab(wide: Boolean) {
     if (all.isEmpty() || groups.isEmpty()) { LoadingPanel(); return }
     val group = currentGroup(groups) ?: return
     val select: (Group) -> Unit = { g -> nav.groupId.value = g.id; app.prefs.lastGroup = g.id }
+    var picker by remember { mutableStateOf(false) }
+    val shown = railGroups(groups, group.id)
     if (wide) {
         Row(Modifier.fillMaxSize()) {
-            GroupRail(groups, group.id, select, Modifier.width(220.dp).fillMaxHeight())
+            GroupRail(shown, group.id, select, Modifier.width(220.dp).fillMaxHeight(),
+                header = { CountryButton(group, groups, Modifier.fillMaxWidth()) { picker = true } })
             Grid(group, Modifier.weight(1f))
         }
     } else {
         Column(Modifier.fillMaxSize()) {
-            GroupChips(groups, group.id, select)
+            CountryButton(group, groups, Modifier.fillMaxWidth().padding(start = 12.dp, top = 6.dp, end = 12.dp)) { picker = true }
+            GroupChips(shown.filter { it.kind != net.kravos.tv.data.GroupKind.COUNTRY || it.id == group.id }, group.id, select)
             Grid(group, Modifier.weight(1f))
         }
     }
+    if (picker) CountryPicker(groups, group.id, onDismiss = { picker = false }) { g -> picker = false; select(g) }
 }
 
 @Composable

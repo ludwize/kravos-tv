@@ -11,6 +11,9 @@ import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
+import androidx.compose.material3.OutlinedTextField
+import net.kravos.tv.ui.components.Spinner
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -79,29 +82,108 @@ fun ChannelsTab(wide: Boolean) {
     val group = currentGroup(groups) ?: run { LoadingPanel(); return }
     var focused by remember { mutableStateOf<Channel?>(null) }
     var focusTick by remember { mutableIntStateOf(0) }
+    var picker by remember { mutableStateOf(false) }
     val select: (Group) -> Unit = { g -> nav.groupId.value = g.id; app.prefs.lastGroup = g.id }
     val open: (Group) -> Unit = { g -> select(g); focusTick++ }
 
+    // Opening a group checks its channels from this network; dead ones drop out when the check settles.
+    LaunchedEffect(group.id) { app.checkGroup(group.channels) }
+
+    val shown = railGroups(groups, group.id)
     if (wide) {
         Row(Modifier.fillMaxSize()) {
-            GroupRail(groups, group.id, open, Modifier.width(250.dp).fillMaxHeight(), onFocusSelect = select)
+            GroupRail(shown, group.id, open, Modifier.width(250.dp).fillMaxHeight(), onFocusSelect = select,
+                header = { CountryButton(group, groups, Modifier.fillMaxWidth()) { picker = true } })
             ChannelList(group, Modifier.weight(1f).fillMaxHeight(), focusTick = focusTick, onFocus = { focused = it })
             InfoPanel(focused?.takeIf { f -> group.channels.any { it.id == f.id } } ?: group.channels.firstOrNull(), Modifier.width(340.dp).fillMaxHeight())
         }
     } else {
         Column(Modifier.fillMaxSize()) {
-            GroupChips(groups, group.id, select)
+            Row(Modifier.fillMaxWidth().padding(start = 12.dp, top = 6.dp, end = 12.dp), verticalAlignment = Alignment.CenterVertically) {
+                CountryButton(group, groups, Modifier.weight(1f)) { picker = true }
+            }
+            GroupChips(shown.filter { it.kind != GroupKind.COUNTRY || it.id == group.id }, group.id, select)
             ChannelList(group, Modifier.weight(1f), focusTick = focusTick, onFocus = { focused = it })
+        }
+    }
+    if (picker) CountryPicker(groups, group.id, onDismiss = { picker = false }) { g -> picker = false; open(g) }
+}
+
+/** Rail keeps the short list: own groups, the region, categories and the currently chosen country. */
+fun railGroups(groups: List<Group>, selectedId: String): List<Group> = groups.filter { g ->
+    g.kind != GroupKind.COUNTRY || Geo.tier(g.id.removePrefix("c:")) <= 1 || g.id == selectedId
+}.let { l ->
+    // A country picked from the list shows up right under the region.
+    val sel = l.firstOrNull { it.id == selectedId && it.kind == GroupKind.COUNTRY && Geo.tier(it.id.removePrefix("c:")) > 1 }
+    if (sel == null) l else l.filter { it.id != sel.id }.toMutableList().apply {
+        val at = indexOfLast { it.section == "Region" } + 1
+        add(at.coerceIn(0, size), sel.copy(section = "Izabrana zemlja"))
+    }
+}
+
+@Composable
+fun CountryButton(current: Group, groups: List<Group>, modifier: Modifier = Modifier, onClick: () -> Unit) {
+    val countries = groups.count { it.kind == GroupKind.COUNTRY }
+    val label = if (current.kind == GroupKind.COUNTRY) "${current.flag ?: ""} ${current.title}" else "🌍 Izaberi zemlju"
+    FocusBox(onClick = onClick, modifier = modifier, idle = K.Card, shape = RoundedCornerShape(10.dp)) { _ ->
+        Row(Modifier.padding(horizontal = 14.dp, vertical = 10.dp), verticalAlignment = Alignment.CenterVertically) {
+            Column(Modifier.weight(1f)) {
+                Text("ZEMLJA", color = K.Faint, fontSize = 10.sp, fontWeight = FontWeight.SemiBold)
+                Text(label.trim(), maxLines = 1, overflow = TextOverflow.Ellipsis, fontWeight = FontWeight.Medium)
+            }
+            Text("▾  $countries", color = K.Dim, fontSize = 13.sp)
+        }
+    }
+}
+
+/** Scrollable list of every country with working channels. */
+@Composable
+fun CountryPicker(groups: List<Group>, selectedId: String, onDismiss: () -> Unit, onPick: (Group) -> Unit) {
+    val app = LocalApp.current
+    val countries = groups.filter { it.kind == GroupKind.COUNTRY && it.channels.isNotEmpty() }
+    var q by remember { mutableStateOf("") }
+    val key = Geo.searchKey(q.trim())
+    val list = if (key.isEmpty()) countries else countries.filter { Geo.searchKey(it.title).contains(key) }
+    val idx = list.indexOfFirst { it.id == selectedId }
+    val state = remember { LazyListState((idx - 3).coerceAtLeast(0)) }
+    val first = remember { FocusRequester() }
+    LaunchedEffect(Unit) { delay(80); runCatching { first.requestFocus() } }
+    KDialog(onDismiss) {
+        Text("Izaberi zemlju", style = MaterialTheme.typography.titleMedium)
+        Text("${countries.size} zemalja · broj = kanali koji rade ili još nisu provereni", color = K.Dim, fontSize = 12.sp)
+        if (!app.isTv) {
+            OutlinedTextField(q, { q = it }, singleLine = true, label = { Text("Traži zemlju") }, modifier = Modifier.fillMaxWidth().padding(top = 8.dp))
+        }
+        Spacer(Modifier.height(8.dp))
+        LazyColumn(Modifier.heightIn(max = 520.dp), state = state) {
+            itemsIndexed(list, key = { _, g -> g.id }) { i, g ->
+                if (i == 0 || list[i - 1].section != g.section) {
+                    Text(g.section.uppercase(), color = K.Accent, fontSize = 11.sp, fontWeight = FontWeight.SemiBold,
+                        modifier = Modifier.padding(start = 12.dp, top = if (i == 0) 2.dp else 14.dp, bottom = 4.dp))
+                }
+                val focusMod = if (i == idx.coerceAtLeast(0)) Modifier.focusRequester(first) else Modifier
+                FocusBox(onClick = { onPick(g) }, selected = g.id == selectedId, modifier = focusMod.fillMaxWidth()) { _ ->
+                    Row(Modifier.padding(horizontal = 12.dp, vertical = 9.dp), verticalAlignment = Alignment.CenterVertically) {
+                        Text(g.flag ?: "", fontSize = 16.sp, modifier = Modifier.width(30.dp))
+                        Text(g.title, Modifier.weight(1f), maxLines = 1)
+                        Text("${g.channels.size}", color = K.Faint, fontSize = 12.sp)
+                    }
+                }
+            }
         }
     }
 }
 
 @Composable
-fun GroupRail(groups: List<Group>, selectedId: String, onSelect: (Group) -> Unit, modifier: Modifier = Modifier, onFocusSelect: ((Group) -> Unit)? = null) {
+fun GroupRail(
+    groups: List<Group>, selectedId: String, onSelect: (Group) -> Unit, modifier: Modifier = Modifier,
+    onFocusSelect: ((Group) -> Unit)? = null, header: (@Composable () -> Unit)? = null,
+) {
     val app = LocalApp.current
     val idx = groups.indexOfFirst { it.id == selectedId }.coerceAtLeast(0)
     val state = rememberLazyListState(initialFirstVisibleItemIndex = (idx - 3).coerceAtLeast(0))
     LazyColumn(modifier.background(K.Panel), state = state, contentPadding = PaddingValues(vertical = 8.dp, horizontal = 8.dp)) {
+        if (header != null) item(key = "header") { Box(Modifier.padding(bottom = 6.dp)) { header() } }
         itemsIndexed(groups, key = { _, g -> g.id }) { i, g ->
             if (i == 0 || groups[i - 1].section != g.section) {
                 Text(g.section.uppercase(), color = K.Faint, fontSize = 11.sp, fontWeight = FontWeight.SemiBold,
@@ -171,7 +253,15 @@ fun ChannelList(group: Group, modifier: Modifier = Modifier, focusTick: Int = 0,
         return
     }
 
+    val checking by app.health.listProgress.collectAsState()
     LazyColumn(modifier, state = state, contentPadding = PaddingValues(horizontal = 12.dp, vertical = 8.dp), verticalArrangement = Arrangement.spacedBy(2.dp)) {
+        if (checking.running && checking.total > 0) item(key = "checking") {
+            Row(Modifier.fillMaxWidth().padding(horizontal = 10.dp, vertical = 6.dp), verticalAlignment = Alignment.CenterVertically) {
+                Spinner(Modifier.size(14.dp), color = K.Dim, stroke = 2.dp)
+                Spacer(Modifier.width(10.dp))
+                Text("Proveravam koji kanali rade sa tvoje mreže… ${checking.done}/${checking.total}", color = K.Dim, fontSize = 12.sp)
+            }
+        }
         itemsIndexed(group.channels, key = { _, c -> c.id }) { _, c ->
             epgV; healthV
             val fr = if (c.id == focusId) Modifier.focusRequester(focusTarget) else Modifier
