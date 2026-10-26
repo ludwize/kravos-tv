@@ -10,5 +10,8 @@ shot 06-tv-list
 shot 07-tv-options
 shot 08-tv-back-home
 shot 09-tv-rail
+shot 095-tv-country-button
+shot 096-tv-picker
+shot 097-tv-country-picked
 shot 10-tv-guide
 shot 11-tv-guide-nav
