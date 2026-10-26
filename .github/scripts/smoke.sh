@@ -89,7 +89,7 @@ if [ "$MODE" = "phone" ]; then
   key KEYCODE_BACK 3
   tap_re '.*Ceo region'; sleep 3; shot 07-region
   tap_re 'ZEMLJA'; sleep 3; shot 08-country-picker
-  tap_re 'Traži zemlju'; adb shell input text "Nem"; sleep 2; key KEYCODE_BACK 1; shot 08b-picker-search
+  for _ in 1 2 3 4; do scroll; done; shot 08b-picker-scroll
   tap_re '.*Nemačka'; sleep 30; shot 09-germany-checked
   tap_re 'Vodič'; sleep 4; shot 10-guide
   tap_re 'Pretraga'; sleep 2

@@ -150,21 +150,12 @@ fun CountryPicker(groups: List<Group>, selectedId: String, onDismiss: () -> Unit
     val state = remember { LazyListState((idx - 3).coerceAtLeast(0)) }
     val first = remember { FocusRequester() }
     LaunchedEffect(Unit) {
-        val start = (idx - 3).coerceAtLeast(0)
         if (app.isTv) { delay(80); runCatching { first.requestFocus() } }
-        // Something (IME / dialog focus) scrolls the list right after opening on phones: hold the start position briefly.
-        repeat(12) {
-            delay(100)
-            if (!state.isScrollInProgress && state.firstVisibleItemIndex != start && key.isEmpty() && !app.isTv) state.scrollToItem(start)
-        }
     }
     LaunchedEffect(key) { if (key.isNotEmpty()) state.scrollToItem(0) }
     KDialog(onDismiss) {
         Text("Izaberi zemlju", style = MaterialTheme.typography.titleMedium)
         Text("${countries.size} zemalja · broj = kanali koji rade ili još nisu provereni", color = K.Dim, fontSize = 12.sp)
-        if (!app.isTv) {
-            OutlinedTextField(q, { q = it }, singleLine = true, label = { Text("Traži zemlju") }, modifier = Modifier.fillMaxWidth().padding(top = 8.dp))
-        }
         Spacer(Modifier.height(8.dp))
         LazyColumn(Modifier.heightIn(max = 520.dp), state = state) {
             itemsIndexed(list, key = { _, g -> g.id }) { i, g ->
