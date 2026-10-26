@@ -1,0 +1,24 @@
+shot 00-start
+found /.*(Srbija|Omiljeni|Nedavno).*/
+shot 01-home
+tapped /.*Srbija/
+shot 02-serbia
+shot 03-serbia-scroll
+tapped /Nova|RTS 2|IDJTV|Newsmax Balkans|TVCG MNE|Pannon TV/
+shot 04-player
+shot 05-player-landscape
+shot 06-player-landscape-info
+tapped /.*Ceo region/
+shot 07-region
+tapped /Vodič/
+shot 10-guide
+tapped /Pretraga/
+shot 11-search
+tapped /Podešavanja/
+shot 12-settings
+shot 13-settings-scroll
+tapped /Kanali/
+not found: /.*Nemačka/
+shot 14-germany
+not found: /Das Erste|ZDF|Arte|DW.*|Euronews.*/
+shot 15-player-de
