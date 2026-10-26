@@ -27,4 +27,10 @@ echo "${GITHUB_RUN_NUMBER:-?} ${GITHUB_SHA:-?}" > "$DIR/$NAME/run.txt"
 cd "$DIR"
 git add -A
 git commit --quiet -m "$NAME log for run ${GITHUB_RUN_NUMBER:-?}" || true
+# Parallel jobs publish at the same time: rebase onto whatever landed meanwhile and retry.
+for i in 1 2 3 4 5 6; do
+  if git push --quiet "$REMOTE" ci-logs 2>/dev/null; then exit 0; fi
+  sleep $((i * 3))
+  git pull --quiet --rebase "$REMOTE" ci-logs || { git rebase --abort 2>/dev/null; git push --quiet --force "$REMOTE" ci-logs; exit 0; }
+done
 git push --quiet --force "$REMOTE" ci-logs

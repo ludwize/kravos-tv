@@ -1,0 +1,126 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['.github/probe/**', '.github/workflows/probe.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Decrypt signing key
+        env:
+          KP_SIGNING_PASS: ${{ secrets.KP_SIGNING_PASS }}
+        run: |
+          if [ -n "$KP_SIGNING_PASS" ]; then
+            openssl enc -d -aes-256-cbc -pbkdf2 -iter 200000 -in signing/release.jks.enc -out "$RUNNER_TEMP/release.jks" -pass env:KP_SIGNING_PASS
+            echo "KP_KEYSTORE_FILE=$RUNNER_TEMP/release.jks" >> "$GITHUB_ENV"
+            echo "KP_KEYSTORE_PASSWORD=$KP_SIGNING_PASS" >> "$GITHUB_ENV"
+          else
+            echo "::warning::KP_SIGNING_PASS secret missing; APK is signed with a throwaway debug key (Google sign-in will not work)"
+          fi
+
+      - name: Build release APK
+        run: |
+          chmod +x gradlew
+          set -o pipefail
+          ./gradlew --no-daemon --stacktrace assembleRelease 2>&1 | tee build.log
+
+      - name: Publish build log on failure
+        if: failure()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash .github/scripts/publish-log.sh build build.log
+
+      - name: Rename APK
+        run: |
+          mkdir -p out
+          cp app/build/outputs/apk/release/app-release.apk "out/KravosTV-1.0.${{ github.run_number }}.apk"
+          ls -la out
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: apk
+          path: out/*.apk
+          retention-days: 14
+
+      - name: Publish APK to ci-logs branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash .github/scripts/publish-log.sh apk out
+
+      - name: GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: build-${{ github.run_number }}
+          name: Kravos TV 1.0.${{ github.run_number }}
+          body: "Automatic build of ${{ github.sha }}"
+          files: out/*.apk
+
+  smoke:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: phone
+            api: 34
+            target: google_apis
+            arch: x86_64
+          - name: tv
+            api: 30
+            target: android-tv
+            arch: x86
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: apk
+          path: out
+
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+
+      - name: Run on emulator
+        continue-on-error: ${{ matrix.name == 'tv' }}
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: ${{ matrix.api }}
+          target: ${{ matrix.target }}
+          arch: ${{ matrix.arch }}
+          disable-animations: true
+          emulator-options: -no-window -gpu swiftshader_indirect -no-boot-anim -camera-back none -no-audio
+          script: bash .github/scripts/smoke.sh ${{ matrix.name }}
+
+      - name: Publish smoke results
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p smoke-${{ matrix.name }}
+          bash .github/scripts/publish-log.sh smoke-${{ matrix.name }} smoke-${{ matrix.name }}

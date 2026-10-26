@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- AppCompat parent: the Cast MediaRouteButton needs an AppCompat theme. -->
+    <style name="Theme.KravosTV" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <color name="bg">#FF000000</color>
+    <color name="icon_bg">#FF0B0D10</color>
+    <color name="accent">#FF4DA3FF</color>
+</resources>
