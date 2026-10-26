@@ -17,8 +17,7 @@ shot 11-search
 tapped /Podešavanja/
 shot 12-settings
 shot 13-settings-scroll
-tapped /Kanali/
-not found: /.*Nemačka/
-shot 14-germany
-not found: /Das Erste|ZDF|Arte|DW.*|Euronews.*/
+tapped /Pretraga/
+shot 14-search-zdf
+tapped /ZDF.*/
 shot 15-player-de
