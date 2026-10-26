@@ -150,9 +150,13 @@ fun CountryPicker(groups: List<Group>, selectedId: String, onDismiss: () -> Unit
     val state = remember { LazyListState((idx - 3).coerceAtLeast(0)) }
     val first = remember { FocusRequester() }
     LaunchedEffect(Unit) {
-        delay(50)
-        state.scrollToItem((idx - 3).coerceAtLeast(0))
-        if (app.isTv) runCatching { first.requestFocus() }
+        val start = (idx - 3).coerceAtLeast(0)
+        if (app.isTv) { delay(80); runCatching { first.requestFocus() } }
+        // Something (IME / dialog focus) scrolls the list right after opening on phones: hold the start position briefly.
+        repeat(12) {
+            delay(100)
+            if (!state.isScrollInProgress && state.firstVisibleItemIndex != start && key.isEmpty() && !app.isTv) state.scrollToItem(start)
+        }
     }
     LaunchedEffect(key) { if (key.isNotEmpty()) state.scrollToItem(0) }
     KDialog(onDismiss) {
