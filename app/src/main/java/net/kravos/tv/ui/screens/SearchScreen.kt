@@ -65,7 +65,8 @@ fun SearchTab() {
         value = withContext(Dispatchers.Default) {
             val k = Geo.searchKey(q.trim())
             if (k.length < 2) return@withContext Results()
-            val ch = all.filter { c -> Geo.searchKey(c.name).contains(k) || c.altNames.any { Geo.searchKey(it).contains(k) } || Geo.searchKey(Geo.name(c.country)) == k }
+            val hide = app.prefs.settings.value.hideDead
+            val ch = all.filter { c -> !(hide && app.health.isDead(c)) }.filter { c -> Geo.searchKey(c.name).contains(k) || c.altNames.any { Geo.searchKey(it).contains(k) } || Geo.searchKey(Geo.name(c.country)) == k }
                 .sortedWith(compareBy<Channel> { !Geo.searchKey(it.name).startsWith(k) }.thenBy { it.num })
                 .take(150)
             val t = System.currentTimeMillis()

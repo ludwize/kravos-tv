@@ -117,6 +117,7 @@ class Health(context: Context, private val prefs: Prefs) {
                     }
                     val d = done.incrementAndGet()
                     _listProgress.value = Progress(true, d, todo.size, 0)
+                    if (d % 40 == 0) { _version.value++; _settled.value++ }
                 }
             }.awaitAll()
         } finally {

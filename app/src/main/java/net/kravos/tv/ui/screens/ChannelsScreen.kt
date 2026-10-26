@@ -149,7 +149,7 @@ fun CountryPicker(groups: List<Group>, selectedId: String, onDismiss: () -> Unit
     val idx = list.indexOfFirst { it.id == selectedId }
     val state = remember { LazyListState((idx - 3).coerceAtLeast(0)) }
     val first = remember { FocusRequester() }
-    LaunchedEffect(Unit) { delay(80); runCatching { first.requestFocus() } }
+    LaunchedEffect(Unit) { if (app.isTv) { delay(80); runCatching { first.requestFocus() } } }
     KDialog(onDismiss) {
         Text("Izaberi zemlju", style = MaterialTheme.typography.titleMedium)
         Text("${countries.size} zemalja · broj = kanali koji rade ili još nisu provereni", color = K.Dim, fontSize = 12.sp)
