@@ -183,7 +183,7 @@ fun PlayerScreen(route: Route.Player) {
             VideoSurface(app.player, Modifier.fillMaxSize(), onTap = {
                 overlay = if (overlay == Overlay.NONE) Overlay.INFO else Overlay.NONE; infoTick++
             })
-            StatusLayer(st, channel) { sources = true }
+            if (overlay != Overlay.LIST && overlay != Overlay.OPTIONS) StatusLayer(st, channel) { sources = true }
             AnimatedVisibility(overlay == Overlay.INFO, Modifier.align(Alignment.BottomCenter), enter = fadeIn(), exit = fadeOut()) {
                 InfoBanner(channel, st, touch = !app.isTv,
                     onPrev = { zap(-1) }, onNext = { zap(1) }, onList = { overlay = Overlay.LIST }, onMore = { overlay = Overlay.OPTIONS },

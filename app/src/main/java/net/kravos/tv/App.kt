@@ -93,7 +93,18 @@ class App : Application(), ImageLoaderFactory {
 
     override fun newImageLoader(): ImageLoader =
         ImageLoader.Builder(this)
-            .okHttpClient { Http.client() }
+            .okHttpClient {
+                // imgur answers deleted images with a "removed" placeholder: treat it as missing so initials show.
+                Http.client().newBuilder().addNetworkInterceptor { chain ->
+                    val r = chain.proceed(chain.request())
+                    val loc = r.header("Location").orEmpty()
+                    if (loc.endsWith("/removed.png") || chain.request().url.encodedPath.endsWith("/removed.png")) {
+                        r.close()
+                        okhttp3.Response.Builder().request(chain.request()).protocol(okhttp3.Protocol.HTTP_1_1).code(404).message("removed")
+                            .body(okhttp3.ResponseBody.create(null, ByteArray(0))).build()
+                    } else r
+                }.build()
+            }
             .components { add(SvgDecoder.Factory()) }
             .memoryCache { MemoryCache.Builder(this).maxSizePercent(0.20).build() }
             .diskCache { DiskCache.Builder().directory(cacheDir.resolve("img")).maxSizeBytes(150L * 1024 * 1024).build() }
