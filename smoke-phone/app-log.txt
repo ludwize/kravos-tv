@@ -1,308 +1,325 @@
-128:10-26 14:43:14.870   830   830 I SafetyLabelChangedBroadcastReceiver: received broadcast packageName: net.kravos.tv, current user: UserHandle{0}, packageChangeEvent: NEW_INSTALL, intent user: UserHandle{0}
-329:10-26 14:43:15.192   522  1815 V SplashScreenExceptionList: SplashScreen checking exception for package net.kravos.tv (target sdk:35) -> false
-331:10-26 14:43:15.202   522  1815 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=net.kravos.tv/.ui.MainActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
-332:10-26 14:43:15.204   828   864 V WindowManagerShell: Transition requested: android.os.BinderProxy@b587af1 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=8 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=net.kravos.tv/.ui.MainActivity } baseActivity=ComponentInfo{net.kravos.tv/net.kravos.tv.ui.MainActivity} topActivity=ComponentInfo{net.kravos.tv/net.kravos.tv.ui.MainActivity} origActivity=null realActivity=ComponentInfo{net.kravos.tv/net.kravos.tv.ui.MainActivity} numActivities=1 lastActiveTime=32347 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@187f6d6} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{39d7d57 net.kravos.tv.ui.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
-346:10-26 14:43:15.246   522  2643 D CoreBackPreview: Window{dc91a36 u0 Splash Screen net.kravos.tv}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@b09f510, mPriority=0, mIsAnimationCallback=false}
-372:10-26 14:43:15.301  3058  3058 I net.kravos.tv: Using CollectorTypeCC GC.
-373:10-26 14:43:15.302  3058  3058 W net.kravos.tv: Unexpected CPU variant for x86: x86_64.
-374:10-26 14:43:15.302  3058  3058 W net.kravos.tv: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
-375:10-26 14:43:15.303  3058  3058 E net.kravos.tv: Not starting debugger since process cannot load the jdwp agent.
-401:10-26 14:43:15.313   522   539 V WindowManager: Sent Transition #6 createdAt=10-26 14:43:15.185 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=8 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=net.kravos.tv/.ui.MainActivity } baseActivity=ComponentInfo{net.kravos.tv/net.kravos.tv.ui.MainActivity} topActivity=ComponentInfo{net.kravos.tv/net.kravos.tv.ui.MainActivity} origActivity=null realActivity=ComponentInfo{net.kravos.tv/net.kravos.tv.ui.MainActivity} numActivities=1 lastActiveTime=32347 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{67c9d15 Task{f972129 #8 type=standard A=10192:net.kravos.tv}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{e29782a net.kravos.tv.ui.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
-403:10-26 14:43:15.313   522   539 V WindowManager:     info={id=6 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{67c9d15 Task{f972129 #8 type=standard A=10192:net.kravos.tv}}} m=OPEN f=NONE leash=Surface(name=Task=8)/@0xd8660a0 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{4c1261b Task{a1eccd2 #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x109745f sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
-413:10-26 14:43:15.316   522   550 I ActivityManager: Start proc 3058:net.kravos.tv/u0a192 for next-top-activity {net.kravos.tv/net.kravos.tv.ui.MainActivity}
-487:10-26 14:43:15.433  3058  3058 D nativeloader: Configuring clns-6 for other apk /data/app/~~xNwa8b82f-c1I5nQ4QJAbA==/net.kravos.tv-INf9dL_fCaQnLmmaF5xMgg==/base.apk. target_sdk_version=35, uses_libraries=, library_path=/data/app/~~xNwa8b82f-c1I5nQ4QJAbA==/net.kravos.tv-INf9dL_fCaQnLmmaF5xMgg==/lib/x86_64:/data/app/~~xNwa8b82f-c1I5nQ4QJAbA==/net.kravos.tv-INf9dL_fCaQnLmmaF5xMgg==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/net.kravos.tv
-537:10-26 14:43:15.464  3058  3058 V GraphicsEnvironment: ANGLE GameManagerService for net.kravos.tv: false
-538:10-26 14:43:15.464  3058  3058 V GraphicsEnvironment: net.kravos.tv is not listed in per-application setting
-1067:10-26 14:43:15.867   522  1825 E JobScheduler.JobStatus: App net.kravos.tv became active but still in NEVER bucket
-1248:10-26 14:43:16.106  1041  1041 D CarrierSvcBindHelper: onPackageAdded: net.kravos.tv
-1250:10-26 14:43:16.110  1041  1041 D CarrierSvcBindHelper: onPackageModified: net.kravos.tv
-1252:10-26 14:43:16.110  1041  1310 D ImsResolver: maybeAddedImsService, packageName: net.kravos.tv
-1264:10-26 14:43:16.127  1041  1310 D ImsResolver: maybeAddedImsService, packageName: net.kravos.tv
-1398:10-26 14:43:16.376   522  2647 D CoreBackPreview: Window{26e88c u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@4640cc6, mPriority=0, mIsAnimationCallback=false}
-1914:10-26 14:43:17.266   522   539 I ActivityTaskManager: Displayed net.kravos.tv/.ui.MainActivity for user 0: +2s79ms
-1936:10-26 14:43:17.315   522   895 D CoreBackPreview: Window{dc91a36 u0 Splash Screen net.kravos.tv}: Setting back callback null
-1938:10-26 14:43:17.318   522  1390 W InputManager-JNI: Input channel object 'dc91a36 Splash Screen net.kravos.tv (client)' was disposed without first being removed with the input manager!
-2058:10-26 14:43:17.466  3058  3058 I net.kravos.tv: Waiting for a blocking GC ClassLinker
-2267:10-26 14:43:17.914  3058  3070 I net.kravos.tv: Background concurrent copying GC freed 1191037(37MB) AllocSpace objects, 0(0B) LOS objects, 49% free, 21MB/43MB, paused 21us,9us total 535.843ms
-2268:10-26 14:43:17.915  3058  3058 I net.kravos.tv: WaitForGcToComplete blocked ClassLinker on Background for 449.055ms
-2499:10-26 14:43:18.254   522  1190 I ImeTracker: net.kravos.tv:1b3eb8c6: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
-2500:10-26 14:43:18.254   522  1190 I ImeTracker: net.kravos.tv:1b3eb8c6: onCancelled at PHASE_SERVER_SHOULD_HIDE
-2509:10-26 14:43:18.270  1492  1492 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=0 fieldName=null extras=null}, false)
-2727:10-26 14:43:18.488  3058  3118 I KravosTV: iptv-org: 10202 channels, 15815 streams in 2624 ms
-2881:10-26 14:43:18.747  1562  1562 I AiAiEcho: AppFetcherImplV2 updateApps package:[net.kravos.tv], userId:[0], reason:[package is added.].
-2937:10-26 14:43:18.875  1562  1562 I AiAiEcho: AppFetcherImpl onPackageChanged net.kravos.tv.
-2938:10-26 14:43:18.877  1562  2749 I AiAiEcho: AppIndexer Package:[net.kravos.tv] UserProfile:[0] Enabled:[true].
-2939:10-26 14:43:18.877  1562  2749 I AiAiEcho: AppFetcherImplV2 updateApps package:[net.kravos.tv], userId:[0], reason:[package is updated.].
-3921:10-26 14:43:19.962  3058  3666 W net.kravos.tv: Long monitor contention with owner DefaultDispatcher-worker-3 (3126) at void x3.f.z()(SourceFile:-1) waiters=1 in x3.c x3.f.d(java.lang.String) for 188ms
-3922:10-26 14:43:19.962  3058  3643 W net.kravos.tv: Long monitor contention with owner DefaultDispatcher-worker-3 (3126) at void x3.f.z()(SourceFile:-1) waiters=3 in x3.c x3.f.d(java.lang.String) for 140ms
-4006:10-26 14:43:20.097  3058  3118 W KravosTV: GET https://rtcg-live-open-geo.morescreens.com/RTCG_1_002/playlist.m3u8 -> 403
-4009:10-26 14:43:20.103  3058  3607 W KravosTV: GET http://213.91.179.28:8000/play/a03n -> 404
-4038:10-26 14:43:20.178  3058  3596 W KravosTV: GET https://edge8.pink.rs/pinktv/index.m3u8 -> 404
-4043:10-26 14:43:20.197  3058  3606 W KravosTV: GET https://edge8.pink.rs/narodnatv/index.m3u8 -> 404
-4215:10-26 14:43:20.460  3058  3595 W KravosTV: GET https://rtcg-live-open-geo.morescreens.com/RTCG_1_003/playlist.m3u8 -> 403
-4297:10-26 14:43:20.669  3058  3603 W KravosTV: GET http://109.92.29.10:1935/tvduga/tvduga/playlist.m3u8 -> 404
-4347:10-26 14:43:20.780  3058  3592 W KravosTV: GET https://streaming.radiohub.hr/RadioHub_WEB_streaming/BHWUC27pGZ/3.m3u8 -> 404
-4824:10-26 14:43:21.045  1041  1041 D CarrierSvcBindHelper: onPackageModified: net.kravos.tv
-4828:10-26 14:43:21.052  1041  1310 D ImsResolver: maybeAddedImsService, packageName: net.kravos.tv
-4873:10-26 14:43:21.148  3058  3595 W KravosTV: GET https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT2/default/index.mpd -> 404
-4874:10-26 14:43:21.150  3058  3596 W KravosTV: GET https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT1/default/index.mpd -> 404
-4958:10-26 14:43:21.280  3058  3070 I net.kravos.tv: Background young concurrent copying GC freed 249305(14MB) AllocSpace objects, 24(3568KB) LOS objects, 34% free, 26MB/40MB, paused 51us,25us total 186.447ms
-5013:10-26 14:43:21.383  3058  3587 I KravosTV: downloaded https://epgshare01.online/epgshare01/epg_ripper_RS1.xml.gz -> 7157706 b
-5022:10-26 14:43:21.408  3058  3591 W KravosTV: GET https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT3/default/index.mpd -> 404
-5054:10-26 14:43:21.443  3058  3590 W KravosTV: GET https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT4/default/index.mpd -> 404
-5200:10-26 14:43:21.634  3058  3642 W KravosTV: GET https://stream2.nmih.hu:4102/live.m3u8 -> 404
-5231:10-26 14:43:21.691  3058  3592 W KravosTV: GET https://178.253.194.105/klasiktv/playlist.m3u8 -> 404
-5453:10-26 14:43:22.147  3058  3070 I net.kravos.tv: NativeAlloc concurrent copying GC freed 691125(25MB) AllocSpace objects, 49(3972KB) LOS objects, 49% free, 24MB/48MB, paused 39us,42us total 393.118ms
-5490:10-26 14:43:22.207  3058  3124 W KravosTV: GET https://webtvstream.bhtelecom.ba/hls19/rts1_1200.m3u8 -> 403
-5492:10-26 14:43:22.208  3058  3595 W KravosTV: GET https://webtvstream.bhtelecom.ba/hls16/hrt2_1200.m3u8 -> 403
-5494:10-26 14:43:22.208  3058  3591 W KravosTV: GET https://webtvstream.bhtelecom.ba/hls16/hrt3_1200.m3u8 -> 403
-5496:10-26 14:43:22.209  3058  3596 W KravosTV: GET https://webtvstream.bhtelecom.ba/hls16/hrt1_1200.m3u8 -> 403
-5499:10-26 14:43:22.212  3058  4039 D ProfileInstaller: Installing profile for net.kravos.tv
-5863:10-26 14:43:22.534  3058  3642 W KravosTV: GET https://webtvstream.bhtelecom.ba/hls19/rts1_1200.m3u8 -> 403
-6442:10-26 14:43:23.388  1562  1562 I AiAiEcho: AppFetcherImpl onPackageChanged net.kravos.tv.
-6458:10-26 14:43:23.405  3058  3592 W KravosTV: GET https://stream.nasatv.com.mk/jazztv/hls/jazztv_live.m3u8 -> 404
-6475:10-26 14:43:23.429  1562  2597 I AiAiEcho: AppIndexer Package:[net.kravos.tv] UserProfile:[0] Enabled:[true].
-6476:10-26 14:43:23.430  1562  2597 I AiAiEcho: AppFetcherImplV2 updateApps package:[net.kravos.tv], userId:[0], reason:[package is updated.].
-6667:10-26 14:43:23.628  3058  3593 W KravosTV: GET https://stream.nasatv.com.mk/rocktv/hls/rocktv_live.m3u8 -> 404
-6755:10-26 14:43:23.845  3058  3587 I KravosTV: downloaded https://epgshare01.online/epgshare01/epg_ripper_BA1.xml.gz -> 2217376 b
-6814:10-26 14:43:24.054  3058  3591 W KravosTV: GET https://live.mnet.mk/hls/mnet-sport.m3u8 -> 500
-6815:10-26 14:43:24.055  3058  3118 W KravosTV: GET https://live.mnet.mk/hls/mnet-info.m3u8 -> 500
-7363:10-26 14:43:24.909  3058  3587 I KravosTV: downloaded https://epgshare01.online/epgshare01/epg_ripper_HR1.xml.gz -> 1866671 b
-7364:10-26 14:43:24.910  3058  3587 W KravosTV: epg https://epgshare01.online/epgshare01/epg_ripper_HR1.xml.gz: Unexpected token (position:TEXT ﻿@1:2 in java.io.InputStreamReader@5f92800) 
-7367:10-26 14:43:24.930  3058  3587 I KravosTV: epg: 54 channels, 4631 programmes
-7505:10-26 14:43:25.146  3058  3592 W KravosTV: GET http://23.88.66.93/SLO1/index.m3u8 -> 404
-7597:10-26 14:43:25.293  3058  3606 W KravosTV: GET http://23.88.66.93/SLO2/index.m3u8 -> 404
-7792:10-26 14:43:25.962  3058  3599 W KravosTV: GET http://ott.sgn.net/hls/tvurslja.m3u8 -> 404
-7861:10-26 14:43:26.175  1451  3399 I BlockstoreStorage: Clearing Blockstore Data for package net.kravos.tv [CONTEXT service_id=258 ]
-7910:10-26 14:43:26.340  4495  4495 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-7919:10-26 14:43:26.358  4495  4495 I AndroidRuntime: Using default boot image
-7920:10-26 14:43:26.358  4495  4495 I AndroidRuntime: Leaving lock profiling enabled
-8175:10-26 14:43:26.718  4495  4495 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-9221:10-26 14:43:27.953  4495  4495 D AndroidRuntime: Shutting down VM
-9446:10-26 14:43:28.483  3058  3609 W KravosTV: GET https://5aa64ca8b95b8.streamlock.net:4443/edutv/edutelevizija/playlist.m3u8 -> 404
-14747:10-26 14:43:30.980  3058  3590 W KravosTV: GET https://webtvstream.bhtelecom.ba/hls13/bhrtportal_hd_1200.m3u8 -> 403
-16273:10-26 14:43:33.232  4934  4934 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-16275:10-26 14:43:33.240  4934  4934 I AndroidRuntime: Using default boot image
-16276:10-26 14:43:33.240  4934  4934 I AndroidRuntime: Leaving lock profiling enabled
-16307:10-26 14:43:33.373  4934  4934 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-16534:10-26 14:43:33.904  3058  3118 W KravosTV: GET https://pluslive.rtrs.tv/plus/plus/playlist.m3u8 -> 403
-16623:10-26 14:43:34.422  4934  4934 D AndroidRuntime: Shutting down VM
-16699:10-26 14:43:34.734  3058  3640 W KravosTV: GET https://glb.bozztv.com/glb/ssh101/tvrozaje/index.m3u8 -> 404
-16763:10-26 14:43:35.384   522   897 D CoreBackPreview: Window{c1264c3 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@a2c8a1f, mPriority=0, mIsAnimationCallback=false}
-16764:10-26 14:43:35.532   522  1875 I ImeTracker: net.kravos.tv:40562faf: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
-16765:10-26 14:43:35.532   522  1875 I ImeTracker: net.kravos.tv:40562faf: onCancelled at PHASE_SERVER_SHOULD_HIDE
-16768:10-26 14:43:35.533  1492  1492 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=0 fieldName=null extras=null}, false)
-16783:10-26 14:43:35.597  1492  1492 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=0 fieldName=null extras=null}, false)
-16789:10-26 14:43:35.763  3058  3640 W KravosTV: GET https://rtcg-live-open-geo.morescreens.com/RTCG_1_001/playlist.m3u8 -> 403
-16890:10-26 14:43:36.486  3058  3642 W KravosTV: GET https://live.mnet.mk/hls/mnet.m3u8 -> 500
-24146:10-26 14:43:43.690  5383  5383 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-24170:10-26 14:43:43.712  5383  5383 I AndroidRuntime: Using default boot image
-24171:10-26 14:43:43.712  5383  5383 I AndroidRuntime: Leaving lock profiling enabled
-24407:10-26 14:43:43.895  5383  5383 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-24725:10-26 14:43:45.024  5383  5383 D AndroidRuntime: Shutting down VM
-25807:10-26 14:43:47.003  3058  3593 I KravosTV: health: checked 132 channels, 52 work
-46137:10-26 14:44:13.183  1492  1492 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=0 fieldName=null extras=null}, true)
-46190:10-26 14:44:13.271   522   817 I WindowManager: finishDrawing of orientation change: Window{26e88c u0 net.kravos.tv/net.kravos.tv.ui.MainActivity} 109ms
-46195:10-26 14:44:13.288   522   817 I WindowManager: finishDrawing of orientation change: Window{c1264c3 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity} 126ms
-46198:10-26 14:44:13.291   522   539 V WindowManager:     info={id=7 t=CHANGE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{67c9d15 Task{f972129 #8 type=standard A=10192:net.kravos.tv}}} m=CHANGE f=NONE p=WCT{RemoteToken{f3513af DefaultTaskDisplayArea@153360427}} leash=Surface(name=Task=8)/@0xd8660a0 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 640, 320) d=0 r=0->1:0},{WCT{RemoteToken{f3513af DefaultTaskDisplayArea@153360427}} m=CHANGE f=NONE p=WCT{RemoteToken{df2e3bc Display{#0 state=ON size=640x320 ROTATION_90}}} leash=Surface(name=DefaultTaskDisplayArea)/@0xdacc4fe sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 640, 320) d=0 r=0->1:-1},{WCT{RemoteToken{df2e3bc Display{#0 state=ON size=640x320 ROTATION_90}}} m=CHANGE f=IS_DISPLAY leash=Surface(name=WindowedMagnification:0:31)/@0x1e3260e sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 640, 320) d=0 r=0->1:-1}]}
-46312:10-26 14:44:19.197  3058  3058 I ImeTracker: net.kravos.tv:5aa1f870: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT_BY_INSETS_API
-46313:10-26 14:44:19.197  1492  1492 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x8001(Normal) imeOptions=0x2000006 privateImeOptions=null actionName=DONE actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=404]}, true)
-46321:10-26 14:44:19.205  3058  3058 I ImeTracker: net.kravos.tv:4a0c6af6: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
-46324:10-26 14:44:19.206  1492  1492 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0x8001(Normal) imeOptions=0x2000006 privateImeOptions=null actionName=DONE actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}]}, false)
-46334:10-26 14:44:19.237  1492  1492 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x8001(Normal) imeOptions=0x2000006 privateImeOptions=null actionName=DONE actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
-46355:10-26 14:44:19.254   522   817 I ImeTracker: net.kravos.tv:5aa1f870: onFailed at PHASE_WM_SHOW_IME_RUNNER
-46365:10-26 14:44:19.264   522   817 D CoreBackPreview: Window{c1264c3 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@9c32f83, mPriority=0, mIsAnimationCallback=false}
-46622:10-26 14:44:19.915  3058  3058 I ImeTracker: net.kravos.tv:4a0c6af6: onShown
-46794:10-26 14:44:21.366   522  1914 I WindowManager: finishDrawing of orientation change: Window{26e88c u0 net.kravos.tv/net.kravos.tv.ui.MainActivity} 36ms
-46795:10-26 14:44:21.367  1492  1492 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x8001(Normal) imeOptions=0x2000006 privateImeOptions=null actionName=DONE actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}]}, true)
-46802:10-26 14:44:21.385  1492  1492 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0x8001(Normal) imeOptions=0x2000006 privateImeOptions=null actionName=DONE actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}]}, false)
-46804:10-26 14:44:21.390   522  1914 I WindowManager: finishDrawing of orientation change: Window{c1264c3 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity} 59ms
-46819:10-26 14:44:21.424  1492  1492 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x8001(Normal) imeOptions=0x2000006 privateImeOptions=null actionName=DONE actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
-46894:10-26 14:44:21.465  1492  1492 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x8001(Normal) imeOptions=0x2000006 privateImeOptions=null actionName=DONE actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
-47018:10-26 14:44:21.573   522   539 V WindowManager:     info={id=8 t=CHANGE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{null m=CHANGE f=IS_INPUT_METHOD|TRANSLUCENT p=WCT{RemoteToken{df2e3bc Display{#0 state=ON size=320x640 ROTATION_0}}} leash=Surface(name=WindowToken{4e97d27 type=2011 android.os.Binder@5a7d3e6})/@0x521d4f2 sb=Rect(0, 0 - 640, 320) eb=Rect(0, 0 - 320, 640) d=0 r=1->0:-1},{WCT{RemoteToken{67c9d15 Task{f972129 #8 type=standard A=10192:net.kravos.tv}}} m=CHANGE f=NONE p=WCT{RemoteToken{f3513af DefaultTaskDisplayArea@153360427}} leash=Surface(name=Task=8)/@0xd8660a0 sb=Rect(0, 0 - 640, 320) eb=Rect(0, 0 - 320, 640) d=0 r=1->0:0},{WCT{RemoteToken{f3513af DefaultTaskDisplayArea@153360427}} m=CHANGE f=NONE p=WCT{RemoteToken{df2e3bc Display{#0 state=ON size=320x640 ROTATION_0}}} leash=Surface(name=DefaultTaskDisplayArea)/@0xdacc4fe sb=Rect(0, 0 - 640, 320) eb=Rect(0, 0 - 320, 640) d=0 r=1->0:-1},{WCT{RemoteToken{df2e3bc Display{#0 state=ON size=320x640 ROTATION_0}}} m=CHANGE f=IS_DISPLAY leash=Surface(name=WindowedMagnification:0:31)/@0x1e3260e sb=Rect(0, 0 - 640, 320) eb=Rect(0, 0 - 320, 640) d=0 r=1->0:-1}]}
-47123:10-26 14:44:25.325   522  1390 I ImeTracker: net.kravos.tv:8a4aed82: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_SOFT_INPUT_BY_BACK_KEY
-47134:10-26 14:44:25.344   522  1832 D CoreBackPreview: Window{c1264c3 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@7c96020, mPriority=0, mIsAnimationCallback=false}
-47135:10-26 14:44:25.345  3058  3058 I ImeTracker: net.kravos.tv:fc9f1c3d: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
-47136:10-26 14:44:25.346   522  1832 I ImeTracker: net.kravos.tv:fc9f1c3d: onCancelled at PHASE_SERVER_SHOULD_HIDE
-47137:10-26 14:44:25.346  3058  3058 I ImeTracker: net.kravos.tv:8a4aed82: onHidden
-47146:10-26 14:44:28.382  6288  6288 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-47147:10-26 14:44:28.389  6288  6288 I AndroidRuntime: Using default boot image
-47148:10-26 14:44:28.389  6288  6288 I AndroidRuntime: Leaving lock profiling enabled
-47161:10-26 14:44:28.491  6288  6288 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-47220:10-26 14:44:29.513  6288  6288 D AndroidRuntime: Shutting down VM
-47285:10-26 14:44:30.169  3058  3058 E FrameTracker: force finish cuj, time out: J<IME_INSETS_ANIMATION::0@0@net.kravos.tv>
-47889:10-26 14:44:35.693  6365  6365 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-47890:10-26 14:44:35.699  6365  6365 I AndroidRuntime: Using default boot image
-47891:10-26 14:44:35.700  6365  6365 I AndroidRuntime: Leaving lock profiling enabled
-47905:10-26 14:44:35.814  6365  6365 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-47956:10-26 14:44:36.852  6365  6365 D AndroidRuntime: Shutting down VM
-48112:10-26 14:44:42.843  6387  6387 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-48113:10-26 14:44:42.847  6387  6387 I AndroidRuntime: Using default boot image
-48114:10-26 14:44:42.847  6387  6387 I AndroidRuntime: Leaving lock profiling enabled
-48127:10-26 14:44:42.942  6387  6387 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-48176:10-26 14:44:43.966  6387  6387 D AndroidRuntime: Shutting down VM
-48262:10-26 14:44:44.843  3058  3058 I ImeTracker: net.kravos.tv:d1c5c02f: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT_BY_INSETS_API
-48265:10-26 14:44:44.845  1492  1492 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0x8001(Normal) imeOptions=0x2000006 privateImeOptions=null actionName=DONE actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}]}, false)
-48269:10-26 14:44:44.846  3058  3058 I ImeTracker: net.kravos.tv:e48dce3b: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
-48272:10-26 14:44:44.849  1492  1492 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x8001(Normal) imeOptions=0x2000006 privateImeOptions=null actionName=DONE actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
-48332:10-26 14:44:44.879   522  2515 D CoreBackPreview: Window{c1264c3 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@707c56b, mPriority=0, mIsAnimationCallback=false}
-48333:10-26 14:44:44.880   522  2219 I ImeTracker: net.kravos.tv:d1c5c02f: onFailed at PHASE_WM_SHOW_IME_RUNNER
-48374:10-26 14:44:44.926  3058  3058 I ImeTracker: net.kravos.tv:e48dce3b: onShown
-48419:10-26 14:44:48.872   522  2515 I ImeTracker: net.kravos.tv:421026ff: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_SOFT_INPUT_BY_BACK_KEY
-48429:10-26 14:44:48.882   522  2219 D CoreBackPreview: Window{c1264c3 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@2516909, mPriority=0, mIsAnimationCallback=false}
-48430:10-26 14:44:48.894  3058  3058 I ImeTracker: net.kravos.tv:ee81f06f: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
-48431:10-26 14:44:48.895   522  2219 I ImeTracker: net.kravos.tv:ee81f06f: onCancelled at PHASE_SERVER_SHOULD_HIDE
-48432:10-26 14:44:48.895  3058  3058 I ImeTracker: net.kravos.tv:421026ff: onHidden
-48442:10-26 14:44:50.052  6429  6429 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-48443:10-26 14:44:50.055  6429  6429 I AndroidRuntime: Using default boot image
-48444:10-26 14:44:50.055  6429  6429 I AndroidRuntime: Leaving lock profiling enabled
-48457:10-26 14:44:50.110  6429  6429 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-48507:10-26 14:44:51.121  6429  6429 D AndroidRuntime: Shutting down VM
-48592:10-26 14:44:51.994   522   897 D CoreBackPreview: Window{c1264c3 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback null
-48593:10-26 14:44:51.997   522   897 W InputManager-JNI: Input channel object 'c1264c3 net.kravos.tv/net.kravos.tv.ui.MainActivity (client)' was disposed without first being removed with the input manager!
-48604:10-26 14:44:52.035  3058  3058 I ImeTracker: net.kravos.tv:b1214a28: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT
-48605:10-26 14:44:52.035  3058  3058 I ImeTracker: net.kravos.tv:b1214a28: onFailed at PHASE_CLIENT_VIEW_SERVED
-48607:10-26 14:44:52.040   522   897 I ImeTracker: net.kravos.tv:ea7563cb: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
-48608:10-26 14:44:52.040   522   897 I ImeTracker: net.kravos.tv:ea7563cb: onCancelled at PHASE_SERVER_SHOULD_HIDE
-48611:10-26 14:44:52.043  1492  1492 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=0 fieldName=null extras=null}, false)
-48799:10-26 14:44:52.511  3058  6465 W KravosTV: GET https://zdf-hls-18.akamaized.net/hls/live/2016501/dach/high/master.m3u8 -> 403
-48821:10-26 14:44:52.705  3058  3070 W net.kravos.tv: Cleared Reference was only reachable from finalizer (only reported once)
-48835:10-26 14:44:52.936  3058  6500 W KravosTV: GET https://ma.anixa.tv/clips/stream/anixehd/index.m3u8 -> 403
-48842:10-26 14:44:52.947  3058  6473 W KravosTV: GET https://ma.anixa.tv/clips/stream/anixesd/index.m3u8 -> 403
-48888:10-26 14:44:53.518  3058  6455 W KravosTV: GET https://jmp2.uk/plu-6790fa9e1cfc4aa96dfadcef.m3u8 -> 404
-49026:10-26 14:44:54.991  3058  6470 W KravosTV: GET https://api.alpaca.t62a.com/hls/9103/index.m3u8 -> 404
-49063:10-26 14:44:55.570  3058  6455 W KravosTV: GET https://streaming.magentamusik.de/csm/573870/magentamusik1/index.m3u8 -> 403
-49195:10-26 14:44:55.932  3058  6473 W KravosTV: GET https://5acade5fc0c29.streamlock.net/OKGera/tmbz_live_high.stream/playlist.m3u8 -> 403
-49262:10-26 14:44:56.044  3058  6470 W KravosTV: GET https://mdrtvsnhls.akamaized.net/hls/live/2016928/mdrtvsn/index.m3u8 -> 403
-49579:10-26 14:44:56.503  3058  6470 W KravosTV: GET https://mdrtvsahls.akamaized.net/hls/live/2016879/mdrtvsa/index.m3u8 -> 403
-49780:10-26 14:44:56.679  3058  6465 W KravosTV: GET https://jmp2.uk/plu-645e00d5d3fdde000829463a.m3u8 -> 404
-49876:10-26 14:44:57.108  3058  6470 W KravosTV: GET https://mdrtvthhls.akamaized.net/hls/live/2016880/mdrtvth/index.m3u8 -> 403
-49895:10-26 14:44:57.241  3058  6469 W KravosTV: GET https://jmp2.uk/plu-627d3176d7dfa500077042f1.m3u8 -> 404
-50012:10-26 14:44:59.137  3058  3058 E FrameTracker: force finish cuj, time out: J<IME_INSETS_ANIMATION::1@0@net.kravos.tv>
-50095:10-26 14:45:00.311  3058  6465 W KravosTV: GET https://s.ok54.de/mok-ks/kassel/playlist.m3u8 -> 403
-50096:10-26 14:45:00.311  3058  6525 W KravosTV: GET https://s.ok54.de/abr_okkl/webstream/playlist.m3u8 -> 403
-50098:10-26 14:45:00.313  3058  6470 W KravosTV: GET https://s.ok54.de/mok-rm/mok-rm/playlist.m3u8 -> 403
-50100:10-26 14:45:00.450  3058  6525 W KravosTV: GET https://s.ok54.de/ott/webstream/playlist.m3u8 -> 403
-50101:10-26 14:45:00.589  3058  6470 W KravosTV: GET https://s.ok54.de/okweinstrasse/okweinstrasse/playlist.m3u8 -> 404
-50128:10-26 14:45:00.767  3058  6455 W KravosTV: GET https://s.ok54.de/ott/webstream/tv/webstream_720p/playlist.m3u8 -> 403
-50129:10-26 14:45:00.768  3058  6525 W KravosTV: GET https://s.ok54.de/abr_ok4/live/playlist.m3u8 -> 403
-50202:10-26 14:45:01.421  3058  6465 W KravosTV: GET https://zdf-hls-19.akamaized.net/hls/live/2016502/de/high/master.m3u8 -> 403
-50203:10-26 14:45:01.499  3058  6455 W KravosTV: GET https://bttv-live-z.r53.cdn.tv1.eu/13014bundestag-hk1/_definst_/live/video/hk1_de.smil/playlist.m3u8 -> 404
-50207:10-26 14:45:01.500  3058  6475 W KravosTV: GET https://bttv-live-z.r53.cdn.tv1.eu/13014bundestag-hk3/_definst_/live/video/hk3_de.smil/playlist.m3u8 -> 404
-50208:10-26 14:45:01.532  3058  6472 W KravosTV: GET https://bttv-live-z.r53.cdn.tv1.eu/13014bundestag-hk2/_definst_/live/video/hk2_de.smil/playlist.m3u8 -> 404
-50209:10-26 14:45:01.590  3058  6471 W KravosTV: GET https://bttv-live-z.r53.cdn.tv1.eu/13014bundestag-hk4/_definst_/live/video/hk4_de.smil/playlist.m3u8 -> 404
-50217:10-26 14:45:03.022  3058  6500 W KravosTV: GET https://jmp2.uk/plu-69b968ba255fecb01f602257.m3u8 -> 404
-50218:10-26 14:45:03.030  3058  6472 W KravosTV: GET https://jmp2.uk/plu-68ada46d5190a45dc9c45af1.m3u8 -> 404
-50219:10-26 14:45:03.041  3058  6525 W KravosTV: GET https://jmp2.uk/plu-699d87093d5dba980705cca8.m3u8 -> 404
-50220:10-26 14:45:03.067  3058  6476 W KravosTV: GET https://jmp2.uk/plu-5f8eb91bb9b9e7000817e67f.m3u8 -> 500
-50225:10-26 14:45:03.218  3058  6475 W KravosTV: GET https://jmp2.uk/plu-69b968e011fc7b9e27c0d958.m3u8 -> 404
-50227:10-26 14:45:03.906  3058  6455 W KravosTV: GET https://jmp2.uk/plu-69a554179a3f3bb488c7d2be.m3u8 -> 404
-50228:10-26 14:45:04.249  3058  6455 W KravosTV: GET https://jmp2.uk/plu-6911c8dd8caba6f046c5c5d5.m3u8 -> 404
-50230:10-26 14:45:04.704  3058  6467 W KravosTV: GET https://jmp2.uk/plu-6911c92b4316999535eb1e08.m3u8 -> 404
-50272:10-26 14:45:05.766  3058  6525 W KravosTV: GET https://jmp2.uk/plu-642ad072283aa4000806148c.m3u8 -> 404
-50292:10-26 14:45:05.876  3058  6500 W KravosTV: GET https://jmp2.uk/plu-69b968ca1c36025fd0a3d92d.m3u8 -> 404
-50306:10-26 14:45:06.034  3058  6475 W KravosTV: GET https://qvcde-live.akamaized.net/hls/live/2097104/qby/1/1.m3u8 -> 404
-50330:10-26 14:45:06.199  3058  6525 W KravosTV: GET https://rbhlslive.akamaized.net/hls/live/2020435/rbfs/master.m3u8 -> 403
-50334:10-26 14:45:06.274  3058  6476 W KravosTV: GET https://live.creacast.com/radio21/smil:radio21.smil/playlist.m3u8 -> 403
-50335:10-26 14:45:06.318  3058  3593 W KravosTV: GET https://qvcde-live.akamaized.net/hls/live/2097104/qps/1/1.m3u8 -> 404
-50339:10-26 14:45:06.321  3058  6473 W KravosTV: GET https://rbb-hls-berlin.akamaized.net/hls/live/2017824/rbb_berlin/index.m3u8 -> 403
-50364:10-26 14:45:06.604  3058  6525 W KravosTV: GET https://live.creacast.com/rockland-radio/smil:rockland-radio.smil/playlist.m3u8 -> 403
-50365:10-26 14:45:06.748  3058  6473 W KravosTV: GET https://rbb-hls-brandenburg.akamaized.net/hls/live/2017825/rbb_brandenburg/master.m3u8 -> 403
-50444:10-26 14:45:08.138  3058  6473 W KravosTV: GET https://jmp2.uk/plu-63d000ef4e83e700086e0d6c.m3u8 -> 404
-50576:10-26 14:45:10.843  3058  3593 W KravosTV: GET https://jmp2.uk/plu-65787f2eb228b7000843fa5c.m3u8 -> 404
-50586:10-26 14:45:10.957  3058  6471 W KravosTV: GET https://swrbwd-hls.akamaized.net/hls/live/2018672/swrbwd/master.m3u8 -> 403
-50600:10-26 14:45:11.290  3058  6525 W KravosTV: GET https://swrrpd-hls.akamaized.net/hls/live/2018676/swrrpd/master.m3u8 -> 403
-50683:10-26 14:45:12.936  3058  6525 W KravosTV: GET https://5889e7d0d6e28.streamlock.net/tide-live/smil:livestream.smil/chunklist_w1303016797_b5500000.m3u8 -> 404
-50692:10-26 14:45:13.016  3058  6467 W KravosTV: GET http://213.91.179.28:8000/play/a082 -> 404
-50702:10-26 14:45:13.212  3058  6525 W KravosTV: GET https://5889e7d0d6e28.streamlock.net/tide-live/_definst_/smil:livestream.smil/chunklist_w815830392_b5500000.m3u8 -> 404
-50706:10-26 14:45:13.364  3058  6476 W KravosTV: GET https://srde.akamaized.net/hls/live/2031842/visualradio-unserding/index.m3u8 -> 403
-50861:10-26 14:45:14.535  3058  6525 W KravosTV: GET https://zdf-hls-15.akamaized.net/hls/live/2016498/de/high/master.m3u8 -> 403
-50905:10-26 14:45:14.842  3058  6467 W KravosTV: GET https://zdf-hls-17.akamaized.net/hls/live/2016500/de/high/master.m3u8 -> 403
-50925:10-26 14:45:14.944  3058  6476 W KravosTV: GET https://zdf-hls-16.akamaized.net/hls/live/2016499/de/high/master.m3u8 -> 403
-50935:10-26 14:45:15.005  3058  6455 W KravosTV: GET https://ma.anixa.tv/clips/stream/aristo/index.m3u8 -> 403
-50941:10-26 14:45:15.135  3058  6471 W KravosTV: GET https://artesimulcast.akamaized.net/hls/live/2030993/artelive_de/index.m3u8 -> 403
-51240:10-26 14:45:17.762  3058  6466 W KravosTV: GET https://jmp2.uk/plu-64b67f0424ade50008a3be17.m3u8 -> 403
-51249:10-26 14:45:17.780  3058  6476 W KravosTV: GET https://jmp2.uk/plu-64afe50c5dc16600087f3227.m3u8 -> 403
-51327:10-26 14:45:24.108  7167  7167 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-51328:10-26 14:45:24.111  7167  7167 I AndroidRuntime: Using default boot image
-51329:10-26 14:45:24.111  7167  7167 I AndroidRuntime: Leaving lock profiling enabled
-51342:10-26 14:45:24.170  7167  7167 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-51457:10-26 14:45:25.216  7167  7167 D AndroidRuntime: Shutting down VM
-51609:10-26 14:45:26.818   522   539 V WindowManager:     info={id=9 t=TO_FRONT f=0x80 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{4c1261b Task{a1eccd2 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x109745f sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{67c9d15 Task{f972129 #8 type=standard A=10192:net.kravos.tv}}} m=TO_BACK f=NONE leash=Surface(name=Task=8)/@0xd8660a0 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{279d909 token=android.os.Binder@e99fe6a})/@0xc8f6ada sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
-51673:10-26 14:45:32.226  7206  7206 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-51674:10-26 14:45:32.229  7206  7206 I AndroidRuntime: Using default boot image
-51675:10-26 14:45:32.229  7206  7206 I AndroidRuntime: Leaving lock profiling enabled
-51688:10-26 14:45:32.287  7206  7206 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-51737:10-26 14:45:33.316  7206  7206 D AndroidRuntime: Shutting down VM
-51988:10-26 14:45:34.256   522   539 V WindowManager:     info={id=10 t=TO_FRONT f=0x80 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{4c1261b Task{a1eccd2 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x109745f sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{67c9d15 Task{f972129 #8 type=standard A=10192:net.kravos.tv}}} m=TO_BACK f=NONE leash=Surface(name=Task=8)/@0xd8660a0 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{279d909 token=android.os.Binder@e99fe6a})/@0xc8f6ada sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
-52033:10-26 14:45:34.297  1492  1492 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x8001(Normal) imeOptions=0x2000003 privateImeOptions=null actionName=SEARCH actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=404]}, false)
-52035:10-26 14:45:34.297  3058  3058 I ImeTracker: net.kravos.tv:78e9c192: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT_BY_INSETS_API
-52039:10-26 14:45:34.298  1492  1492 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x8001(Normal) imeOptions=0x2000003 privateImeOptions=null actionName=SEARCH actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=404]}, true)
-52043:10-26 14:45:34.299  1492  1492 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0x8001(Normal) imeOptions=0x2000003 privateImeOptions=null actionName=SEARCH actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}]}, false)
-52047:10-26 14:45:34.301  3058  3058 I ImeTracker: net.kravos.tv:bb63e57b: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
-52052:10-26 14:45:34.314  1492  1492 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x8001(Normal) imeOptions=0x2000003 privateImeOptions=null actionName=SEARCH actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
-52066:10-26 14:45:34.321   522  2640 I ImeTracker: net.kravos.tv:78e9c192: onFailed at PHASE_WM_SHOW_IME_RUNNER
-52067:10-26 14:45:34.331   522   536 D CoreBackPreview: Window{26e88c u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@e1fcc93, mPriority=0, mIsAnimationCallback=false}
-52099:10-26 14:45:34.392  3058  3058 I ImeTracker: net.kravos.tv:bb63e57b: onShown
-52157:10-26 14:45:39.055  3058  3070 I net.kravos.tv: NativeAlloc concurrent copying GC freed 109966(3000KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 17MB/35MB, paused 107us,21us total 110.504ms
-52201:10-26 14:45:42.254   522  1875 I ImeTracker: net.kravos.tv:b25c56ac: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_SOFT_INPUT_BY_BACK_KEY
-52211:10-26 14:45:42.263   522  2654 D CoreBackPreview: Window{26e88c u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@9355956, mPriority=0, mIsAnimationCallback=false}
-52212:10-26 14:45:42.292  3058  3058 I ImeTracker: net.kravos.tv:d7bd478e: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
-52213:10-26 14:45:42.293   522  2657 I ImeTracker: net.kravos.tv:d7bd478e: onCancelled at PHASE_SERVER_SHOULD_HIDE
-52214:10-26 14:45:42.293  3058  3058 I ImeTracker: net.kravos.tv:b25c56ac: onHidden
-52215:10-26 14:45:42.296  3058  3058 W FrameTracker: Missed SF frame:PREDICTION_ERROR, 14137, 0, CUJ=J<IME_INSETS_ANIMATION::0@1@net.kravos.tv>
-52217:10-26 14:45:42.542  3058  3058 W FrameTracker: Missed SF frame:PREDICTION_ERROR, 14623, 0, CUJ=J<IME_INSETS_ANIMATION::1@1@net.kravos.tv>
-52225:10-26 14:45:43.394  7277  7277 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-52226:10-26 14:45:43.397  7277  7277 I AndroidRuntime: Using default boot image
-52227:10-26 14:45:43.397  7277  7277 I AndroidRuntime: Leaving lock profiling enabled
-52240:10-26 14:45:43.482  7277  7277 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-52345:10-26 14:45:44.516  7277  7277 D AndroidRuntime: Shutting down VM
-52379:10-26 14:45:45.396  3058  3058 I ImeTracker: net.kravos.tv:8cc48258: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT
-52385:10-26 14:45:45.398   522  1875 I ImeTracker: net.kravos.tv:8cc48258: onCancelled at PHASE_SERVER_SHOULD_HIDE
-52386:10-26 14:45:45.398  3058  3058 I ImeTracker: net.kravos.tv:328d13e6: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
-52387:10-26 14:45:45.399  3058  3058 I ImeTracker: net.kravos.tv:328d13e6: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
-52388:10-26 14:45:45.400  1492  1492 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=0 fieldName=null extras=null}, true)
-52407:10-26 14:45:45.429   522   539 V WindowManager:     info={id=11 t=TO_FRONT f=0x80 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{4c1261b Task{a1eccd2 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x109745f sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{67c9d15 Task{f972129 #8 type=standard A=10192:net.kravos.tv}}} m=TO_BACK f=NONE leash=Surface(name=Task=8)/@0xd8660a0 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{279d909 token=android.os.Binder@e99fe6a})/@0xc8f6ada sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
-52549:10-26 14:45:53.013  7334  7334 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-52550:10-26 14:45:53.016  7334  7334 I AndroidRuntime: Using default boot image
-52551:10-26 14:45:53.016  7334  7334 I AndroidRuntime: Leaving lock profiling enabled
-52564:10-26 14:45:53.073  7334  7334 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-52614:10-26 14:45:54.093  7334  7334 D AndroidRuntime: Shutting down VM
-52720:10-26 14:45:55.006   522   539 V WindowManager:     info={id=12 t=TO_FRONT f=0x80 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{4c1261b Task{a1eccd2 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x109745f sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{67c9d15 Task{f972129 #8 type=standard A=10192:net.kravos.tv}}} m=TO_BACK f=NONE leash=Surface(name=Task=8)/@0xd8660a0 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{279d909 token=android.os.Binder@e99fe6a})/@0xc8f6ada sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
-52748:10-26 14:45:55.078  3058  3058 I ImeTracker: net.kravos.tv:a7ad1279: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT_BY_INSETS_API
-52750:10-26 14:45:55.078  1492  1492 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x8001(Normal) imeOptions=0x2000003 privateImeOptions=null actionName=SEARCH actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=404]}, true)
-52755:10-26 14:45:55.080  1492  1492 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0x8001(Normal) imeOptions=0x2000003 privateImeOptions=null actionName=SEARCH actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}]}, false)
-52759:10-26 14:45:55.082  3058  3058 I ImeTracker: net.kravos.tv:c015cdac: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
-52762:10-26 14:45:55.097  1492  1492 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x8001(Normal) imeOptions=0x2000003 privateImeOptions=null actionName=SEARCH actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
-52786:10-26 14:45:55.105   522  1190 I ImeTracker: net.kravos.tv:a7ad1279: onFailed at PHASE_WM_SHOW_IME_RUNNER
-52787:10-26 14:45:55.114   522   817 D CoreBackPreview: Window{26e88c u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@8c74be3, mPriority=0, mIsAnimationCallback=false}
-52797:10-26 14:45:55.143  3058  3058 I ImeTracker: net.kravos.tv:c015cdac: onShown
-52798:10-26 14:45:55.209  3058  3058 W FrameTracker: Missed SF frame:PREDICTION_ERROR, 15819, 0, CUJ=J<IME_INSETS_ANIMATION::0@1@net.kravos.tv>
-52860:10-26 14:45:59.431  3058  3070 I net.kravos.tv: NativeAlloc concurrent copying GC freed 239648(8043KB) AllocSpace objects, 14(396KB) LOS objects, 49% free, 18MB/36MB, paused 60us,11us total 168.391ms
-52862:10-26 14:45:59.681  3058  3070 I net.kravos.tv: NativeAlloc concurrent copying GC freed 143887(3967KB) AllocSpace objects, 20(400KB) LOS objects, 50% free, 17MB/35MB, paused 27us,11us total 122.332ms
-52863:10-26 14:45:59.925  3058  3070 I net.kravos.tv: NativeAlloc concurrent copying GC freed 126312(3462KB) AllocSpace objects, 0(0B) LOS objects, 50% free, 18MB/36MB, paused 66us,15us total 123.821ms
-52880:10-26 14:46:03.020   522  1914 I ImeTracker: net.kravos.tv:92b132aa: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_SOFT_INPUT_BY_BACK_KEY
-52889:10-26 14:46:03.030   522  2657 D CoreBackPreview: Window{26e88c u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@54a2b93, mPriority=0, mIsAnimationCallback=false}
-52891:10-26 14:46:03.059  3058  3058 I ImeTracker: net.kravos.tv:945cdc8f: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
-52892:10-26 14:46:03.061   522  2657 I ImeTracker: net.kravos.tv:945cdc8f: onCancelled at PHASE_SERVER_SHOULD_HIDE
-52893:10-26 14:46:03.061  3058  3058 I ImeTracker: net.kravos.tv:92b132aa: onHidden
-52895:10-26 14:46:03.309  3058  3058 W FrameTracker: Missed SF frame:PREDICTION_ERROR, 16330, 0, CUJ=J<IME_INSETS_ANIMATION::1@1@net.kravos.tv>
-52904:10-26 14:46:04.155  7388  7388 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-52905:10-26 14:46:04.157  7388  7388 I AndroidRuntime: Using default boot image
-52906:10-26 14:46:04.157  7388  7388 I AndroidRuntime: Leaving lock profiling enabled
-52919:10-26 14:46:04.209  7388  7388 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-52972:10-26 14:46:05.227  7388  7388 D AndroidRuntime: Shutting down VM
-53048:10-26 14:46:06.093  3058  3058 I ImeTracker: net.kravos.tv:919d57bb: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT_BY_INSETS_API
-53051:10-26 14:46:06.095  1492  1492 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0x8001(Normal) imeOptions=0x2000003 privateImeOptions=null actionName=SEARCH actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}]}, false)
-53054:10-26 14:46:06.096  3058  3058 I ImeTracker: net.kravos.tv:783f4a64: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
-53057:10-26 14:46:06.098  1492  1492 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x8001(Normal) imeOptions=0x2000003 privateImeOptions=null actionName=SEARCH actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
-53082:10-26 14:46:06.111   522  1875 I ImeTracker: net.kravos.tv:919d57bb: onFailed at PHASE_WM_SHOW_IME_RUNNER
-53083:10-26 14:46:06.112   522  1914 D CoreBackPreview: Window{26e88c u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@8b81865, mPriority=0, mIsAnimationCallback=false}
-53098:10-26 14:46:06.212  3058  3058 I ImeTracker: net.kravos.tv:783f4a64: onShown
-53149:10-26 14:46:16.453  3058  3058 E FrameTracker: force finish cuj, time out: J<IME_INSETS_ANIMATION::0@1@net.kravos.tv>
-53174:10-26 14:46:28.194   522  1875 I ImeTracker: net.kravos.tv:21a37422: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_SOFT_INPUT_BY_BACK_KEY
-53185:10-26 14:46:28.215   522  1190 D CoreBackPreview: Window{26e88c u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@ca6758c, mPriority=0, mIsAnimationCallback=false}
-53186:10-26 14:46:28.227  3058  3058 I ImeTracker: net.kravos.tv:69807407: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
-53187:10-26 14:46:28.227   522  1190 I ImeTracker: net.kravos.tv:69807407: onCancelled at PHASE_SERVER_SHOULD_HIDE
-53188:10-26 14:46:28.228  3058  3058 I ImeTracker: net.kravos.tv:21a37422: onHidden
-53190:10-26 14:46:28.475  3058  3058 W FrameTracker: Missed SF frame:PREDICTION_ERROR, 25954, 0, CUJ=J<IME_INSETS_ANIMATION::1@1@net.kravos.tv>
+192:10-26 14:52:40.681   517  1834 V SplashScreenExceptionList: SplashScreen checking exception for package net.kravos.tv (target sdk:35) -> false
+194:10-26 14:52:40.684   833   869 V WindowManagerShell: Transition requested: android.os.BinderProxy@d697740 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=8 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=net.kravos.tv/.ui.MainActivity } baseActivity=ComponentInfo{net.kravos.tv/net.kravos.tv.ui.MainActivity} topActivity=ComponentInfo{net.kravos.tv/net.kravos.tv.ui.MainActivity} origActivity=null realActivity=ComponentInfo{net.kravos.tv/net.kravos.tv.ui.MainActivity} numActivities=1 lastActiveTime=39913 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@3bd7679} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{c5a7fbe net.kravos.tv.ui.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+195:10-26 14:52:40.684   517  1834 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=net.kravos.tv/.ui.MainActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+259:10-26 14:52:40.780   517  1829 D CoreBackPreview: Window{8cb1f7f u0 Splash Screen net.kravos.tv}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@e02f44d, mPriority=0, mIsAnimationCallback=false}
+271:10-26 14:52:40.822  2594  2594 I net.kravos.tv: Using CollectorTypeCC GC.
+276:10-26 14:52:40.824  2594  2594 W net.kravos.tv: Unexpected CPU variant for x86: x86_64.
+277:10-26 14:52:40.824  2594  2594 W net.kravos.tv: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+279:10-26 14:52:40.827  2594  2594 E net.kravos.tv: Not starting debugger since process cannot load the jdwp agent.
+309:10-26 14:52:40.842   517   546 I ActivityManager: Start proc 2594:net.kravos.tv/u0a192 for next-top-activity {net.kravos.tv/net.kravos.tv.ui.MainActivity}
+617:10-26 14:52:41.207   517   535 V WindowManager: Sent Transition #6 createdAt=10-26 14:52:40.580 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=8 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=net.kravos.tv/.ui.MainActivity } baseActivity=ComponentInfo{net.kravos.tv/net.kravos.tv.ui.MainActivity} topActivity=ComponentInfo{net.kravos.tv/net.kravos.tv.ui.MainActivity} origActivity=null realActivity=ComponentInfo{net.kravos.tv/net.kravos.tv.ui.MainActivity} numActivities=1 lastActiveTime=39913 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{a107cd7 Task{7778a8e #8 type=standard A=10192:net.kravos.tv}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{458d9c4 net.kravos.tv.ui.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+619:10-26 14:52:41.207   517   535 V WindowManager:     info={id=6 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{a107cd7 Task{7778a8e #8 type=standard A=10192:net.kravos.tv}}} m=OPEN f=NONE leash=Surface(name=Task=8)/@0x3027d0 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{dc6a0ad Task{a904964 #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x85fcd46 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
+624:10-26 14:52:41.212  2594  2594 D nativeloader: Configuring clns-6 for other apk /data/app/~~VxE0eXtnTFhW7EMbbR8o8Q==/net.kravos.tv-B3FHiw6f3mrE8V5dINSKMg==/base.apk. target_sdk_version=35, uses_libraries=, library_path=/data/app/~~VxE0eXtnTFhW7EMbbR8o8Q==/net.kravos.tv-B3FHiw6f3mrE8V5dINSKMg==/lib/x86_64:/data/app/~~VxE0eXtnTFhW7EMbbR8o8Q==/net.kravos.tv-B3FHiw6f3mrE8V5dINSKMg==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/net.kravos.tv
+642:10-26 14:52:41.249  2594  2594 V GraphicsEnvironment: ANGLE GameManagerService for net.kravos.tv: false
+643:10-26 14:52:41.249  2594  2594 V GraphicsEnvironment: net.kravos.tv is not listed in per-application setting
+826:10-26 14:52:41.487   517  1820 E JobScheduler.JobStatus: App net.kravos.tv became active but still in NEVER bucket
+911:10-26 14:52:41.556  1043  1043 D CarrierSvcBindHelper: onPackageAdded: net.kravos.tv
+990:10-26 14:52:41.667   517  1774 D CoreBackPreview: Window{3d7a9e3 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@dfc282b, mPriority=0, mIsAnimationCallback=false}
+1012:10-26 14:52:41.699   517   800 I SdkSandboxManager: No SDKs used. Skipping SDK data reconcilation for CallingInfo{mUid=10192, mPackageName='net.kravos.tv, mAppProcessToken='null'}
+1039:10-26 14:52:41.742  1043  1325 D ImsResolver: maybeAddedImsService, packageName: net.kravos.tv
+1352:10-26 14:52:42.492   517  1823 I WindowManager: finishDrawing of relaunch: Window{3d7a9e3 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity} 680ms
+1353:10-26 14:52:42.495   517   535 I ActivityTaskManager: Displayed net.kravos.tv/.ui.MainActivity for user 0: +1s935ms
+1382:10-26 14:52:42.543   517  1834 W InputManager-JNI: Input channel object '8cb1f7f Splash Screen net.kravos.tv (client)' was disposed without first being removed with the input manager!
+1496:10-26 14:52:42.964  2594  2594 I net.kravos.tv: Waiting for a blocking GC ClassLinker
+1533:10-26 14:52:43.191  2594  2602 I net.kravos.tv: NativeAlloc concurrent copying GC freed 612628(19MB) AllocSpace objects, 0(0B) LOS objects, 49% free, 12MB/25MB, paused 11.735ms,10us total 346.771ms
+1534:10-26 14:52:43.191  2594  2594 I net.kravos.tv: WaitForGcToComplete blocked ClassLinker on NativeAlloc for 226.920ms
+1804:10-26 14:52:43.725   517   946 D CoreBackPreview: Window{3d7a9e3 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback null
+1806:10-26 14:52:43.743   517  1720 W InputManager-JNI: Input channel object '3d7a9e3 net.kravos.tv/net.kravos.tv.ui.MainActivity (client)' was disposed without first being removed with the input manager!
+1867:10-26 14:52:43.913  2594  2602 I net.kravos.tv: Background young concurrent copying GC freed 387883(12MB) AllocSpace objects, 0(0B) LOS objects, 26% free, 19MB/25MB, paused 12us,9us total 257.842ms
+1924:10-26 14:52:44.132   517  1828 D CoreBackPreview: Window{b6c5461 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@33c4dd3, mPriority=0, mIsAnimationCallback=false}
+1928:10-26 14:52:44.135   834   834 I SafetyLabelChangedBroadcastReceiver: received broadcast packageName: net.kravos.tv, current user: UserHandle{0}, packageChangeEvent: NEW_INSTALL, intent user: UserHandle{0}
+1940:10-26 14:52:44.173   517  1720 I ImeTracker: net.kravos.tv:43f1ef52: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+1941:10-26 14:52:44.173   517  1720 I ImeTracker: net.kravos.tv:43f1ef52: onCancelled at PHASE_SERVER_SHOULD_HIDE
+1981:10-26 14:52:44.223  1460  1460 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=0 fieldName=null extras=null}, false)
+2040:10-26 14:52:44.368  2594  2602 W net.kravos.tv: Cleared Reference was only reachable from finalizer (only reported once)
+2049:10-26 14:52:44.386  2594  2602 I net.kravos.tv: Background concurrent copying GC freed 593600(18MB) AllocSpace objects, 0(0B) LOS objects, 50% free, 16MB/32MB, paused 33us,10us total 294.162ms
+2129:10-26 14:52:44.555  2594  2684 I KravosTV: iptv-org: 10202 channels, 15815 streams in 3142 ms
+2373:10-26 14:52:44.956  2594  2602 I net.kravos.tv: Background young concurrent copying GC freed 712800(19MB) AllocSpace objects, 0(0B) LOS objects, 59% free, 13MB/32MB, paused 13us,13us total 150.342ms
+2735:10-26 14:52:45.853  2594  3026 W net.kravos.tv: Long monitor contention with owner DefaultDispatcher-worker-30 (3029) at void x3.f.z()(SourceFile:-1) waiters=0 in x3.c x3.f.d(java.lang.String) for 238ms
+2736:10-26 14:52:45.853  2594  3030 W net.kravos.tv: Long monitor contention with owner DefaultDispatcher-worker-30 (3029) at void x3.f.z()(SourceFile:-1) waiters=1 in x3.c x3.f.d(java.lang.String) for 238ms
+2737:10-26 14:52:45.853  2594  3027 W net.kravos.tv: Long monitor contention with owner DefaultDispatcher-worker-30 (3029) at void x3.f.z()(SourceFile:-1) waiters=2 in x3.c x3.f.d(java.lang.String) for 237ms
+3116:10-26 14:52:46.438  2594  3020 W KravosTV: GET http://213.91.179.28:8000/play/a03n -> 404
+3132:10-26 14:52:46.560  1043  1043 D CarrierSvcBindHelper: onPackageModified: net.kravos.tv
+3134:10-26 14:52:46.571  2594  3031 W KravosTV: GET https://webtvstream.bhtelecom.ba/hls19/rts1_1200.m3u8 -> 403
+3138:10-26 14:52:46.586  1043  1325 D ImsResolver: maybeAddedImsService, packageName: net.kravos.tv
+3146:10-26 14:52:46.609  2594  3024 W KravosTV: GET https://edge8.pink.rs/pinktv/index.m3u8 -> 404
+3148:10-26 14:52:46.613  2594  3058 W KravosTV: GET https://edge8.pink.rs/pinktv/index.m3u8 -> 404
+3150:10-26 14:52:46.614  2594  2686 W KravosTV: GET https://webtvstream.bhtelecom.ba/hls19/rts1_1200.m3u8 -> 403
+3164:10-26 14:52:46.647  2594  3125 W KravosTV: GET https://edge8.pink.rs/narodnatv/index.m3u8 -> 404
+3245:10-26 14:52:46.994  2594  3020 W KravosTV: GET https://edge8.pink.rs/narodnatv/index.m3u8 -> 404
+3250:10-26 14:52:47.001  2594  3302 D ProfileInstaller: Installing profile for net.kravos.tv
+3428:10-26 14:52:47.525  2594  3011 W net.kravos.tv: Weak pointer dereference blocked for 13 milliseconds.
+3429:10-26 14:52:47.525  2594  3058 W net.kravos.tv: Weak pointer dereference blocked for 12 milliseconds.
+3512:10-26 14:52:47.786  2594  2602 I net.kravos.tv: Background young concurrent copying GC freed 259849(12MB) AllocSpace objects, 17(2004KB) LOS objects, 0% free, 33MB/33MB, paused 205us,14.952ms total 731.140ms
+3542:10-26 14:52:47.883  2594  3060 W KravosTV: GET http://109.92.29.10:1935/tvduga/tvduga/playlist.m3u8 -> 404
+3560:10-26 14:52:47.988  2594  2685 I KravosTV: downloaded https://epgshare01.online/epgshare01/epg_ripper_RS1.xml.gz -> 7157706 b
+3593:10-26 14:52:48.045  2594  3023 W KravosTV: GET http://109.92.29.10:1935/tvduga/tvduga/playlist.m3u8 -> 404
+3608:10-26 14:52:48.070  2594  3038 W KravosTV: GET https://stream2.nmih.hu:4102/live.m3u8 -> 404
+3775:10-26 14:52:48.488  2594  3025 W KravosTV: GET https://webtvstream.bhtelecom.ba/hls13/bhrtportal_hd_1200.m3u8 -> 403
+3871:10-26 14:52:48.586  2594  2602 I net.kravos.tv: Background concurrent copying GC freed 179181(13MB) AllocSpace objects, 82(9540KB) LOS objects, 49% free, 19MB/39MB, paused 27us,23us total 751.025ms
+4508:10-26 14:52:49.777  2594  2602 I net.kravos.tv: Background young concurrent copying GC freed 824588(25MB) AllocSpace objects, 4(552KB) LOS objects, 41% free, 23MB/39MB, paused 1.260ms,23us total 138.869ms
+4577:10-26 14:52:49.912  2594  3025 W KravosTV: GET https://pluslive.rtrs.tv/plus/plus/playlist.m3u8 -> 403
+5291:10-26 14:52:50.720  1603  1603 I AiAiEcho: AppFetcherImplV2 updateApps package:[net.kravos.tv], userId:[0], reason:[package is added.].
+5591:10-26 14:52:51.601  3696  3696 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+5593:10-26 14:52:51.631  3696  3696 I AndroidRuntime: Using default boot image
+5594:10-26 14:52:51.631  3696  3696 I AndroidRuntime: Leaving lock profiling enabled
+5615:10-26 14:52:51.674  2594  2602 I net.kravos.tv: Background young concurrent copying GC freed 661508(19MB) AllocSpace objects, 5(1044KB) LOS objects, 49% free, 20MB/39MB, paused 29us,26us total 152.979ms
+5635:10-26 14:52:51.825  2594  2685 I KravosTV: downloaded https://epgshare01.online/epgshare01/epg_ripper_BA1.xml.gz -> 2217376 b
+5717:10-26 14:52:52.010  3696  3696 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+5970:10-26 14:52:52.873  1043  1043 D CarrierSvcBindHelper: onPackageModified: net.kravos.tv
+6050:10-26 14:52:53.034  1043  1325 D ImsResolver: maybeAddedImsService, packageName: net.kravos.tv
+6582:10-26 14:52:54.111  3696  3696 D AndroidRuntime: Shutting down VM
+6820:10-26 14:52:54.798  2594  3002 W KravosTV: GET https://5aa64ca8b95b8.streamlock.net:4443/edutv/edutelevizija/playlist.m3u8 -> 404
+6821:10-26 14:52:54.800  2594  3018 W KravosTV: GET https://5aa64ca8b95b8.streamlock.net:4443/edutv/edutelevizija/playlist.m3u8 -> 404
+6951:10-26 14:52:55.272  2594  2685 I KravosTV: downloaded https://epgshare01.online/epgshare01/epg_ripper_HR1.xml.gz -> 1866671 b
+6955:10-26 14:52:55.279  2594  2685 W KravosTV: epg https://epgshare01.online/epgshare01/epg_ripper_HR1.xml.gz: Unexpected token (position:TEXT ﻿@1:2 in java.io.InputStreamReader@9a23e73) 
+7305:10-26 14:52:55.415  2594  2602 I net.kravos.tv: Background young concurrent copying GC freed 429542(18MB) AllocSpace objects, 0(0B) LOS objects, 39% free, 24MB/39MB, paused 44us,27us total 510.325ms
+7352:10-26 14:52:55.608  2594  2685 I KravosTV: epg: 54 channels, 4629 programmes
+7427:10-26 14:52:55.689  2594  2594 D WM-RescheduleReceiver: Received intent Intent { act=android.intent.action.BOOT_COMPLETED flg=0x89000010 cmp=net.kravos.tv/androidx.work.impl.background.systemalarm.RescheduleReceiver (has extras) }
+7560:10-26 14:52:55.987  2594  3024 W KravosTV: GET https://glb.bozztv.com/glb/ssh101/tvrozaje/index.m3u8 -> 404
+7945:10-26 14:52:56.709  2594  3024 W KravosTV: GET https://rtcg-live-open-geo.morescreens.com/RTCG_1_001/playlist.m3u8 -> 403
+7946:10-26 14:52:56.715  2594  3017 W KravosTV: GET https://rtcg-live-open-geo.morescreens.com/RTCG_1_002/playlist.m3u8 -> 403
+8033:10-26 14:52:57.012  2594  3022 W KravosTV: GET https://rtcg-live-open-geo.morescreens.com/RTCG_1_003/playlist.m3u8 -> 403
+8125:10-26 14:52:57.338  2594  3017 W KravosTV: GET https://streaming.radiohub.hr/RadioHub_WEB_streaming/BHWUC27pGZ/3.m3u8 -> 404
+8390:10-26 14:52:58.061  1603  1603 I AiAiEcho: AppFetcherImpl onPackageChanged net.kravos.tv.
+8391:10-26 14:52:58.064  1603  3658 I AiAiEcho: AppIndexer Package:[net.kravos.tv] UserProfile:[0] Enabled:[true].
+8392:10-26 14:52:58.064  1603  3658 I AiAiEcho: AppFetcherImplV2 updateApps package:[net.kravos.tv], userId:[0], reason:[package is updated.].
+8545:10-26 14:52:58.377  2594  3017 W KravosTV: GET https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT2/default/index.mpd -> 404
+8552:10-26 14:52:58.405  2594  3063 W KravosTV: GET https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT3/default/index.mpd -> 404
+8650:10-26 14:52:58.562  2594  3023 W KravosTV: GET https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT4/default/index.mpd -> 404
+8919:10-26 14:52:58.960  2594  3022 W KravosTV: GET https://178.253.194.105/klasiktv/playlist.m3u8 -> 404
+8940:10-26 14:52:59.016  2594  3017 W KravosTV: GET https://webtvstream.bhtelecom.ba/hls16/hrt2_1200.m3u8 -> 403
+8960:10-26 14:52:59.130  2594  3063 W KravosTV: GET https://webtvstream.bhtelecom.ba/hls16/hrt3_1200.m3u8 -> 403
+9217:10-26 14:52:59.639  4264  4264 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+9226:10-26 14:52:59.646  4264  4264 I AndroidRuntime: Using default boot image
+9227:10-26 14:52:59.646  4264  4264 I AndroidRuntime: Leaving lock profiling enabled
+9307:10-26 14:52:59.775  4264  4264 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+9445:10-26 14:53:00.182  2594  3020 W KravosTV: GET https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT1/default/index.mpd -> 404
+9537:10-26 14:53:00.472  2594  3020 W KravosTV: GET https://webtvstream.bhtelecom.ba/hls16/hrt1_1200.m3u8 -> 403
+9723:10-26 14:53:00.884  4264  4264 D AndroidRuntime: Shutting down VM
+9875:10-26 14:53:01.238  2594  3022 W KravosTV: GET https://stream.nasatv.com.mk/jazztv/hls/jazztv_live.m3u8 -> 404
+10001:10-26 14:53:01.795  2594  3025 W KravosTV: GET https://stream.nasatv.com.mk/rocktv/hls/rocktv_live.m3u8 -> 404
+10011:10-26 14:53:01.926  2594  3021 W KravosTV: GET https://live.mnet.mk/hls/mnet-info.m3u8 -> 500
+10109:10-26 14:53:02.163   517  1821 D CoreBackPreview: Window{d88cdd6 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@cd9269d, mPriority=0, mIsAnimationCallback=false}
+10136:10-26 14:53:02.189  2594  3017 W KravosTV: GET https://live.mnet.mk/hls/mnet.m3u8 -> 500
+10137:10-26 14:53:02.190  2594  3022 W KravosTV: GET https://live.mnet.mk/hls/mnet-sport.m3u8 -> 500
+10320:10-26 14:53:02.596   517  1821 I ImeTracker: net.kravos.tv:398cc7a5: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+10349:10-26 14:53:02.631   517  1821 I ImeTracker: net.kravos.tv:398cc7a5: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10372:10-26 14:53:02.659  1460  1460 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=0 fieldName=null extras=null}, false)
+10823:10-26 14:53:03.492  2594  3019 W KravosTV: GET http://23.88.66.93/SLO2/index.m3u8 -> 404
+10828:10-26 14:53:03.498  2594  3022 W KravosTV: GET http://23.88.66.93/SLO1/index.m3u8 -> 404
+11470:10-26 14:53:04.129  2594  2685 W KravosTV: GET http://ott.sgn.net/hls/tvurslja.m3u8 -> 404
+11499:10-26 14:53:04.218  1488  4385 I BlockstoreStorage: Clearing Blockstore Data for package net.kravos.tv [CONTEXT service_id=258 ]
+12304:10-26 14:53:05.903  1603  1603 I AiAiEcho: AppFetcherImpl onPackageChanged net.kravos.tv.
+12305:10-26 14:53:05.904  1603  2733 I AiAiEcho: AppIndexer Package:[net.kravos.tv] UserProfile:[0] Enabled:[true].
+12306:10-26 14:53:05.904  1603  2733 I AiAiEcho: AppFetcherImplV2 updateApps package:[net.kravos.tv], userId:[0], reason:[package is updated.].
+17631:10-26 14:53:10.308  4946  4946 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+17638:10-26 14:53:10.318  4946  4946 I AndroidRuntime: Using default boot image
+17639:10-26 14:53:10.318  4946  4946 I AndroidRuntime: Leaving lock profiling enabled
+17729:10-26 14:53:10.687  4946  4946 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+18022:10-26 14:53:11.849  4946  4946 D AndroidRuntime: Shutting down VM
+18082:10-26 14:53:12.327  2594  3019 I KravosTV: health: checked 132 channels, 53 work
+28548:10-26 14:53:40.555  1460  1460 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=0 fieldName=null extras=null}, true)
+28649:10-26 14:53:40.702   517   903 I WindowManager: finishDrawing of orientation change: Window{b6c5461 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity} 210ms
+28710:10-26 14:53:40.748   517  1094 I WindowManager: finishDrawing of orientation change: Window{d88cdd6 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity} 256ms
+28731:10-26 14:53:40.790   517   535 V WindowManager:     info={id=7 t=CHANGE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{a107cd7 Task{7778a8e #8 type=standard A=10192:net.kravos.tv}}} m=CHANGE f=NONE p=WCT{RemoteToken{b4b9099 DefaultTaskDisplayArea@76573461}} leash=Surface(name=Task=8)/@0x3027d0 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 640, 320) d=0 r=0->1:0},{WCT{RemoteToken{b4b9099 DefaultTaskDisplayArea@76573461}} m=CHANGE f=NONE p=WCT{RemoteToken{4915f5e Display{#0 state=ON size=640x320 ROTATION_90}}} leash=Surface(name=DefaultTaskDisplayArea)/@0x748e521 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 640, 320) d=0 r=0->1:-1},{WCT{RemoteToken{4915f5e Display{#0 state=ON size=640x320 ROTATION_90}}} m=CHANGE f=IS_DISPLAY leash=Surface(name=WindowedMagnification:0:31)/@0x493a840 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 640, 320) d=0 r=0->1:-1}]}
+30321:10-26 14:53:46.607  1460  1460 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x8001(Normal) imeOptions=0x2000006 privateImeOptions=null actionName=DONE actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=404]}, false)
+30335:10-26 14:53:46.614  2594  2594 I ImeTracker: net.kravos.tv:6dd8f7d9: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT_BY_INSETS_API
+30346:10-26 14:53:46.627  1460  1460 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x8001(Normal) imeOptions=0x2000006 privateImeOptions=null actionName=DONE actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=404]}, true)
+30350:10-26 14:53:46.630  1460  1460 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0x8001(Normal) imeOptions=0x2000006 privateImeOptions=null actionName=DONE actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}]}, false)
+30357:10-26 14:53:46.668  2594  2594 I ImeTracker: net.kravos.tv:5de028a2: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+30381:10-26 14:53:46.773  1460  1460 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x8001(Normal) imeOptions=0x2000006 privateImeOptions=null actionName=DONE actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
+30427:10-26 14:53:46.799   517   946 D CoreBackPreview: Window{d88cdd6 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@a3a2bb2, mPriority=0, mIsAnimationCallback=false}
+30582:10-26 14:53:47.088   517   903 I ImeTracker: net.kravos.tv:6dd8f7d9: onFailed at PHASE_WM_SHOW_IME_RUNNER
+30885:10-26 14:53:48.177  2594  2594 I ImeTracker: net.kravos.tv:5de028a2: onShown
+31221:10-26 14:53:49.143   517  1720 I WindowManager: finishDrawing of orientation change: Window{b6c5461 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity} 86ms
+31225:10-26 14:53:49.156  1460  1460 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x8001(Normal) imeOptions=0x2000006 privateImeOptions=null actionName=DONE actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}]}, true)
+31231:10-26 14:53:49.170  1460  1460 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0x8001(Normal) imeOptions=0x2000006 privateImeOptions=null actionName=DONE actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}]}, false)
+31237:10-26 14:53:49.197   517  1823 I WindowManager: finishDrawing of orientation change: Window{d88cdd6 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity} 140ms
+31242:10-26 14:53:49.215  1460  1460 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x8001(Normal) imeOptions=0x2000006 privateImeOptions=null actionName=DONE actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
+31316:10-26 14:53:49.306  1460  1460 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x8001(Normal) imeOptions=0x2000006 privateImeOptions=null actionName=DONE actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
+31404:10-26 14:53:49.564   517   535 V WindowManager:     info={id=8 t=CHANGE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{null m=CHANGE f=IS_INPUT_METHOD|TRANSLUCENT p=WCT{RemoteToken{4915f5e Display{#0 state=ON size=320x640 ROTATION_0}}} leash=Surface(name=WindowToken{9380ae7 type=2011 android.os.Binder@48500a6})/@0x4706c89 sb=Rect(0, 0 - 640, 320) eb=Rect(0, 0 - 320, 640) d=0 r=1->0:-1},{WCT{RemoteToken{a107cd7 Task{7778a8e #8 type=standard A=10192:net.kravos.tv}}} m=CHANGE f=NONE p=WCT{RemoteToken{b4b9099 DefaultTaskDisplayArea@76573461}} leash=Surface(name=Task=8)/@0x3027d0 sb=Rect(0, 0 - 640, 320) eb=Rect(0, 0 - 320, 640) d=0 r=1->0:0},{WCT{RemoteToken{b4b9099 DefaultTaskDisplayArea@76573461}} m=CHANGE f=NONE p=WCT{RemoteToken{4915f5e Display{#0 state=ON size=320x640 ROTATION_0}}} leash=Surface(name=DefaultTaskDisplayArea)/@0x748e521 sb=Rect(0, 0 - 640, 320) eb=Rect(0, 0 - 320, 640) d=0 r=1->0:-1},{WCT{RemoteToken{4915f5e Display{#0 state=ON size=320x640 ROTATION_0}}} m=CHANGE f=IS_DISPLAY leash=Surface(name=WindowedMagnification:0:31)/@0x493a840 sb=Rect(0, 0 - 640, 320) eb=Rect(0, 0 - 320, 640) d=0 r=1->0:-1}]}
+32912:10-26 14:53:53.047   517  1774 I ImeTracker: net.kravos.tv:9a89f71: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_SOFT_INPUT_BY_BACK_KEY
+32924:10-26 14:53:53.071   517  1832 D CoreBackPreview: Window{d88cdd6 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@cad49a1, mPriority=0, mIsAnimationCallback=false}
+32925:10-26 14:53:53.084  2594  2594 I ImeTracker: net.kravos.tv:338dfad9: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
+32926:10-26 14:53:53.086   517  1836 I ImeTracker: net.kravos.tv:338dfad9: onCancelled at PHASE_SERVER_SHOULD_HIDE
+32927:10-26 14:53:53.086  2594  2594 I ImeTracker: net.kravos.tv:9a89f71: onHidden
+33150:10-26 14:53:56.182  6130  6130 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+33151:10-26 14:53:56.193  6130  6130 I AndroidRuntime: Using default boot image
+33152:10-26 14:53:56.193  6130  6130 I AndroidRuntime: Leaving lock profiling enabled
+33166:10-26 14:53:56.344  6130  6130 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+33294:10-26 14:53:57.375  6130  6130 D AndroidRuntime: Shutting down VM
+36844:10-26 14:54:03.329  2594  2594 E FrameTracker: force finish cuj, time out: J<IME_INSETS_ANIMATION::1@0@net.kravos.tv>
+37115:10-26 14:54:03.924  6244  6244 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+37134:10-26 14:54:03.933  6244  6244 I AndroidRuntime: Using default boot image
+37136:10-26 14:54:03.934  6244  6244 I AndroidRuntime: Leaving lock profiling enabled
+37411:10-26 14:54:04.140  6244  6244 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+37950:10-26 14:54:05.210  6244  6244 D AndroidRuntime: Shutting down VM
+42013:10-26 14:54:11.670  6305  6305 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+42082:10-26 14:54:11.682  6305  6305 I AndroidRuntime: Using default boot image
+42083:10-26 14:54:11.682  6305  6305 I AndroidRuntime: Leaving lock profiling enabled
+42400:10-26 14:54:11.905  6305  6305 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+44940:10-26 14:54:12.955  6305  6305 D AndroidRuntime: Shutting down VM
+45024:10-26 14:54:13.851  2594  2594 I ImeTracker: net.kravos.tv:5a645ab5: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT_BY_INSETS_API
+45027:10-26 14:54:13.853  1460  1460 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0x8001(Normal) imeOptions=0x2000006 privateImeOptions=null actionName=DONE actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}]}, false)
+45031:10-26 14:54:13.858  2594  2594 I ImeTracker: net.kravos.tv:960ab9f4: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+45034:10-26 14:54:13.860  1460  1460 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x8001(Normal) imeOptions=0x2000006 privateImeOptions=null actionName=DONE actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
+45087:10-26 14:54:13.892   517  1836 D CoreBackPreview: Window{d88cdd6 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@ec156ab, mPriority=0, mIsAnimationCallback=false}
+45088:10-26 14:54:13.892   517   946 I ImeTracker: net.kravos.tv:5a645ab5: onFailed at PHASE_WM_SHOW_IME_RUNNER
+45117:10-26 14:54:13.950  2594  2594 I ImeTracker: net.kravos.tv:960ab9f4: onShown
+45219:10-26 14:54:17.904   517  1834 I ImeTracker: net.kravos.tv:618db5dc: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_SOFT_INPUT_BY_BACK_KEY
+45231:10-26 14:54:17.928   517  1831 D CoreBackPreview: Window{d88cdd6 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@3b718c6, mPriority=0, mIsAnimationCallback=false}
+45232:10-26 14:54:17.939  2594  2594 I ImeTracker: net.kravos.tv:856c3ed7: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
+45233:10-26 14:54:17.939   517  1720 I ImeTracker: net.kravos.tv:856c3ed7: onCancelled at PHASE_SERVER_SHOULD_HIDE
+45234:10-26 14:54:17.939  2594  2594 I ImeTracker: net.kravos.tv:618db5dc: onHidden
+45236:10-26 14:54:18.016  2594  2594 W FrameTracker: Missed SF frame:UNKNOWN: 80, 8992, 0, CUJ=J<IME_INSETS_ANIMATION::0@0@net.kravos.tv>
+45245:10-26 14:54:19.105  6355  6355 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+45246:10-26 14:54:19.109  6355  6355 I AndroidRuntime: Using default boot image
+45247:10-26 14:54:19.109  6355  6355 I AndroidRuntime: Leaving lock profiling enabled
+45260:10-26 14:54:19.187  6355  6355 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+45317:10-26 14:54:20.220  6355  6355 D AndroidRuntime: Shutting down VM
+45404:10-26 14:54:21.136   517   821 D CoreBackPreview: Window{d88cdd6 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback null
+45405:10-26 14:54:21.140   517   821 W InputManager-JNI: Input channel object 'd88cdd6 net.kravos.tv/net.kravos.tv.ui.MainActivity (client)' was disposed without first being removed with the input manager!
+45416:10-26 14:54:21.203  2594  2594 I ImeTracker: net.kravos.tv:70a1b016: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT
+45417:10-26 14:54:21.203  2594  2594 I ImeTracker: net.kravos.tv:70a1b016: onFailed at PHASE_CLIENT_VIEW_SERVED
+45421:10-26 14:54:21.213   517  1774 I ImeTracker: net.kravos.tv:7201fef0: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+45422:10-26 14:54:21.214   517  1774 I ImeTracker: net.kravos.tv:7201fef0: onCancelled at PHASE_SERVER_SHOULD_HIDE
+45425:10-26 14:54:21.220  1460  1460 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=0 fieldName=null extras=null}, false)
+45604:10-26 14:54:21.721  2594  6392 W KravosTV: GET https://zdf-hls-18.akamaized.net/hls/live/2016501/dach/high/master.m3u8 -> 403
+45622:10-26 14:54:22.045  2594  3019 W KravosTV: GET https://ma.anixa.tv/clips/stream/anixesd/index.m3u8 -> 403
+45623:10-26 14:54:22.046  2594  6393 W KravosTV: GET https://ma.anixa.tv/clips/stream/aristo/index.m3u8 -> 403
+45627:10-26 14:54:22.059  2594  6394 W KravosTV: GET https://artesimulcast.akamaized.net/hls/live/2030993/artelive_de/index.m3u8 -> 403
+45629:10-26 14:54:22.065  2594  3022 W KravosTV: GET https://ma.anixa.tv/clips/stream/anixehd/index.m3u8 -> 403
+45865:10-26 14:54:26.718  2594  6414 W KravosTV: GET https://jmp2.uk/plu-64b67f0424ade50008a3be17.m3u8 -> 403
+45890:10-26 14:54:26.844  2594  6391 W KravosTV: GET https://jmp2.uk/plu-60940a07d88ba90007b9cb71.m3u8 -> 503
+45972:10-26 14:54:28.065  2594  6401 W KravosTV: GET https://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/v2/stitch/hls/channel/5ede45d077746000072be0fe/3321280/playlist.m3u8?terminate=false&sid=d6629c76-d1 -> 503
+45976:10-26 14:54:28.181  2594  2594 E FrameTracker: force finish cuj, time out: J<IME_INSETS_ANIMATION::1@0@net.kravos.tv>
+46015:10-26 14:54:28.806  2594  6414 W KravosTV: GET https://jmp2.uk/plu-6790fa9e1cfc4aa96dfadcef.m3u8 -> 404
+46058:10-26 14:54:29.234  2594  6411 W KravosTV: GET https://jmp2.uk/plu-64afe50c5dc16600087f3227.m3u8 -> 403
+46139:10-26 14:54:30.046  2594  6391 W KravosTV: GET https://5acade5fc0c29.streamlock.net/OKGera/tmbz_live_high.stream/playlist.m3u8 -> 403
+46164:10-26 14:54:30.323  2594  6390 W KravosTV: GET https://api.alpaca.t62a.com/hls/9103/index.m3u8 -> 404
+46176:10-26 14:54:30.422  2594  6391 W KravosTV: GET https://streaming.magentamusik.de/csm/573870/magentamusik1/index.m3u8 -> 403
+46216:10-26 14:54:31.059  2594  6401 W KravosTV: GET https://mdrtvsnhls.akamaized.net/hls/live/2016928/mdrtvsn/index.m3u8 -> 403
+46235:10-26 14:54:31.232  2594  6392 W KravosTV: GET https://jmp2.uk/plu-645e00d5d3fdde000829463a.m3u8 -> 404
+46244:10-26 14:54:31.456  2594  6401 W KravosTV: GET https://mdrtvsahls.akamaized.net/hls/live/2016879/mdrtvsa/index.m3u8 -> 403
+46254:10-26 14:54:31.845  2594  6458 W KravosTV: GET https://jmp2.uk/plu-627d3176d7dfa500077042f1.m3u8 -> 404
+46258:10-26 14:54:31.863  2594  6401 W KravosTV: GET https://mdrtvthhls.akamaized.net/hls/live/2016880/mdrtvth/index.m3u8 -> 403
+46432:10-26 14:54:34.757  2594  3022 W KravosTV: GET https://s.ok54.de/mok-ks/kassel/playlist.m3u8 -> 403
+46433:10-26 14:54:34.757  2594  6390 W KravosTV: GET https://s.ok54.de/abr_okkl/webstream/playlist.m3u8 -> 403
+46439:10-26 14:54:34.878  2594  6390 W KravosTV: GET https://s.ok54.de/mok-rm/mok-rm/playlist.m3u8 -> 403
+46441:10-26 14:54:35.013  2594  6458 W KravosTV: GET https://s.ok54.de/ott/webstream/playlist.m3u8 -> 403
+46442:10-26 14:54:35.169  2594  6390 W KravosTV: GET https://s.ok54.de/okweinstrasse/okweinstrasse/playlist.m3u8 -> 404
+46465:10-26 14:54:35.328  2594  6457 W KravosTV: GET https://s.ok54.de/abr_ok4/live/playlist.m3u8 -> 403
+46466:10-26 14:54:35.328  2594  6391 W KravosTV: GET https://s.ok54.de/ott/webstream/tv/webstream_720p/playlist.m3u8 -> 403
+46475:10-26 14:54:35.512  2594  6401 W KravosTV: GET https://bttv-live-z.r53.cdn.tv1.eu/13014bundestag-hk3/_definst_/live/video/hk3_de.smil/playlist.m3u8 -> 404
+46484:10-26 14:54:35.591  2594  6391 W KravosTV: GET https://bttv-live-z.r53.cdn.tv1.eu/13014bundestag-hk1/_definst_/live/video/hk1_de.smil/playlist.m3u8 -> 404
+46488:10-26 14:54:35.710  2594  3022 W KravosTV: GET https://bttv-live-z.r53.cdn.tv1.eu/13014bundestag-hk2/_definst_/live/video/hk2_de.smil/playlist.m3u8 -> 404
+46492:10-26 14:54:35.761  2594  6390 W KravosTV: GET https://bttv-live-z.r53.cdn.tv1.eu/13014bundestag-hk4/_definst_/live/video/hk4_de.smil/playlist.m3u8 -> 404
+46494:10-26 14:54:35.903  2594  6401 W KravosTV: GET https://zdf-hls-19.akamaized.net/hls/live/2016502/de/high/master.m3u8 -> 403
+46510:10-26 14:54:37.907  2594  6390 W KravosTV: GET https://jmp2.uk/plu-69b968ba255fecb01f602257.m3u8 -> 404
+46513:10-26 14:54:37.968  2594  6394 W KravosTV: GET https://jmp2.uk/plu-5f8eb91bb9b9e7000817e67f.m3u8 -> 500
+46522:10-26 14:54:38.753  2594  3022 W KravosTV: GET https://jmp2.uk/plu-68ada46d5190a45dc9c45af1.m3u8 -> 404
+46523:10-26 14:54:38.795  2594  6401 W KravosTV: GET https://jmp2.uk/plu-699d87093d5dba980705cca8.m3u8 -> 404
+46525:10-26 14:54:39.013  2594  6379 W KravosTV: GET https://jmp2.uk/plu-69b968e011fc7b9e27c0d958.m3u8 -> 404
+46532:10-26 14:54:40.440  2594  6394 W KravosTV: GET https://jmp2.uk/plu-69a554179a3f3bb488c7d2be.m3u8 -> 404
+46533:10-26 14:54:40.526  2594  6459 W KravosTV: GET https://jmp2.uk/plu-6911c92b4316999535eb1e08.m3u8 -> 404
+46534:10-26 14:54:40.532  2594  3022 W KravosTV: GET https://jmp2.uk/plu-6911c8dd8caba6f046c5c5d5.m3u8 -> 404
+46540:10-26 14:54:42.172  2594  6460 W KravosTV: GET https://jmp2.uk/plu-642ad072283aa4000806148c.m3u8 -> 404
+46566:10-26 14:54:42.458  2594  6459 W KravosTV: GET https://jmp2.uk/plu-69b968ca1c36025fd0a3d92d.m3u8 -> 404
+46693:10-26 14:54:42.947  2594  6457 W KravosTV: GET https://qvcde-live.akamaized.net/hls/live/2097104/qby/1/1.m3u8 -> 404
+46716:10-26 14:54:42.972  2594  6401 W KravosTV: GET https://live.creacast.com/radio21/smil:radio21.smil/playlist.m3u8 -> 403
+46722:10-26 14:54:43.003  2594  6394 W KravosTV: GET https://qvcde-live.akamaized.net/hls/live/2097104/qps/1/1.m3u8 -> 404
+46733:10-26 14:54:43.048  2594  6379 W KravosTV: GET https://rbhlslive.akamaized.net/hls/live/2020435/rbfs/master.m3u8 -> 403
+46749:10-26 14:54:43.100  2594  6460 W KravosTV: GET https://rbb-hls-berlin.akamaized.net/hls/live/2017824/rbb_berlin/index.m3u8 -> 403
+46755:10-26 14:54:43.124  2594  6394 W KravosTV: GET https://live.creacast.com/rockland-radio/smil:rockland-radio.smil/playlist.m3u8 -> 403
+47038:10-26 14:54:43.515  2594  6460 W KravosTV: GET https://rbb-hls-brandenburg.akamaized.net/hls/live/2017825/rbb_brandenburg/master.m3u8 -> 403
+47557:10-26 14:54:45.076  2594  6459 W KravosTV: GET https://jmp2.uk/plu-63d000ef4e83e700086e0d6c.m3u8 -> 404
+47724:10-26 14:54:47.448  2594  6394 W KravosTV: GET https://jmp2.uk/plu-65787f2eb228b7000843fa5c.m3u8 -> 404
+47744:10-26 14:54:47.843  2594  6459 W KravosTV: GET https://swrrpd-hls.akamaized.net/hls/live/2018676/swrrpd/master.m3u8 -> 403
+47745:10-26 14:54:47.854  2594  6401 W KravosTV: GET https://swrbwd-hls.akamaized.net/hls/live/2018672/swrbwd/master.m3u8 -> 403
+47816:10-26 14:54:48.740  2594  6401 W KravosTV: GET https://5889e7d0d6e28.streamlock.net/tide-live/smil:livestream.smil/chunklist_w950614881_b5500000.m3u8 -> 404
+47824:10-26 14:54:48.990  2594  6401 W KravosTV: GET https://5889e7d0d6e28.streamlock.net/tide-live/_definst_/smil:livestream.smil/chunklist_w1330102204_b5500000.m3u8 -> 404
+47828:10-26 14:54:49.023  2594  3019 W KravosTV: GET https://zdf-hls-15.akamaized.net/hls/live/2016498/de/high/master.m3u8 -> 403
+47840:10-26 14:54:49.176  2594  6458 W KravosTV: GET http://213.91.179.28:8000/play/a082 -> 404
+47852:10-26 14:54:49.391  2594  6390 W KravosTV: GET https://srde.akamaized.net/hls/live/2031842/visualradio-unserding/index.m3u8 -> 403
+47940:10-26 14:54:50.520  2594  6392 W KravosTV: GET https://zdf-hls-16.akamaized.net/hls/live/2016499/de/high/master.m3u8 -> 403
+47943:10-26 14:54:50.613  2594  6459 W KravosTV: GET https://zdf-hls-17.akamaized.net/hls/live/2016500/de/high/master.m3u8 -> 403
+49592:10-26 14:54:53.317  7080  7080 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+49593:10-26 14:54:53.322  7080  7080 I AndroidRuntime: Using default boot image
+49594:10-26 14:54:53.322  7080  7080 I AndroidRuntime: Leaving lock profiling enabled
+49607:10-26 14:54:53.436  7080  7080 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+49787:10-26 14:54:54.485  7080  7080 D AndroidRuntime: Shutting down VM
+50014:10-26 14:54:56.343   517   535 V WindowManager:     info={id=9 t=TO_FRONT f=0x80 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{dc6a0ad Task{a904964 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x85fcd46 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{a107cd7 Task{7778a8e #8 type=standard A=10192:net.kravos.tv}}} m=TO_BACK f=NONE leash=Surface(name=Task=8)/@0x3027d0 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{966c0b0 token=android.os.Binder@c511075})/@0xbeced0 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
+50177:10-26 14:55:01.552  7140  7140 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+50178:10-26 14:55:01.556  7140  7140 I AndroidRuntime: Using default boot image
+50179:10-26 14:55:01.556  7140  7140 I AndroidRuntime: Leaving lock profiling enabled
+50193:10-26 14:55:01.644  7140  7140 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+50388:10-26 14:55:02.718  7140  7140 D AndroidRuntime: Shutting down VM
+50511:10-26 14:55:04.065   517   535 V WindowManager:     info={id=10 t=TO_FRONT f=0x80 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{dc6a0ad Task{a904964 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x85fcd46 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{a107cd7 Task{7778a8e #8 type=standard A=10192:net.kravos.tv}}} m=TO_BACK f=NONE leash=Surface(name=Task=8)/@0x3027d0 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{966c0b0 token=android.os.Binder@c511075})/@0xbeced0 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
+50584:10-26 14:55:04.205  2594  2594 I ImeTracker: net.kravos.tv:fc5939f6: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT_BY_INSETS_API
+50588:10-26 14:55:04.205  1460  1460 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x8001(Normal) imeOptions=0x2000003 privateImeOptions=null actionName=SEARCH actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=404]}, false)
+50591:10-26 14:55:04.206  1460  1460 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x8001(Normal) imeOptions=0x2000003 privateImeOptions=null actionName=SEARCH actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=404]}, true)
+50596:10-26 14:55:04.209  1460  1460 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0x8001(Normal) imeOptions=0x2000003 privateImeOptions=null actionName=SEARCH actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}]}, false)
+50601:10-26 14:55:04.213  2594  2594 I ImeTracker: net.kravos.tv:bf72f7a4: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+50604:10-26 14:55:04.215  1460  1460 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x8001(Normal) imeOptions=0x2000003 privateImeOptions=null actionName=SEARCH actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
+50644:10-26 14:55:04.236   517  1828 I ImeTracker: net.kravos.tv:fc5939f6: onFailed at PHASE_WM_SHOW_IME_RUNNER
+50647:10-26 14:55:04.252   517  1830 D CoreBackPreview: Window{b6c5461 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@9385ec1, mPriority=0, mIsAnimationCallback=false}
+50665:10-26 14:55:04.303  2594  2594 I ImeTracker: net.kravos.tv:bf72f7a4: onShown
+50798:10-26 14:55:11.997   517   589 I ImeTracker: net.kravos.tv:e1f3f8bd: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_SOFT_INPUT_BY_BACK_KEY
+50808:10-26 14:55:12.016   517   821 D CoreBackPreview: Window{b6c5461 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@67fb753, mPriority=0, mIsAnimationCallback=false}
+50809:10-26 14:55:12.033  2594  2594 I ImeTracker: net.kravos.tv:dc92298f: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
+50810:10-26 14:55:12.033   517   821 I ImeTracker: net.kravos.tv:dc92298f: onCancelled at PHASE_SERVER_SHOULD_HIDE
+50811:10-26 14:55:12.034  2594  2594 I ImeTracker: net.kravos.tv:e1f3f8bd: onHidden
+50812:10-26 14:55:12.052  2594  2594 W FrameTracker: Missed SF frame:PREDICTION_ERROR, 15252, 0, CUJ=J<IME_INSETS_ANIMATION::0@1@net.kravos.tv>
+50814:10-26 14:55:12.283  2594  2594 W FrameTracker: Missed SF frame:UNKNOWN: 80, 15797, 0, CUJ=J<IME_INSETS_ANIMATION::1@1@net.kravos.tv>
+50821:10-26 14:55:13.206  7234  7234 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+50822:10-26 14:55:13.212  7234  7234 I AndroidRuntime: Using default boot image
+50823:10-26 14:55:13.212  7234  7234 I AndroidRuntime: Leaving lock profiling enabled
+50836:10-26 14:55:13.323  7234  7234 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+50896:10-26 14:55:14.362  7234  7234 D AndroidRuntime: Shutting down VM
+51003:10-26 14:55:15.295  2594  2594 I ImeTracker: net.kravos.tv:4bd2c14b: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT
+51004:10-26 14:55:15.296   517   821 I ImeTracker: net.kravos.tv:4bd2c14b: onCancelled at PHASE_SERVER_SHOULD_HIDE
+51005:10-26 14:55:15.296  2594  2594 I ImeTracker: net.kravos.tv:ac52e7a8: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
+51007:10-26 14:55:15.298  2594  2594 I ImeTracker: net.kravos.tv:ac52e7a8: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+51015:10-26 14:55:15.308   517   535 V WindowManager:     info={id=11 t=TO_FRONT f=0x80 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{dc6a0ad Task{a904964 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x85fcd46 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{a107cd7 Task{7778a8e #8 type=standard A=10192:net.kravos.tv}}} m=TO_BACK f=NONE leash=Surface(name=Task=8)/@0x3027d0 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{966c0b0 token=android.os.Binder@c511075})/@0xbeced0 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
+51018:10-26 14:55:15.309  1460  1460 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=0 fieldName=null extras=null}, true)
+51124:10-26 14:55:22.982  7282  7282 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+51125:10-26 14:55:22.986  7282  7282 I AndroidRuntime: Using default boot image
+51126:10-26 14:55:22.986  7282  7282 I AndroidRuntime: Leaving lock profiling enabled
+51139:10-26 14:55:23.062  7282  7282 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+51197:10-26 14:55:24.090  7282  7282 D AndroidRuntime: Shutting down VM
+51291:10-26 14:55:25.041   517   535 V WindowManager:     info={id=12 t=TO_FRONT f=0x80 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{dc6a0ad Task{a904964 #1 type=home}}} m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x85fcd46 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{WCT{RemoteToken{a107cd7 Task{7778a8e #8 type=standard A=10192:net.kravos.tv}}} m=TO_BACK f=NONE leash=Surface(name=Task=8)/@0x3027d0 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{966c0b0 token=android.os.Binder@c511075})/@0xbeced0 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
+51324:10-26 14:55:25.103  1460  1460 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x8001(Normal) imeOptions=0x2000003 privateImeOptions=null actionName=SEARCH actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[mParcelledData.dataSize=404]}, true)
+51328:10-26 14:55:25.106  2594  2594 I ImeTracker: net.kravos.tv:adc1f9f7: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT_BY_INSETS_API
+51331:10-26 14:55:25.108  1460  1460 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0x8001(Normal) imeOptions=0x2000003 privateImeOptions=null actionName=SEARCH actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}]}, false)
+51332:10-26 14:55:25.111  2594  2594 I ImeTracker: net.kravos.tv:b4b33c2c: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+51338:10-26 14:55:25.122  1460  1460 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x8001(Normal) imeOptions=0x2000003 privateImeOptions=null actionName=SEARCH actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
+51362:10-26 14:55:25.139   517  1821 I ImeTracker: net.kravos.tv:adc1f9f7: onFailed at PHASE_WM_SHOW_IME_RUNNER
+51365:10-26 14:55:25.144   517  1774 D CoreBackPreview: Window{b6c5461 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@95737fc, mPriority=0, mIsAnimationCallback=false}
+51375:10-26 14:55:25.183  2594  2594 I ImeTracker: net.kravos.tv:b4b33c2c: onShown
+51376:10-26 14:55:25.249  2594  2594 W FrameTracker: Missed SF frame:PREDICTION_ERROR, 17150, 0, CUJ=J<IME_INSETS_ANIMATION::0@1@net.kravos.tv>
+51406:10-26 14:55:33.043   517  1756 I ImeTracker: net.kravos.tv:3716b873: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_SOFT_INPUT_BY_BACK_KEY
+51416:10-26 14:55:33.059   517  1821 D CoreBackPreview: Window{b6c5461 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@d6982c, mPriority=0, mIsAnimationCallback=false}
+51417:10-26 14:55:33.083  2594  2594 I ImeTracker: net.kravos.tv:425b2a4b: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
+51418:10-26 14:55:33.084   517  1774 I ImeTracker: net.kravos.tv:425b2a4b: onCancelled at PHASE_SERVER_SHOULD_HIDE
+51419:10-26 14:55:33.084  2594  2594 I ImeTracker: net.kravos.tv:3716b873: onHidden
+51421:10-26 14:55:33.333  2594  2594 W FrameTracker: Missed SF frame:PREDICTION_ERROR, 17624, 0, CUJ=J<IME_INSETS_ANIMATION::1@1@net.kravos.tv>
+51428:10-26 14:55:34.230  7327  7327 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+51429:10-26 14:55:34.234  7327  7327 I AndroidRuntime: Using default boot image
+51430:10-26 14:55:34.234  7327  7327 I AndroidRuntime: Leaving lock profiling enabled
+51444:10-26 14:55:34.316  7327  7327 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+51494:10-26 14:55:35.339  7327  7327 D AndroidRuntime: Shutting down VM
+51576:10-26 14:55:36.217  2594  2594 I ImeTracker: net.kravos.tv:ed6d6503: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT_BY_INSETS_API
+51579:10-26 14:55:36.219  1460  1460 I GoogleInputMethodService: GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0x8001(Normal) imeOptions=0x2000003 privateImeOptions=null actionName=SEARCH actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}]}, false)
+51583:10-26 14:55:36.222  2594  2594 I ImeTracker: net.kravos.tv:90308506: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+51586:10-26 14:55:36.224  1460  1460 I AndroidIME: AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0x8001(Normal) imeOptions=0x2000003 privateImeOptions=null actionName=SEARCH actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=net.kravos.tv fieldId=-1 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, androidx.core.view.inputmethod.EditorInfoCompat.STYLUS_HANDWRITING_ENABLED=true, android.support.text.emoji.emojiCompat_replaceAll=false}], IncognitoMode = false, DeviceLocked = false
+51613:10-26 14:55:36.249   517  1774 I ImeTracker: net.kravos.tv:ed6d6503: onFailed at PHASE_WM_SHOW_IME_RUNNER
+51617:10-26 14:55:36.265   517  1094 D CoreBackPreview: Window{b6c5461 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@f70e48e, mPriority=0, mIsAnimationCallback=false}
+51626:10-26 14:55:36.418  2594  2594 I ImeTracker: net.kravos.tv:90308506: onShown
+51628:10-26 14:55:36.616  2594  2594 W FrameTracker: Missed SF frame:PREDICTION_ERROR, 17892, 0, CUJ=J<IME_INSETS_ANIMATION::0@1@net.kravos.tv>
+51766:10-26 14:55:58.352   517  1823 I ImeTracker: net.kravos.tv:28f5d2f1: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_SOFT_INPUT_BY_BACK_KEY
+51775:10-26 14:55:58.370   517  1823 D CoreBackPreview: Window{b6c5461 u0 net.kravos.tv/net.kravos.tv.ui.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@d22d498, mPriority=0, mIsAnimationCallback=false}
+51777:10-26 14:55:58.385  2594  2594 I ImeTracker: net.kravos.tv:4451e0f8: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
+51778:10-26 14:55:58.385   517  1823 I ImeTracker: net.kravos.tv:4451e0f8: onCancelled at PHASE_SERVER_SHOULD_HIDE
+51779:10-26 14:55:58.385  2594  2594 I ImeTracker: net.kravos.tv:28f5d2f1: onHidden
+51782:10-26 14:55:58.585  2594  2594 W FrameTracker: Missed SF frame:PREDICTION_ERROR, 27210, 0, CUJ=J<IME_INSETS_ANIMATION::1@1@net.kravos.tv>
