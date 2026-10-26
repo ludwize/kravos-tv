@@ -192,7 +192,8 @@ fun GroupRail(
             FocusBox(
                 onClick = { onSelect(g) },
                 // On TV, moving through the rail switches the list right away (like TiviMate).
-                onFocus = if (app.isTv && onFocusSelect != null) ({ onFocusSelect(g) }) else null,
+                // Empty groups (no favorites yet) are not switched to just by passing over them.
+                onFocus = if (app.isTv && onFocusSelect != null && g.channels.isNotEmpty()) ({ onFocusSelect(g) }) else null,
                 selected = g.id == selectedId,
                 modifier = Modifier.fillMaxWidth(),
             ) { f ->
@@ -236,10 +237,13 @@ fun ChannelList(group: Group, modifier: Modifier = Modifier, focusTick: Int = 0,
     val focusTarget = remember { FocusRequester() }
     val focusId = if (targetIdx >= 0) target else group.channels.firstOrNull()?.id
 
-    LaunchedEffect(focusTick) {
-        if (!app.isTv) return@LaunchedEffect
-        delay(60)
-        runCatching { focusTarget.requestFocus() }
+    // On TV the remote starts in the channel list. The list may still be composing, so retry briefly.
+    LaunchedEffect(focusTick, group.channels.isNotEmpty()) {
+        if (!app.isTv || group.channels.isEmpty()) return@LaunchedEffect
+        repeat(15) {
+            delay(80)
+            if (runCatching { focusTarget.requestFocus() }.isSuccess) return@LaunchedEffect
+        }
     }
 
     if (group.channels.isEmpty()) {

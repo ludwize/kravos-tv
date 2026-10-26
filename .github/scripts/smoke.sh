@@ -111,6 +111,7 @@ else
   key KEYCODE_DPAD_RIGHT 2; shot 07-tv-options
   key KEYCODE_BACK 2; shot 071-tv-after-back-options
   key KEYCODE_BACK 3; shot 08-tv-back-home
+  key KEYCODE_BACK 1; shot 081-tv-exit-hint
   adb shell dumpsys activity activities | grep -m1 -E "topResumedActivity|mResumedActivity" >> "$OUT/steps.txt"
   key KEYCODE_DPAD_LEFT; key KEYCODE_DPAD_DOWN; key KEYCODE_DPAD_DOWN 2; shot 09-tv-rail
   for _ in 1 2 3 4 5 6; do key KEYCODE_DPAD_UP 0.5; done
