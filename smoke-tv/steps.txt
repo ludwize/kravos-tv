@@ -11,7 +11,8 @@ shot 061-tv-after-back-list
 shot 07-tv-options
 shot 071-tv-after-back-options
 shot 08-tv-back-home
-    mResumedActivity: ActivityRecord{510accf u0 com.google.android.tvlauncher/.MainActivity t4}
+shot 081-tv-exit-hint
+    mResumedActivity: ActivityRecord{4d1abc0 u0 net.kravos.tv/.ui.MainActivity t5}
 shot 09-tv-rail
 shot 095-tv-country-button
 shot 096-tv-picker
