@@ -12,7 +12,7 @@ shot 07-tv-options
 shot 071-tv-after-back-options
 shot 08-tv-back-home
 shot 081-tv-exit-hint
-    mResumedActivity: ActivityRecord{270bd20 u0 net.kravos.tv/.ui.MainActivity t5}
+    mResumedActivity: ActivityRecord{9f0d217 u0 net.kravos.tv/.ui.MainActivity t5}
 shot 09-tv-rail
 shot 095-tv-country-button
 shot 096-tv-picker
