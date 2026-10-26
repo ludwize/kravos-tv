@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="sr" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>N1 Srbija uživo | Gledaj N1 Live stream | N1 Srbija</title>
+    <link rel="icon" sizes="32x32" href="https://n1nova.live/um-logo.svg">
+    <meta name="description" content="Gledajte N1 Srbija uživo i budite u toku sa najnovijim vestima i događajima. Uživajte u visokokvalitetnom emitovanju sa N1 Srbije." />
+    <meta property="og:title" content="N1 Srbija uživo | Gledaj N1 Live stream | N1 Srbija" />
+    <meta property="og:description" content="Gledajte N1 Srbija uživo i budite u toku sa najnovijim vestima i događajima. Uživajte u visokokvalitetnom emitovanju sa N1 Srbije." />
+    <meta property="og:type" content="video.other" />
+    <meta property="og:url" content="https://n1nova.live/n1-uzivo.html" />
+    <meta property="og:image" content="https://n1nova.live/n1-logo.svg" />
+     <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NXL3XRD3');</script>
+    <!-- End Google Tag Manager -->
+    <script type="module" crossorigin src="/assets/main-NwfpewcL.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-3HPo9WBc.css">
+  </head>
+  <body class="h-full">
+    <div
+      id="app"
+      class="h-full flex flex-col justify-between bg-background-primary"
+    >
+      <div>
+        <header
+          class="bg-background-secondary border-b border-b-border-primary leading-6 text-base"
+        >
+          <div
+            class="container mx-auto flex flex-col lg:grid lg:grid-cols-(--content-grid-columns) lg:items-center h-full"
+          >
+            <a href="index.html" class="py-3 px-[10px]">
+              <img
+                width="35"
+                height="30"
+                src="/um-logo.svg"
+                alt="united media logo"
+              />
+            </a>
+            <div class="flex justify-start items-center h-full">
+              <a
+                class="text-n1-primary font-bold px-[10px] py-3"
+                href="n1-uzivo.html"
+                >N1</a
+              >
+              <a
+                class="text-nova-text-primary px-[10px] py-3"
+                href="novas-uzivo.html"
+                >NOVA</a
+              >
+            </div>
+          </div>
+        </header>
+
+        <main>
+          <div
+            class="hero-section w-full pt-4 pb-10 lg:pt-[23px] lg:pb-[79px] relative bg-n1-background-primary bg-[url('/background.png')] bg-no-repeat bg-cover bg-center"
+          >
+            <div
+              class="container lg:grid lg:grid-cols-(--content-grid-columns) mx-auto px-3 lg:px-0"
+            >
+              <div></div>
+              <h1 class="font-medium text-base leading-7 text-n1-text-light">
+                Gledate program televizije N1 uživo
+              </h1>
+            </div>
+          </div>
+          <div
+            class="container mx-auto lg:grid lg:grid-cols-(--content-grid-columns) relative -mt-6 lg:-mt-[57px] z-[11]"
+          >
+            <div></div>
+            <video-js
+              class="videos-data video-js vjs-default-skin mx-auto h-full w-full !rounded-lg overflow-hidden"
+              autoplay
+              data-error-connection="Greška u konekciji. Molimo vas pokušajte ponovo kasnije."
+              data-error-geo="Sadržaj nije dostupan iz zemlje iz koje pristupate."
+              data-error-generic="Došlo je do neočekivane greške. Molimo vas osvežite stranicu."
+              data-url="https://best-str.umn.cdn.united.cloud/stream?stream=sp1400&sp=n1info&channel=n1srp&u=n1info&p=n1Sh4redSecre7iNf0&player=m3u8"
+              data-error-thumbnail-url="n1.png"
+            >
+            </video-js>
+          </div>
+        </main>
+      </div>
+
+      <footer
+        class="text-n1-text-secondary border-t border-t-border-primary bg-background-secondary text-xs leading-3.5"
+      >
+        <div
+          class="flex flex-col md:flex-row justify-center md:justify-between container mx-auto py-6 gap-6"
+        >
+          <div
+            class="flex flex-col md:flex-row gap-5 justify-center items-center md:justify-start"
+          >
+          </div>
+          <div class="text-center md:text-right">
+            <p>Member of United Media - Copyright 2025</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXL3XRD3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"49f5f4f8094348948f2651c5379cc641","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

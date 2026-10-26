@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="sr" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gledajte N1 i NovaS uživo | Najnovije vesti i događaji</title>
+    <link rel="icon" sizes="32x32" href="https://n1nova.live/um-logo.svg">
+    <meta name="description" content="Pratite najnovije vesti i događaje uživo na N1 i NovaS. Uživajte u kvalitetnom emitovanju i budite u toku sa svime što se dešava." />
+    <meta property="og:title" content="Gledajte N1 i NovaS uživo | Najnovije vesti i događaji" />
+    <meta property="og:description" content="Pratite najnovije vesti i događaje uživo na N1 i NovaS. Uživajte u kvalitetnom emitovanju i budite u toku sa svime što se dešava." />
+    <meta property="og:type" content="video.other" />
+    <meta property="og:url" content="https://n1nova.live" />
+    <meta property="og:image" content="https://n1nova.live/open-graph.png" />
+     <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NXL3XRD3');</script>
+    <!-- End Google Tag Manager -->
+    <script type="module" crossorigin src="/assets/main-NwfpewcL.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-3HPo9WBc.css">
+  </head>
+  <body class="h-full">
+    <div
+      id="app"
+      class="h-full flex flex-col justify-between bg-[url('/background.png')] bg-background-primary bg-cover bg-no-repeat bg-center"
+    >
+      <div class="flex flex-col gap-6 md:h-full">
+        <header
+          class="bg-background-secondary border-b border-b-border-primary leading-6 text-base"
+        >
+          <div
+            class="container mx-auto flex flex-col lg:grid lg:grid-cols-(--content-grid-columns) lg:items-center h-full"
+          >
+            <a href="index.html" class="py-3 px-[10px]">
+              <img
+                width="35"
+                height="30"
+                src="/um-logo.svg"
+                alt="united media logo"
+              />
+            </a>
+          </div>
+        </header>
+        <main
+          class="flex flex-col gap-6 md:gap-[43px] md:flex-row justify-center items-center h-full"
+        >
+          <div class="flex flex-col gap-4 justify-center items-center">
+            <a
+              class="w-80 shadow-2xl rounded-xl h-[200px] bg-n1-primary flex justify-center items-center"
+              href="n1-uzivo.html"
+            >
+              <img width="138" height="82" src="/n1-logo.svg" alt="n1 logo" />
+            </a>
+            <a class="text-lg leading-6 font-semibold" href="n1-uzivo.html"
+              >Gledaj N1 Srbija uživo</a
+            >
+          </div>
+          <div class="flex flex-col gap-4 justify-center items-center">
+            <a
+              class="w-80 shadow-2xl rounded-xl h-[200px] bg-nova-primary flex justify-center items-center"
+              href="novas-uzivo.html"
+            >
+              <img
+                width="124"
+                height="124"
+                src="/nova-logo.svg"
+                alt="nova logo"
+              />
+            </a>
+            <a class="text-lg leading-6 font-semibold" href="novas-uzivo.html"
+              >Gledaj Nova Srbija uživo</a
+            >
+        </main>
+      </div>
+      <footer
+        class="text-n1-text-secondary border-t border-t-border-primary bg-background-secondary text-xs leading-3.5"
+      >
+        <div
+          class="flex flex-col lg:flex-row justify-center md:justify-between container mx-auto py-6 gap-6"
+        >
+          <div
+            class="flex flex-col lg:flex-row gap-5 justify-center items-center lg:justify-start"
+          ></div>
+          <div class="text-center lg:text-right">
+            <p>Member of United Media - Copyright 2025</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXL3XRD3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"49f5f4f8094348948f2651c5379cc641","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

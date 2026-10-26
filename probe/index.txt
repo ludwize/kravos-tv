@@ -1,84 +1,11 @@
-200   735745 rts https://www.rts.rs/page/tv/sr/live.html m3u8=20 yt=0 ifr=0
-200   396235 rts https://www.rts.rs/live/ m3u8=0 yt=0 ifr=1
-200   735745 rts https://rtsplaneta.rs/ m3u8=20 yt=0 ifr=0
-200   139747 rts https://www.rts.rs/tv/ m3u8=0 yt=0 ifr=1
-404      929 rtv https://media.rtv.rs/sr_lat/uzivo/rtv1 m3u8=0 yt=0 ifr=0
-200    61563 rtv https://www.rtv.rs/sr_lat/uzivo m3u8=0 yt=2 ifr=0
-404      929 rtv https://media.rtv.rs/sr_lat/live m3u8=0 yt=0 ifr=0
-404     1999 n1 https://n1info.rs/uzivo/ m3u8=0 yt=0 ifr=0
-404     1999 n1 https://n1info.rs/live/ m3u8=0 yt=0 ifr=0
-200  1007294 n1 https://n1info.rs/ m3u8=0 yt=0 ifr=0
-404     1997 euronews https://www.euronews.rs/uzivo m3u8=0 yt=0 ifr=0
-200   438472 euronews https://www.euronews.rs/ m3u8=0 yt=0 ifr=0
-404     2000 informer https://informer.rs/informer-tv m3u8=0 yt=0 ifr=0
-404     2000 informer https://informer.rs/uzivo m3u8=0 yt=0 ifr=0
-200   303763 informer https://informer.rs/ m3u8=0 yt=0 ifr=0
-404     2000 kurir https://www.kurir.rs/kurir-tv m3u8=0 yt=0 ifr=0
-404     2000 kurir https://www.kurir.rs/uzivo m3u8=0 yt=0 ifr=0
-200  1197848 kurir https://www.kurir.rs/ m3u8=9 yt=0 ifr=0
-200   260279 blic https://www.blic.rs/blic-tv m3u8=0 yt=0 ifr=3
-200   257338 blic https://www.blic.rs/uzivo m3u8=0 yt=0 ifr=3
-404     1992 prva https://www.prva.rs/uzivo m3u8=0 yt=0 ifr=0
-404     1992 prva https://www.prva.rs/live m3u8=0 yt=0 ifr=0
-200   193019 prva https://www.prva.rs/ m3u8=0 yt=0 ifr=1
-404     1997 b92 https://www.b92.net/uzivo m3u8=0 yt=0 ifr=0
--1       62 b92 https://o2tv.rs/uzivo m3u8=0 yt=0 ifr=0
-200   609310 b92 https://www.b92.net/ m3u8=0 yt=0 ifr=1
-200    28775 pink https://www.pink.rs/uzivo m3u8=0 yt=0 ifr=0
-200    28775 pink https://pink.rs/live m3u8=0 yt=0 ifr=0
-200   163759 pink https://www.pink.rs/ m3u8=0 yt=0 ifr=0
-403     2000 happy https://www.happytv.rs/uzivo m3u8=0 yt=0 ifr=0
-403     2000 happy https://www.happytv.rs/live m3u8=0 yt=0 ifr=0
-403     2000 happy https://www.happytv.rs/ m3u8=0 yt=0 ifr=0
-200   109847 studiob https://www.studiob.rs/uzivo m3u8=0 yt=0 ifr=0
-404     1999 studiob https://www.studiob.rs/live m3u8=0 yt=0 ifr=0
-200   129749 studiob https://www.studiob.rs/ m3u8=0 yt=0 ifr=0
-404     1999 nova https://nova.rs/uzivo m3u8=0 yt=0 ifr=0
-404     1999 nova https://nova.rs/nova-tv-uzivo m3u8=0 yt=0 ifr=0
-200   305991 insajder https://insajder.net/uzivo m3u8=0 yt=0 ifr=0
-200   832853 insajder https://insajder.net/ m3u8=0 yt=0 ifr=0
-404     1991 k1 https://k1info.rs/uzivo m3u8=0 yt=0 ifr=0
-200   356072 k1 https://k1info.rs/ m3u8=0 yt=4 ifr=5
-404     1994 tvhram https://tvhram.rs/uzivo m3u8=0 yt=0 ifr=0
--1       52 rtvbg https://www.tvbeograd.rs/uzivo m3u8=0 yt=0 ifr=0
-yt 404 @N1info None live=False None
-yt 404 @N1Srbija None live=False None
-yt 404 @n1info None live=False None
-yt 404 @euronewssrbija None live=False None
-yt 404 @EuronewsSrbija None live=False None
-yt 404 @InformerTV None live=False None
-yt 200 @informer UCckG41HY8UQrDDdVuUGzYBw live=False informer
-yt 404 @informer_rs None live=False None
-yt 404 @KurirTV None live=False None
-yt 404 @kurirtv None live=False None
-yt 404 @blictv None live=False None
-yt 404 @BlicTV None live=False None
-yt 200 @NovaS UCbf_c3rRCR3TyQDXU-SgjTA live=False novas
-yt 200 @novas UCbf_c3rRCR3TyQDXU-SgjTA live=False novas
-yt 200 @insajder UCUh1MHE6HIlKZrFH4-T14nA live=False iNsajder
-yt 404 @InsajderTV None live=False None
-yt 200 @rtsrs UC4p72iP2AW0dJjkfexsA47w live=False RTSRS
-yt 200 @RTSrs UC4p72iP2AW0dJjkfexsA47w live=False RTSRS
-yt 200 @rtsmedia UCL4gtIU-D0E1nvQvhirJkuA live=False rtsmedia
-yt 200 @PrvaTV UCQ4NPz1nEQognDar9uDjPlA live=False PRVA
-yt 200 @prvatv UCQ4NPz1nEQognDar9uDjPlA live=False PRVA
-yt 200 @TVPrva UC6EAZq_LtnhW07WmCNgAfOQ live=False tvprva
-yt 200 @rtvpink UCI1WX37n_znCGYCMn1Yn5kA live=False B M
-yt 200 @PinkTV UCnbo2b8K38XUBhwzGqN8HHg live=False kirsten.roeters
-yt 404 @TVHappy None live=False None
-yt 200 @happytv UCI4l371l-_E8dhAdKZ2pkjw live=False Happytv
-yt 200 @HappyTV UCI4l371l-_E8dhAdKZ2pkjw live=False Happytv
-yt 404 @tvb92 None live=False None
-yt 200 @B92 UCh3K77dF9uBz4cvzlLiZdbA live=False B92
-yt 404 @o2televizija None live=False None
-yt 200 @rtvvojvodina UCpAtcBqA2LYgEjuJQSoOd6A live=False Rad Vojvodina
-yt 200 @RTVVojvodina UCpAtcBqA2LYgEjuJQSoOd6A live=False Rad Vojvodina
-yt 200 @studiob UCaFbplSCA-GPB3GtVkc9G9g live=False StudioB
-yt 200 @StudioB UCaFbplSCA-GPB3GtVkc9G9g live=False StudioB
-yt 200 @k1televizija UCsTJunBwH5dM7yXCgAh3CQQ live=False K1 Televizija
-yt 404 @K1Info None live=False None
-yt 404 @tvinsajder None live=False None
-yt 200 @TVInfo UCg54rFkNoID11vxto3Awwow live=False TVinfo
-yt 404 @NovaRS None live=False None
-yt 200 @RTSTV UCTTU5CGUFDijE5uXPNSiFAQ live=False Goran S
-yt 200 @rtsplaneta UCuyyB3wCCHeVo62kI-DDHBQ live=False Rts planeta
+200     4753 https://n1nova.live/
+200     5315 https://n1nova.live/n1-uzivo.html
+200     5290 https://n1nova.live/novas-uzivo.html
+200      466 https://cdn.maksnet.tv/em/minacordmedia-secure/?streamname=k1studio&bg=bg_cover.jpg
+200   694824 https://n1nova.live/assets/main-NwfpewcL.js
+200    31853 https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092
+
+STREAMS:
+  200 h=1080 https://best-str.umn.cdn.united.cloud/stream?stream=hp7000&sp=novas&channel=novashd&u=novas&p=n0v43!23t001&player=m3u8
+  200 h=576 https://best-str.umn.cdn.united.cloud/stream?stream=sp1400&sp=n1info&channel=n1srp&u=n1info&p=n1Sh4redSecre7iNf0&player=m3u8
+  200 h=- https://datatracker.ietf.org/doc/html/draft-pantos-hls-rfc8216bis-09#section-4.4.3.7.
