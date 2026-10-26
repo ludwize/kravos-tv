@@ -1,7 +1,7 @@
 shot 00-start
-found /.*(Srbija|Omiljeni|Nedavno).*/
+timeout waiting /.*(Srbija|Omiljeni|Nedavno).*/
 shot 01-home
-tapped /.*Srbija/
+not found: /.*Srbija/
 shot 02-serbia
 shot 03-serbia-scroll
 not found: /Nova|RTS 2|IDJTV|Newsmax Balkans|TVCG MNE|Pannon TV/
@@ -12,9 +12,8 @@ not found: /.*Ceo region/
 shot 07-region
 not found: /ZEMLJA/
 shot 08-country-picker
-tapped /Traži zemlju/
-shot 08b-picker-search
-tapped /.*Nemačka/
+shot 08b-picker-scroll
+not found: /.*Nemačka/
 shot 09-germany-checked
 tapped /Vodič/
 shot 10-guide
