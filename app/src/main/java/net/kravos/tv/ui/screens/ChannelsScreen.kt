@@ -33,6 +33,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberUpdatedState
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -240,6 +241,7 @@ fun ChannelList(group: Group, modifier: Modifier = Modifier, focusTick: Int = 0,
     var wantId by remember(group.id) { mutableStateOf(if (targetIdx >= 0) target else group.channels.firstOrNull()?.id) }
     var focusedId by remember(group.id) { mutableStateOf<String?>(null) }
     var focusedIdx by remember(group.id) { mutableIntStateOf(0) }
+    val latest = rememberUpdatedState(group.channels)
 
     suspend fun grabFocus() {
         repeat(20) {
@@ -276,7 +278,8 @@ fun ChannelList(group: Group, modifier: Modifier = Modifier, focusTick: Int = 0,
 
     val checking by app.health.listProgress.collectAsState()
     LazyColumn(
-        modifier.onFocusChanged { if (!it.hasFocus) focusedId = null },
+        // Focus left the list: forget it only if the user moved away; if the row was removed (dead channel), keep it so we can refocus.
+        modifier.onFocusChanged { st -> if (!st.hasFocus && latest.value.any { it.id == focusedId }) focusedId = null },
         state = state, contentPadding = PaddingValues(horizontal = 12.dp, vertical = 8.dp), verticalArrangement = Arrangement.spacedBy(2.dp),
     ) {
         if (checking.running && checking.total > 0) item(key = "checking") {
