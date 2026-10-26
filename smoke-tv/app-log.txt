@@ -1,195 +1,214 @@
-451:10-26 13:09:00.642   375   481 V installd: DexInv: --- END '/data/app/~~lkc8dEQpeA7D8UeR3V0H5A==/net.kravos.tv-fYku1KzBmdEobpyf4Etjjg==/base.apk' (success) ---
-497:10-26 13:09:00.872   467   505 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:net.kravos.tv flg=0x4000010 (has extras) } to com.google.android.packageinstaller/com.android.packageinstaller.PackageInstalledReceiver
-498:10-26 13:09:00.872   467   505 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:net.kravos.tv flg=0x4000010 (has extras) } to com.android.vending/com.google.android.finsky.packagemanager.impl.PackageMonitorReceiverImpl$RegisteredReceiver
-499:10-26 13:09:00.872   467   505 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:net.kravos.tv flg=0x4000010 (has extras) } to com.google.android.gms/.games.chimera.GamesSystemBroadcastReceiverProxy
-500:10-26 13:09:00.872   467   505 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:net.kravos.tv flg=0x4000010 (has extras) } to com.google.android.gms/.gass.chimera.PackageChangeBroadcastReceiver
-501:10-26 13:09:00.872   467   505 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:net.kravos.tv flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
-502:10-26 13:09:00.872   467   505 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:net.kravos.tv flg=0x4000010 (has extras) } to com.google.android.tv/com.android.tv.receiver.PackageIntentsReceiver
-503:10-26 13:09:00.872  1116  1116 I MediaProvider: Invalidating LocalCallingIdentity cache for package net.kravos.tv. Reason: package android.intent.action.PACKAGE_ADDED
-505:10-26 13:09:00.875  2194  2194 I Finsky  : [2] kwn.n(8): Invalidating cached PackageState for net.kravos.tv
-510:10-26 13:09:00.892   664   664 D AvrcpMediaPlayerList: Name of package changed: net.kravos.tv
-594:10-26 13:09:00.928  2194  3056 I Finsky  : [325] euw.accept(35): Asset module storage cleared for package net.kravos.tv.
-598:10-26 13:09:00.944  1031  3120 W GCM     : Unexpected forwarded intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:net.kravos.tv flg=0x4000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) }
-599:10-26 13:09:00.947  1031  3119 W GCM     : Unexpected forwarded intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:net.kravos.tv flg=0x4000010 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) }
-626:10-26 13:09:01.147   467  1224 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=net.kravos.tv/.ui.MainActivity} from uid 2000
-636:10-26 13:09:01.214   467   506 I ActivityManager: Start proc 3207:net.kravos.tv/u0a76 for pre-top-activity {net.kravos.tv/net.kravos.tv.ui.MainActivity}
-638:10-26 13:09:01.240  3207  3207 W net.kravos.tv: Unexpected CPU variant for X86 using defaults: x86
-639:10-26 13:09:01.248  3207  3207 E net.kravos.tv: Not starting debugger since process cannot load the jdwp agent.
-665:10-26 13:09:01.305  3207  3207 I TetheringManager: registerTetheringEventCallback:net.kravos.tv
-740:10-26 13:09:02.179   467   504 D ArtManagerInternalImpl: /data/misc/iorapd/net.kravos.tv/1/net.kravos.tv.ui.MainActivity/compiled_traces/compiled_trace.pb doesn't exist
-748:10-26 13:09:02.248   467   504 I ActivityTaskManager: Displayed net.kravos.tv/.ui.MainActivity: +939ms
-811:10-26 13:09:03.294  3207  3233 I KravosTV: iptv-org: 10202 channels, 15815 streams in 1966 ms
-818:10-26 13:09:03.536  3207  3223 I net.kravos.tv: Background young concurrent copying GC freed 1852224(56MB) AllocSpace objects, 0(0B) LOS objects, 49% free, 24MB/48MB, paused 24us total 295.728ms
-887:10-26 13:09:04.959  3207  3265 W KravosTV: GET https://edge8.pink.rs/pinktv/index.m3u8 -> 404
-892:10-26 13:09:05.018  3207  3233 I KravosTV: downloaded https://epgshare01.online/epgshare01/epg_ripper_RS1.xml.gz -> 7157706 b
-903:10-26 13:09:05.237  3207  3261 W KravosTV: GET https://webtvstream.bhtelecom.ba/hls19/rts1_1200.m3u8 -> 403
-904:10-26 13:09:05.296  3207  3265 W KravosTV: GET http://213.91.179.28:8000/play/a03n -> 404
-925:10-26 13:09:05.577  3207  3223 I net.kravos.tv: NativeAlloc concurrent copying GC freed 765855(33MB) AllocSpace objects, 6(648KB) LOS objects, 50% free, 18MB/36MB, paused 25us total 346.963ms
-967:10-26 13:09:05.776  3207  3278 W KravosTV: GET https://edge8.pink.rs/narodnatv/index.m3u8 -> 404
-1143:10-26 13:09:06.171  3207  3223 I net.kravos.tv: Background young concurrent copying GC freed 608413(18MB) AllocSpace objects, 11(2476KB) LOS objects, 52% free, 17MB/36MB, paused 7.269ms total 106.635ms
-1259:10-26 13:09:06.936  3207  3286 W KravosTV: GET https://uzivo.rtrs.tv/tv/live/index.m3u8 -> 404
-1273:10-26 13:09:07.216  3207  3266 W KravosTV: GET https://pluslive.rtrs.tv/plus/plus/playlist.m3u8 -> 403
-1274:10-26 13:09:07.216  3207  3439 D ProfileInstaller: Installing profile for net.kravos.tv
-1275:10-26 13:09:07.426  3207  3263 W KravosTV: GET https://glb.bozztv.com/glb/ssh101/tvrozaje/index.m3u8 -> 404
-1276:10-26 13:09:07.448  3207  3233 I KravosTV: downloaded https://epgshare01.online/epgshare01/epg_ripper_BA1.xml.gz -> 2217376 b
-1306:10-26 13:09:08.070  3207  3233 I KravosTV: downloaded https://epgshare01.online/epgshare01/epg_ripper_HR1.xml.gz -> 1866671 b
-1307:10-26 13:09:08.070  3207  3233 W KravosTV: epg https://epgshare01.online/epgshare01/epg_ripper_HR1.xml.gz: Unexpected token (position:TEXT ﻿@1:2 in java.io.InputStreamReader@43ac4c5) 
-1308:10-26 13:09:08.120  3207  3233 I KravosTV: epg: 53 channels, 4558 programmes
-1318:10-26 13:09:08.988  3207  3272 W KravosTV: GET https://stream.nasatv.com.mk/rocktv/hls/rocktv_live.m3u8 -> 404
-1611:10-26 13:09:11.274  3518  3518 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-1614:10-26 13:09:11.297  3518  3518 I AndroidRuntime: Using default boot image
-1616:10-26 13:09:11.297  3518  3518 I AndroidRuntime: Leaving lock profiling enabled
-1623:10-26 13:09:11.382   664   664 D AvrcpMediaPlayerList: Name of package changed: net.kravos.tv
-1738:10-26 13:09:11.608  3518  3518 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
-1898:10-26 13:09:12.741  3518  3518 D AndroidRuntime: Shutting down VM
-1899:10-26 13:09:12.846  3207  3284 W KravosTV: GET https://5aa64ca8b95b8.streamlock.net:4443/edutv/edutelevizija/playlist.m3u8 -> 404
-2527:10-26 13:09:13.906  3207  3280 W KravosTV: GET http://ott.sgn.net/hls/tvurslja.m3u8 -> 404
-2659:10-26 13:09:14.078  3207  3278 W KravosTV: GET http://23.88.66.93/SLO1/index.m3u8 -> 404
-2699:10-26 13:09:14.126  3207  3262 W KravosTV: GET http://23.88.66.93/SLO2/index.m3u8 -> 404
-3335:10-26 13:09:15.310  3207  3280 W KravosTV: GET https://rtcg-live-open-geo.morescreens.com/RTCG_1_002/playlist.m3u8 -> 403
-3336:10-26 13:09:15.311  3207  3286 W KravosTV: GET https://rtcg-live-open-geo.morescreens.com/RTCG_1_003/playlist.m3u8 -> 403
-3337:10-26 13:09:15.313  3207  3264 W KravosTV: GET https://rtcg-live-open-geo.morescreens.com/RTCG_1_001/playlist.m3u8 -> 403
-4208:10-26 13:09:16.455  3207  3276 W KravosTV: GET https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT1/default/index.mpd -> 404
-4209:10-26 13:09:16.456  3207  3261 W KravosTV: GET https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT2/default/index.mpd -> 404
-4224:10-26 13:09:16.461  3207  3302 W KravosTV: GET https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT3/default/index.mpd -> 404
-4390:10-26 13:09:16.566  3207  3263 W KravosTV: GET https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT4/default/index.mpd -> 404
-4855:10-26 13:09:17.107  3207  3302 W KravosTV: GET https://webtvstream.bhtelecom.ba/hls16/hrt3_1200.m3u8 -> 403
-4857:10-26 13:09:17.110  3207  3276 W KravosTV: GET https://webtvstream.bhtelecom.ba/hls16/hrt1_1200.m3u8 -> 403
-4864:10-26 13:09:17.140  3207  3261 W KravosTV: GET https://webtvstream.bhtelecom.ba/hls16/hrt2_1200.m3u8 -> 403
-4898:10-26 13:09:17.234  3207  3265 W KravosTV: GET https://streaming.radiohub.hr/RadioHub_WEB_streaming/BHWUC27pGZ/3.m3u8 -> 404
-4902:10-26 13:09:17.378  3207  3264 W KravosTV: GET https://178.253.194.105/klasiktv/playlist.m3u8 -> 404
-4903:10-26 13:09:17.381  3207  3286 W KravosTV: GET http://176.61.157.250/NationalGeographic/index.m3u8 -> 403
-4907:10-26 13:09:17.415  3207  3302 W KravosTV: GET http://176.61.157.250/NickJr/index.m3u8 -> 403
-4912:10-26 13:09:17.459  3207  3261 W KravosTV: GET http://176.61.157.250/Nickelodeon/index.m3u8 -> 403
-4915:10-26 13:09:17.512  3207  3263 W KravosTV: GET http://176.61.157.250/NovaTV/index.m3u8 -> 403
-4916:10-26 13:09:17.519  3207  3223 I net.kravos.tv: Background concurrent copying GC freed 96903(4767KB) AllocSpace objects, 48(9092KB) LOS objects, 49% free, 17MB/35MB, paused 35us total 377.723ms
-4965:10-26 13:09:18.010  3738  3738 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-4970:10-26 13:09:18.015  3738  3738 I AndroidRuntime: Using default boot image
-4972:10-26 13:09:18.015  3738  3738 I AndroidRuntime: Leaving lock profiling enabled
-4989:10-26 13:09:18.150  3738  3738 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-4991:10-26 13:09:18.420  3207  3304 W KravosTV: GET https://stream.nasatv.com.mk/jazztv/hls/jazztv_live.m3u8 -> 404
-4992:10-26 13:09:18.537  3738  3738 D AndroidRuntime: Shutting down VM
-5030:10-26 13:09:19.386  3207  3280 W KravosTV: GET https://live.mnet.mk/hls/mnet-info.m3u8 -> 500
-5031:10-26 13:09:19.528  3207  3266 W KravosTV: GET https://live.mnet.mk/hls/mnet.m3u8 -> 500
-5032:10-26 13:09:19.600  3207  3304 W KravosTV: GET https://webtvstream.bhtelecom.ba/hls13/bhrtportal_hd_1200.m3u8 -> 403
-5033:10-26 13:09:19.650  3207  3302 W KravosTV: GET https://live.mnet.mk/hls/mnet-sport.m3u8 -> 500
-5050:10-26 13:09:19.700  3207  3272 W KravosTV: GET http://live.topestrada.com/live/topestrada/playlist.m3u8 -> 404
-5664:10-26 13:09:20.022  3762  3762 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-5696:10-26 13:09:20.035  3762  3762 I AndroidRuntime: Using default boot image
-5698:10-26 13:09:20.035  3762  3762 I AndroidRuntime: Leaving lock profiling enabled
-5847:10-26 13:09:20.123  3762  3762 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-5850:10-26 13:09:20.138  3762  3762 D AndroidRuntime: Shutting down VM
-6247:10-26 13:09:21.758  3786  3786 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-6250:10-26 13:09:21.760  3786  3786 I AndroidRuntime: Using default boot image
-6252:10-26 13:09:21.760  3786  3786 I AndroidRuntime: Leaving lock profiling enabled
-6322:10-26 13:09:21.826  3786  3786 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-6324:10-26 13:09:21.836  3786  3786 D AndroidRuntime: Shutting down VM
-11090:10-26 13:09:35.493  3207  3265 I KravosTV: health: checked 131 channels, 46 work
-11552:10-26 13:09:47.396  3909  3909 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-11555:10-26 13:09:47.398  3909  3909 I AndroidRuntime: Using default boot image
-11557:10-26 13:09:47.398  3909  3909 I AndroidRuntime: Leaving lock profiling enabled
-11568:10-26 13:09:47.468  3909  3909 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-11569:10-26 13:09:47.480  3909  3909 D AndroidRuntime: Shutting down VM
-11787:10-26 13:09:53.895  1127  3936 I katniss_interactor_UiActionExecutor: Foreground app = net.kravos.tv
-11833:10-26 13:09:54.326  1127  3936 I katniss_interactor_UiActionExecutor: Foreground app = net.kravos.tv
-11946:10-26 13:09:59.506  2194  2335 I Finsky  : [196] jms.c(20): ItemStore: Not cached: net.kravos.tv
-12172:10-26 13:10:08.049  3985  3985 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-12175:10-26 13:10:08.053  3985  3985 I AndroidRuntime: Using default boot image
-12177:10-26 13:10:08.053  3985  3985 I AndroidRuntime: Leaving lock profiling enabled
-12187:10-26 13:10:08.200  3985  3985 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-12188:10-26 13:10:08.216  3985  3985 D AndroidRuntime: Shutting down VM
-12218:10-26 13:10:10.761  4002  4002 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-12221:10-26 13:10:10.763  4002  4002 I AndroidRuntime: Using default boot image
-12223:10-26 13:10:10.763  4002  4002 I AndroidRuntime: Leaving lock profiling enabled
-12233:10-26 13:10:10.823  4002  4002 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-12234:10-26 13:10:10.826  4002  4002 D AndroidRuntime: Shutting down VM
-12255:10-26 13:10:13.364  4019  4019 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-12258:10-26 13:10:13.365  4019  4019 I AndroidRuntime: Using default boot image
-12260:10-26 13:10:13.365  4019  4019 I AndroidRuntime: Leaving lock profiling enabled
-12270:10-26 13:10:13.417  4019  4019 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-12271:10-26 13:10:13.429  4019  4019 D AndroidRuntime: Shutting down VM
-12331:10-26 13:10:15.974  4041  4041 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-12334:10-26 13:10:15.978  4041  4041 I AndroidRuntime: Using default boot image
-12336:10-26 13:10:15.979  4041  4041 I AndroidRuntime: Leaving lock profiling enabled
-12346:10-26 13:10:16.046  4041  4041 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-12347:10-26 13:10:16.050  4041  4041 D AndroidRuntime: Shutting down VM
-12370:10-26 13:10:18.593  4059  4059 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-12373:10-26 13:10:18.595  4059  4059 I AndroidRuntime: Using default boot image
-12375:10-26 13:10:18.595  4059  4059 I AndroidRuntime: Leaving lock profiling enabled
-12385:10-26 13:10:18.646  4059  4059 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-12386:10-26 13:10:18.649  4059  4059 D AndroidRuntime: Shutting down VM
-12406:10-26 13:10:21.111  4072  4072 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-12409:10-26 13:10:21.112  4072  4072 I AndroidRuntime: Using default boot image
-12411:10-26 13:10:21.112  4072  4072 I AndroidRuntime: Leaving lock profiling enabled
-12421:10-26 13:10:21.164  4072  4072 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-12422:10-26 13:10:21.166  4072  4072 D AndroidRuntime: Shutting down VM
-12458:10-26 13:10:24.712  4089  4089 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-12461:10-26 13:10:24.724  4089  4089 I AndroidRuntime: Using default boot image
-12463:10-26 13:10:24.724  4089  4089 I AndroidRuntime: Leaving lock profiling enabled
-12473:10-26 13:10:24.795  4089  4089 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-12474:10-26 13:10:24.799  4089  4089 D AndroidRuntime: Shutting down VM
-12488:10-26 13:10:26.262  4102  4102 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-12491:10-26 13:10:26.264  4102  4102 I AndroidRuntime: Using default boot image
-12493:10-26 13:10:26.264  4102  4102 I AndroidRuntime: Leaving lock profiling enabled
-12504:10-26 13:10:26.322  4102  4102 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-12505:10-26 13:10:26.325  4102  4102 D AndroidRuntime: Shutting down VM
-12522:10-26 13:10:27.789  4115  4115 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-12526:10-26 13:10:27.790  4115  4115 I AndroidRuntime: Using default boot image
-12528:10-26 13:10:27.790  4115  4115 I AndroidRuntime: Leaving lock profiling enabled
-12538:10-26 13:10:27.841  4115  4115 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-12539:10-26 13:10:27.844  4115  4115 D AndroidRuntime: Shutting down VM
-12555:10-26 13:10:29.306  4128  4128 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-12558:10-26 13:10:29.308  4128  4128 I AndroidRuntime: Using default boot image
-12560:10-26 13:10:29.308  4128  4128 I AndroidRuntime: Leaving lock profiling enabled
-12570:10-26 13:10:29.364  4128  4128 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-12571:10-26 13:10:29.367  4128  4128 D AndroidRuntime: Shutting down VM
-12593:10-26 13:10:32.906  4146  4146 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-12596:10-26 13:10:32.908  4146  4146 I AndroidRuntime: Using default boot image
-12598:10-26 13:10:32.908  4146  4146 I AndroidRuntime: Leaving lock profiling enabled
-12609:10-26 13:10:32.959  4146  4146 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-12610:10-26 13:10:32.964  4146  4146 D AndroidRuntime: Shutting down VM
-12636:10-26 13:10:34.428  4161  4161 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-12639:10-26 13:10:34.429  4161  4161 I AndroidRuntime: Using default boot image
-12641:10-26 13:10:34.429  4161  4161 I AndroidRuntime: Leaving lock profiling enabled
-12651:10-26 13:10:34.487  4161  4161 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-12652:10-26 13:10:34.490  4161  4161 D AndroidRuntime: Shutting down VM
-12653:10-26 13:10:35.953  4174  4174 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-12656:10-26 13:10:35.955  4174  4174 I AndroidRuntime: Using default boot image
-12658:10-26 13:10:35.955  4174  4174 I AndroidRuntime: Leaving lock profiling enabled
-12668:10-26 13:10:36.007  4174  4174 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-12669:10-26 13:10:36.010  4174  4174 D AndroidRuntime: Shutting down VM
-12683:10-26 13:10:37.472  4187  4187 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-12686:10-26 13:10:37.473  4187  4187 I AndroidRuntime: Using default boot image
-12688:10-26 13:10:37.473  4187  4187 I AndroidRuntime: Leaving lock profiling enabled
-12700:10-26 13:10:37.524  4187  4187 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-12701:10-26 13:10:37.527  4187  4187 D AndroidRuntime: Shutting down VM
-12702:10-26 13:10:38.990  4200  4200 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-12705:10-26 13:10:38.992  4200  4200 I AndroidRuntime: Using default boot image
-12707:10-26 13:10:38.992  4200  4200 I AndroidRuntime: Leaving lock profiling enabled
-12717:10-26 13:10:39.047  4200  4200 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-12718:10-26 13:10:39.050  4200  4200 D AndroidRuntime: Shutting down VM
-12734:10-26 13:10:40.513  4213  4213 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-12737:10-26 13:10:40.514  4213  4213 I AndroidRuntime: Using default boot image
-12739:10-26 13:10:40.514  4213  4213 I AndroidRuntime: Leaving lock profiling enabled
-12749:10-26 13:10:40.566  4213  4213 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-12750:10-26 13:10:40.569  4213  4213 D AndroidRuntime: Shutting down VM
-12751:10-26 13:10:42.032  4226  4226 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-12754:10-26 13:10:42.033  4226  4226 I AndroidRuntime: Using default boot image
-12756:10-26 13:10:42.033  4226  4226 I AndroidRuntime: Leaving lock profiling enabled
-12766:10-26 13:10:42.084  4226  4226 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-12772:10-26 13:10:42.090  4226  4226 D AndroidRuntime: Shutting down VM
-12786:10-26 13:10:43.560  4241  4241 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-12789:10-26 13:10:43.561  4241  4241 I AndroidRuntime: Using default boot image
-12791:10-26 13:10:43.561  4241  4241 I AndroidRuntime: Leaving lock profiling enabled
-12801:10-26 13:10:43.614  4241  4241 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-12804:10-26 13:10:43.624  4241  4241 D AndroidRuntime: Shutting down VM
-12956:10-26 13:10:49.257  4268  4268 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-12959:10-26 13:10:49.259  4268  4268 I AndroidRuntime: Using default boot image
-12961:10-26 13:10:49.259  4268  4268 I AndroidRuntime: Leaving lock profiling enabled
-12971:10-26 13:10:49.311  4268  4268 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-12972:10-26 13:10:49.314  4268  4268 D AndroidRuntime: Shutting down VM
-13001:10-26 13:10:51.775  4282  4282 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
-13004:10-26 13:10:51.776  4282  4282 I AndroidRuntime: Using default boot image
-13006:10-26 13:10:51.776  4282  4282 I AndroidRuntime: Leaving lock profiling enabled
-13018:10-26 13:10:51.827  4282  4282 D AndroidRuntime: Calling main entry com.android.commands.input.Input
-13019:10-26 13:10:51.830  4282  4282 D AndroidRuntime: Shutting down VM
+294:10-26 13:17:06.118   374  1111 V installd: DexInv: --- END '/data/app/~~5rzSgfWpQ9MBAKjXgLHy2A==/net.kravos.tv-BNe-E86DEtfoRh8nmTMgFA==/base.apk' (success) ---
+323:10-26 13:17:06.193  1118  1118 I MediaProvider: Invalidating LocalCallingIdentity cache for package net.kravos.tv. Reason: package android.intent.action.PACKAGE_ADDED
+325:10-26 13:17:06.194  2083  2083 I Finsky  : [2] kwn.n(8): Invalidating cached PackageState for net.kravos.tv
+328:10-26 13:17:06.196   665   665 D AvrcpMediaPlayerList: Name of package changed: net.kravos.tv
+339:10-26 13:17:06.271  2083  3006 I Finsky  : [320] euw.accept(35): Asset module storage cleared for package net.kravos.tv.
+341:10-26 13:17:06.286   469   634 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=net.kravos.tv/.ui.MainActivity} from uid 2000
+407:10-26 13:17:06.388   469   507 I ActivityManager: Start proc 3069:net.kravos.tv/u0a76 for pre-top-activity {net.kravos.tv/net.kravos.tv.ui.MainActivity}
+415:10-26 13:17:06.444  3069  3069 W net.kravos.tv: Unexpected CPU variant for X86 using defaults: x86
+416:10-26 13:17:06.447  3069  3069 E net.kravos.tv: Not starting debugger since process cannot load the jdwp agent.
+442:10-26 13:17:06.509  3069  3069 I TetheringManager: registerTetheringEventCallback:net.kravos.tv
+503:10-26 13:17:07.248   469   505 D ArtManagerInternalImpl: /data/misc/iorapd/net.kravos.tv/2/net.kravos.tv.ui.MainActivity/compiled_traces/compiled_trace.pb doesn't exist
+504:10-26 13:17:07.261   469   505 I ActivityTaskManager: Displayed net.kravos.tv/.ui.MainActivity: +943ms
+630:10-26 13:17:08.146  3069  3091 I KravosTV: iptv-org: 10202 channels, 15815 streams in 1566 ms
+637:10-26 13:17:08.223   469  1245 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:net.kravos.tv flg=0x4000010 (has extras) } to com.google.android.packageinstaller/com.android.packageinstaller.PackageInstalledReceiver
+638:10-26 13:17:08.223   469   506 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:net.kravos.tv flg=0x4000010 (has extras) } to com.android.vending/com.google.android.finsky.packagemanager.impl.PackageMonitorReceiverImpl$RegisteredReceiver
+639:10-26 13:17:08.223   469   506 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:net.kravos.tv flg=0x4000010 (has extras) } to com.google.android.gms/.games.chimera.GamesSystemBroadcastReceiverProxy
+640:10-26 13:17:08.223   469   506 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:net.kravos.tv flg=0x4000010 (has extras) } to com.google.android.gms/.gass.chimera.PackageChangeBroadcastReceiver
+641:10-26 13:17:08.223   469   506 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:net.kravos.tv flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+642:10-26 13:17:08.223   469   506 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:net.kravos.tv flg=0x4000010 (has extras) } to com.google.android.tv/com.android.tv.receiver.PackageIntentsReceiver
+936:10-26 13:17:09.513  3069  3080 I net.kravos.tv: Background young concurrent copying GC freed 2273885(68MB) AllocSpace objects, 0(0B) LOS objects, 51% free, 22MB/46MB, paused 696us total 1.066s
+1016:10-26 13:17:10.007  2083  2260 D GetConfigurationSnapsho: 9kdWxlbWV0YWRhdGEKHmNvbS5nb29nbGUubWFpbmxpbmUuZ28ucHJpbWFyeQ', 5, 0), Flag(AutoUpdateCodegen__rapid_auto_update_listing, 'com.google.android.googlequicksearchbox,301143294,0,4', 4, 0), Flag(AutoUpdateCodegen__rapid_auto_update_listing_v3, '', 4, 0), Flag(AutoUpdateCodegen__read_client_update_discovered_timestamp, false, 2, 0), Flag(AutoUpdateCodegen__relax_dark_launch_splitid_comparison_with_inclusion, true, 2, 0), Flag(AutoUpdateCodegen__request_policy_in_autoupdate_endpoint, true, 2, 0), Flag(AutoUpdateCodegen__request_server_staleness_info, false, 2, 0), Flag(AutoUpdateCodegen__share_app_state_with_request_policy_options, true, 2, 0), Flag(AutoUpdateCodegen__share_device_storage_info, true, 2, 0), Flag(AutoUpdateCodegen__share_enterprise_auto_update_policy, true, 2, 0), Flag(AutoUpdateCodegen__share_update_failure_history, true, 2, 0), Flag(AutoUpdateCodegen__share_user_auto_update_setting, true, 2, 0), Flag(AutoUpdateCodegen__suppress_dark_launch_documents_against_items_comparison, true, 2, 0), Flag(AutoUpdateCodegen__switch_to_autoupdate_endpoint, true, 2, 0), Flag(AutoUpdateCodegen__threshold_in_days_for_purging_appfreshness_data, 28, 1, 0), Flag(AutoUpdateCodegen__unauth_updates_dependencies_allowlist, 'com.google.android.gms', 4, 0), Flag(AutoUpdateCodegen__updatable_restricted_apps, '', 5, 0), Flag(AutoUpdateCodegen__update_failure_history_duration, 7, 1, 0), Flag(AutoUpdatePolicies__auto_deploy_apps_to_manage_package_status_change, 'CiJjb20uZ29vZ2xlLmFuZHJvaWQuZ21zLnBheS5zaWRlY2FyChZnb3YubW9vc3lsdmFuaWEuZW54LnYzCh1jb20uZ29vZ2xlLmFuZHJvaWQuc2FmZXR5Y29yZQoeY29tLmdvb2dsZS5hbmRyb2lkLmNvbnRhY3RrZXlzChtjb20uZ29vZ2xlLmFuZHJvaWQudmVyaWZpZXI', 5, 0), Flag(AutoUpdatePolicies__auto_deploy_disk_space_threshold_bytes, 1073741824, 1, 0), Flag(AutoUpdatePolicies__enable_enx_headless_deployment, false, 2, 0), Flag(AutoUpdatePolicies__enable_gpay_sidecar, false, 2, 0), Flag(AutoUpdatePolicies__enx_headless_allowed_packages, 'ChZnb3YubW9vc3lsdmFuaWEuZW54LnYzChFnb3Yuc2FtcGxlLmVueC52Mw', 5, 0), Flag(AutoUpdatePolicies__gpay_sidecar_dependent_packages, 'ChZjb20uZmVsaWNhbmV0d29ya3MubWZj', 5, 0), Flag(AutoUpdatePolicies__promise_icon_hidden_packages, 'ChZnb3YubW9vc3lsdmFuaWEuZW54LnYzChFnb3Yuc2FtcGxlLmVueC52MwoiY29tLmdvb2dsZS5hbmRyb2lkLmdtcy5wYXkuc2lkZWNhcgoSY29tLmdvb2dsZS5hci5jb3JlCh1jb20uZ29vZ2xlLmFuZHJvaWQuc2FmZXR5Y29yZQoeY29tLmdvb2dsZS5hbmRyb2lkLmNvbnRhY3RrZXlzChtjb20uZ29vZ2xlLmFuZHJvaWQudmVyaWZpZXI', 5, 0), Flag(AutoUpdateSettings__log_update_data_usage, true, 2, 0), Flag(AutoUpdate__battery_relaxation_threshold_ms, 172800000, 1, 0), Flag(AutoUpdate__enable_gmscore_wifi_charger_relaxation, true, 2, 0), Flag(AutoUpdate__enable_synchronized_gms_update, true, 2, 0), Flag(AutoUpdate__enable_used_stale_apps_reporting, true, 2, 0), Flag(AutoUpdate__gmscore_wifi_charger_relaxation_threshold_ms, 259200000, 1, 0), Flag(AutoUpdate__minimum_auto_update_battery_level, 50, 1, 0), Flag(AutoUpdate__skip_gmscore_canary_check, false, 2, 0), Flag(AutoUpdate__update_aia_supervisor_on_wifi, true, 2, 0), Flag(AutoplayExoPlayerVideos__enable_exo_player_video_page_level_autoplay, false, 2, 0), Flag(AutoplayVideos__delay_video_autoplay_start_ms, 300, 1, 0), Flag(AutoplayVideos__enable_full_screen_activity, false, 2, 0), Flag(AutoplayVideos__enable_full_screen_support, false, 2, 0), Flag(AutoplayVideos__enable_overlay_on_pause, true, 2, 0), Flag(AutoplayVideos__enable_video_autoplaying, false, 2, 0), Flag(AutoplayVideos__enable_video_autoplaying_ads_cluster, true, 2, 0), Flag(AutoplayVideos__enable_video_autoplaying_dp, false, 2, 0), Flag(AutoplayVideos__enable_video_autoplaying_mdp, false, 2, 0), Flag(AutoplayVideos__resume_video_after_full_screen, false, 2, 0), Flag(AutoplayVideos__send_youtube_update_notification, false, 2, 0), Flag(AutoplayVideos__use_restricted_api_key, true, 2, 0), Flag(AvoidBulkCancelNetworkRequests__avoid_bulk_cancel_deep_links_and_details_requests, false, 2, 0), Flag(AvoidBulkCancelNetworkRequests__avoid_bulk_cancel_image_requests, false, 2, 0),
+1055:10-26 13:17:10.407  3069  3382 W KravosTV: GET https://edge8.pink.rs/pinktv/index.m3u8 -> 404
+1057:10-26 13:17:10.422  3069  3300 W KravosTV: GET https://webtvstream.bhtelecom.ba/hls19/rts1_1200.m3u8 -> 403
+1070:10-26 13:17:10.631  3069  3296 I KravosTV: downloaded https://epgshare01.online/epgshare01/epg_ripper_RS1.xml.gz -> 7157706 b
+1071:10-26 13:17:10.698  3069  3373 W KravosTV: GET https://glb.bozztv.com/glb/ssh101/tvrozaje/index.m3u8 -> 404
+1078:10-26 13:17:10.956  3069  3367 W KravosTV: GET https://rtcg-live-open-geo.morescreens.com/RTCG_1_003/playlist.m3u8 -> 403
+1087:10-26 13:17:10.986  3069  3371 W KravosTV: GET https://rtcg-live-open-geo.morescreens.com/RTCG_1_001/playlist.m3u8 -> 403
+1088:10-26 13:17:10.987  3069  3369 W KravosTV: GET https://rtcg-live-open-geo.morescreens.com/RTCG_1_002/playlist.m3u8 -> 403
+1092:10-26 13:17:11.244  3069  3080 I net.kravos.tv: NativeAlloc concurrent copying GC freed 710474(31MB) AllocSpace objects, 27(2012KB) LOS objects, 49% free, 19MB/38MB, paused 24us total 358.304ms
+1093:10-26 13:17:11.263  3069  3375 W KravosTV: GET https://streaming.radiohub.hr/RadioHub_WEB_streaming/BHWUC27pGZ/3.m3u8 -> 404
+1096:10-26 13:17:11.500  3069  3086 I net.kravos.tv: Waiting for a blocking GC ProfileSaver
+1097:10-26 13:17:11.530  3069  3384 W KravosTV: GET https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT3/default/index.mpd -> 404
+1098:10-26 13:17:11.531  3069  3343 W KravosTV: GET https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT2/default/index.mpd -> 404
+1099:10-26 13:17:11.533  3069  3367 W KravosTV: GET https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT4/default/index.mpd -> 404
+1102:10-26 13:17:11.552  3069  3373 W KravosTV: GET https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT1/default/index.mpd -> 404
+1103:10-26 13:17:11.569  3069  3080 I net.kravos.tv: Background young concurrent copying GC freed 666516(21MB) AllocSpace objects, 7(1692KB) LOS objects, 51% free, 18MB/38MB, paused 9.648ms total 95.231ms
+1104:10-26 13:17:11.569  3069  3086 I net.kravos.tv: WaitForGcToComplete blocked ProfileSaver on ClassLinker for 69.558ms
+1105:10-26 13:17:11.592  3069  3369 W KravosTV: GET https://178.253.194.105/klasiktv/playlist.m3u8 -> 404
+1121:10-26 13:17:11.832  3069  3384 W KravosTV: GET https://webtvstream.bhtelecom.ba/hls16/hrt3_1200.m3u8 -> 403
+1123:10-26 13:17:12.170  3069  3459 D ProfileInstaller: Installing profile for net.kravos.tv
+1124:10-26 13:17:12.184  3069  3373 W KravosTV: GET https://webtvstream.bhtelecom.ba/hls16/hrt1_1200.m3u8 -> 403
+1126:10-26 13:17:12.186   665   665 D AvrcpMediaPlayerList: Name of package changed: net.kravos.tv
+1133:10-26 13:17:12.196  3069  3343 W KravosTV: GET https://webtvstream.bhtelecom.ba/hls16/hrt2_1200.m3u8 -> 403
+1140:10-26 13:17:12.409  3069  3296 I KravosTV: downloaded https://epgshare01.online/epgshare01/epg_ripper_BA1.xml.gz -> 2217376 b
+1149:10-26 13:17:12.860  3069  3296 I KravosTV: downloaded https://epgshare01.online/epgshare01/epg_ripper_HR1.xml.gz -> 1866671 b
+1150:10-26 13:17:12.860  3069  3296 W KravosTV: epg https://epgshare01.online/epgshare01/epg_ripper_HR1.xml.gz: Unexpected token (position:TEXT ﻿@1:2 in java.io.InputStreamReader@921112a) 
+1153:10-26 13:17:12.892  3069  3296 I KravosTV: epg: 53 channels, 4562 programmes
+1159:10-26 13:17:13.028  3069  3343 W KravosTV: GET https://stream.nasatv.com.mk/jazztv/hls/jazztv_live.m3u8 -> 404
+1164:10-26 13:17:13.149  3069  3343 W KravosTV: GET https://stream.nasatv.com.mk/rocktv/hls/rocktv_live.m3u8 -> 404
+1171:10-26 13:17:13.435  3069  3378 W KravosTV: GET https://live.mnet.mk/hls/mnet-info.m3u8 -> 500
+1186:10-26 13:17:13.614  3069  3097 W KravosTV: GET https://live.mnet.mk/hls/mnet-sport.m3u8 -> 500
+1187:10-26 13:17:13.616  3069  3367 W KravosTV: GET https://live.mnet.mk/hls/mnet.m3u8 -> 500
+1233:10-26 13:17:14.098  3069  3378 W KravosTV: GET http://213.91.179.28:8000/play/a03n -> 404
+1238:10-26 13:17:14.235  3069  3344 W KravosTV: GET https://edge8.pink.rs/narodnatv/index.m3u8 -> 404
+1481:10-26 13:17:15.806  3589  3589 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+1484:10-26 13:17:15.810  3589  3589 I AndroidRuntime: Using default boot image
+1486:10-26 13:17:15.810  3589  3589 I AndroidRuntime: Leaving lock profiling enabled
+1501:10-26 13:17:15.990  3589  3589 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+2292:10-26 13:17:17.145  3589  3589 D AndroidRuntime: Shutting down VM
+2371:10-26 13:17:17.964  3069  3302 W KravosTV: GET https://webtvstream.bhtelecom.ba/hls13/bhrtportal_hd_1200.m3u8 -> 403
+3540:10-26 13:17:19.121  3069  3295 W KravosTV: GET https://uzivo.rtrs.tv/tv/live/index.m3u8 -> 404
+3597:10-26 13:17:19.370  3069  3380 W KravosTV: GET https://pluslive.rtrs.tv/plus/plus/playlist.m3u8 -> 403
+7981:10-26 13:17:20.959  3069  3371 W KravosTV: GET http://23.88.66.93/SLO1/index.m3u8 -> 404
+10551:10-26 13:17:21.615  3069  3380 W KravosTV: GET http://ott.sgn.net/hls/tvurslja.m3u8 -> 404
+11049:10-26 13:17:21.737  3069  3380 W KravosTV: GET http://23.88.66.93/SLO2/index.m3u8 -> 404
+11445:10-26 13:17:21.989  3865  3865 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11448:10-26 13:17:21.997  3865  3865 I AndroidRuntime: Using default boot image
+11450:10-26 13:17:21.997  3865  3865 I AndroidRuntime: Leaving lock profiling enabled
+11462:10-26 13:17:22.047  3865  3865 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11519:10-26 13:17:22.092  3865  3865 D AndroidRuntime: Shutting down VM
+11725:10-26 13:17:22.291  3069  3365 W KravosTV: GET https://5aa64ca8b95b8.streamlock.net:4443/edutv/edutelevizija/playlist.m3u8 -> 404
+17412:10-26 13:17:23.561  3891  3891 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+17415:10-26 13:17:23.562  3891  3891 I AndroidRuntime: Using default boot image
+17417:10-26 13:17:23.562  3891  3891 I AndroidRuntime: Leaving lock profiling enabled
+17427:10-26 13:17:23.620  3891  3891 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+17429:10-26 13:17:23.625  3069  3373 W KravosTV: GET http://live.topestrada.com/live/topestrada/playlist.m3u8 -> 404
+17430:10-26 13:17:23.627  3891  3891 D AndroidRuntime: Shutting down VM
+17577:10-26 13:17:25.256  3941  3941 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+17580:10-26 13:17:25.257  3941  3941 I AndroidRuntime: Using default boot image
+17582:10-26 13:17:25.257  3941  3941 I AndroidRuntime: Leaving lock profiling enabled
+17592:10-26 13:17:25.301  3941  3941 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+17593:10-26 13:17:25.305  3941  3941 D AndroidRuntime: Shutting down VM
+17595:10-26 13:17:25.363  3069  3069 I ExoPlayerImpl: Init 9436503 [AndroidXMedia3/1.5.1] [generic_x86, AOSP TV on x86, Google, 30]
+17599:10-26 13:17:25.483   469   976 I MediaFocusControl: requestAudioFocus() from uid/pid 10076/3069 clientId=android.media.AudioManager@1973f2bM1.c@8e72f88 callingPack=net.kravos.tv req=1 flags=0x0 sdk=35
+17601:10-26 13:17:25.492  3069  3069 I KravosTV: play Pink [hls] https://edge8.pink.rs/pinktv/index.m3u8
+17631:10-26 13:17:29.338  3069  3956 E ExoPlayerImplInternal: Playback error
+17632:10-26 13:17:29.338  3069  3956 E ExoPlayerImplInternal:   M1.l: Source error
+17633:10-26 13:17:29.338  3069  3956 E ExoPlayerImplInternal:       at M1.F.i(Unknown Source:54)
+17634:10-26 13:17:29.338  3069  3956 E ExoPlayerImplInternal:       at M1.F.handleMessage(Unknown Source:341)
+17635:10-26 13:17:29.338  3069  3956 E ExoPlayerImplInternal:       at android.os.Handler.dispatchMessage(Handler.java:102)
+17636:10-26 13:17:29.338  3069  3956 E ExoPlayerImplInternal:       at android.os.Looper.loop(Looper.java:223)
+17637:10-26 13:17:29.338  3069  3956 E ExoPlayerImplInternal:       at android.os.HandlerThread.run(HandlerThread.java:67)
+17638:10-26 13:17:29.338  3069  3956 E ExoPlayerImplInternal:   Caused by: J1.o: Response code: 404
+17639:10-26 13:17:29.338  3069  3956 E ExoPlayerImplInternal:       at K1.a.i(Unknown Source:302)
+17640:10-26 13:17:29.338  3069  3956 E ExoPlayerImplInternal:       at J1.q.i(Unknown Source:11)
+17641:10-26 13:17:29.338  3069  3956 E ExoPlayerImplInternal:       at c2.r.e(Unknown Source:19)
+17642:10-26 13:17:29.338  3069  3956 E ExoPlayerImplInternal:       at c2.k.run(Unknown Source:34)
+17643:10-26 13:17:29.338  3069  3956 E ExoPlayerImplInternal:       at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+17644:10-26 13:17:29.338  3069  3956 E ExoPlayerImplInternal:       at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+17645:10-26 13:17:29.338  3069  3956 E ExoPlayerImplInternal:       at java.lang.Thread.run(Thread.java:923)
+17648:10-26 13:17:29.341  3069  3069 W KravosTV: source failed (ERROR_CODE_IO_BAD_HTTP_STATUS): https://edge8.pink.rs/pinktv/index.m3u8
+18170:10-26 13:17:34.461  3069  3299 I KravosTV: health: checked 131 channels, 50 work
+18307:10-26 13:17:50.909  3992  3992 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+18310:10-26 13:17:50.910  3992  3992 I AndroidRuntime: Using default boot image
+18312:10-26 13:17:50.910  3992  3992 I AndroidRuntime: Leaving lock profiling enabled
+18324:10-26 13:17:50.944  3992  3992 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+18325:10-26 13:17:50.947  3992  3992 D AndroidRuntime: Shutting down VM
+18326:10-26 13:17:50.964   469  2696 I MediaFocusControl: requestAudioFocus() from uid/pid 10076/3069 clientId=android.media.AudioManager@1973f2bM1.c@8e72f88 callingPack=net.kravos.tv req=1 flags=0x0 sdk=35
+18329:10-26 13:17:50.970  3069  3069 I KravosTV: play Prva [hls] https://de1.dstv.cx/PrvaTVHD/index.m3u8
+18337:10-26 13:17:53.981  3069  3956 E ExoPlayerImplInternal: Playback error
+18338:10-26 13:17:53.981  3069  3956 E ExoPlayerImplInternal:   UnknownHostException (no network)
+18341:10-26 13:17:53.983  3069  3069 W KravosTV: source failed (ERROR_CODE_IO_NETWORK_CONNECTION_FAILED): https://de1.dstv.cx/PrvaTVHD/index.m3u8
+18966:10-26 13:18:03.335  2083  2355 I Finsky  : [193] jms.c(20): ItemStore: Not cached: net.kravos.tv
+19409:10-26 13:18:11.517  4107  4107 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+19412:10-26 13:18:11.518  4107  4107 I AndroidRuntime: Using default boot image
+19414:10-26 13:18:11.518  4107  4107 I AndroidRuntime: Leaving lock profiling enabled
+19425:10-26 13:18:11.562  4107  4107 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+19426:10-26 13:18:11.564  4107  4107 D AndroidRuntime: Shutting down VM
+19471:10-26 13:18:14.137  4125  4125 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+19474:10-26 13:18:14.138  4125  4125 I AndroidRuntime: Using default boot image
+19476:10-26 13:18:14.138  4125  4125 I AndroidRuntime: Leaving lock profiling enabled
+19486:10-26 13:18:14.171  4125  4125 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+19487:10-26 13:18:14.174  4125  4125 D AndroidRuntime: Shutting down VM
+19561:10-26 13:18:16.795  4145  4145 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+19564:10-26 13:18:16.796  4145  4145 I AndroidRuntime: Using default boot image
+19566:10-26 13:18:16.796  4145  4145 I AndroidRuntime: Leaving lock profiling enabled
+19582:10-26 13:18:16.835  4145  4145 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+19584:10-26 13:18:16.842  4145  4145 D AndroidRuntime: Shutting down VM
+19618:10-26 13:18:19.302  4159  4159 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+19621:10-26 13:18:19.303  4159  4159 I AndroidRuntime: Using default boot image
+19623:10-26 13:18:19.303  4159  4159 I AndroidRuntime: Leaving lock profiling enabled
+19633:10-26 13:18:19.362  4159  4159 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+19634:10-26 13:18:19.365  4159  4159 D AndroidRuntime: Shutting down VM
+19671:10-26 13:18:21.938  4176  4176 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+19674:10-26 13:18:21.939  4176  4176 I AndroidRuntime: Using default boot image
+19676:10-26 13:18:21.939  4176  4176 I AndroidRuntime: Leaving lock profiling enabled
+19687:10-26 13:18:21.972  4176  4176 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+19688:10-26 13:18:21.975  4176  4176 D AndroidRuntime: Shutting down VM
+19689:10-26 13:18:24.416  4189  4189 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+19692:10-26 13:18:24.417  4189  4189 I AndroidRuntime: Using default boot image
+19694:10-26 13:18:24.417  4189  4189 I AndroidRuntime: Leaving lock profiling enabled
+19704:10-26 13:18:24.450  4189  4189 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+19705:10-26 13:18:24.453  4189  4189 D AndroidRuntime: Shutting down VM
+19735:10-26 13:18:24.827  3069  3080 I net.kravos.tv: Background concurrent copying GC freed 241913(10MB) AllocSpace objects, 83(9296KB) LOS objects, 49% free, 20MB/40MB, paused 58us total 286.920ms
+19789:10-26 13:18:28.038  4211  4211 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+19792:10-26 13:18:28.039  4211  4211 I AndroidRuntime: Using default boot image
+19794:10-26 13:18:28.039  4211  4211 I AndroidRuntime: Leaving lock profiling enabled
+19804:10-26 13:18:28.075  4211  4211 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+19805:10-26 13:18:28.079  4211  4211 D AndroidRuntime: Shutting down VM
+19806:10-26 13:18:29.530  4224  4224 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+19809:10-26 13:18:29.530  4224  4224 I AndroidRuntime: Using default boot image
+19811:10-26 13:18:29.530  4224  4224 I AndroidRuntime: Leaving lock profiling enabled
+19823:10-26 13:18:29.565  4224  4224 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+19824:10-26 13:18:29.570  4224  4224 D AndroidRuntime: Shutting down VM
+19872:10-26 13:18:31.010  4244  4244 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+19875:10-26 13:18:31.011  4244  4244 I AndroidRuntime: Using default boot image
+19877:10-26 13:18:31.011  4244  4244 I AndroidRuntime: Leaving lock profiling enabled
+19887:10-26 13:18:31.044  4244  4244 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+19888:10-26 13:18:31.047  4244  4244 D AndroidRuntime: Shutting down VM
+19889:10-26 13:18:32.489  4257  4257 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+19892:10-26 13:18:32.490  4257  4257 I AndroidRuntime: Using default boot image
+19894:10-26 13:18:32.490  4257  4257 I AndroidRuntime: Leaving lock profiling enabled
+19904:10-26 13:18:32.525  4257  4257 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+19905:10-26 13:18:32.528  4257  4257 D AndroidRuntime: Shutting down VM
+19945:10-26 13:18:36.109  4275  4275 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+19948:10-26 13:18:36.110  4275  4275 I AndroidRuntime: Using default boot image
+19950:10-26 13:18:36.110  4275  4275 I AndroidRuntime: Leaving lock profiling enabled
+19960:10-26 13:18:36.144  4275  4275 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+19961:10-26 13:18:36.147  4275  4275 D AndroidRuntime: Shutting down VM
+19962:10-26 13:18:37.587  4288  4288 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+19965:10-26 13:18:37.588  4288  4288 I AndroidRuntime: Using default boot image
+19967:10-26 13:18:37.588  4288  4288 I AndroidRuntime: Leaving lock profiling enabled
+19978:10-26 13:18:37.621  4288  4288 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+19979:10-26 13:18:37.624  4288  4288 D AndroidRuntime: Shutting down VM
+19980:10-26 13:18:39.079  4301  4301 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+19983:10-26 13:18:39.080  4301  4301 I AndroidRuntime: Using default boot image
+19985:10-26 13:18:39.080  4301  4301 I AndroidRuntime: Leaving lock profiling enabled
+19995:10-26 13:18:39.115  4301  4301 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+19996:10-26 13:18:39.118  4301  4301 D AndroidRuntime: Shutting down VM
+20009:10-26 13:18:40.558  4314  4314 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+20012:10-26 13:18:40.559  4314  4314 I AndroidRuntime: Using default boot image
+20014:10-26 13:18:40.559  4314  4314 I AndroidRuntime: Leaving lock profiling enabled
+20024:10-26 13:18:40.597  4314  4314 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+20025:10-26 13:18:40.600  4314  4314 D AndroidRuntime: Shutting down VM
+20047:10-26 13:18:42.053  4327  4327 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+20050:10-26 13:18:42.054  4327  4327 I AndroidRuntime: Using default boot image
+20052:10-26 13:18:42.054  4327  4327 I AndroidRuntime: Leaving lock profiling enabled
+20062:10-26 13:18:42.089  4327  4327 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+20063:10-26 13:18:42.091  4327  4327 D AndroidRuntime: Shutting down VM
+20098:10-26 13:18:43.534  4340  4340 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+20101:10-26 13:18:43.535  4340  4340 I AndroidRuntime: Using default boot image
+20103:10-26 13:18:43.535  4340  4340 I AndroidRuntime: Leaving lock profiling enabled
+20114:10-26 13:18:43.569  4340  4340 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+20115:10-26 13:18:43.571  4340  4340 D AndroidRuntime: Shutting down VM
+20128:10-26 13:18:45.011  4353  4353 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+20131:10-26 13:18:45.012  4353  4353 I AndroidRuntime: Using default boot image
+20133:10-26 13:18:45.012  4353  4353 I AndroidRuntime: Leaving lock profiling enabled
+20143:10-26 13:18:45.049  4353  4353 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+20144:10-26 13:18:45.052  4353  4353 D AndroidRuntime: Shutting down VM
+20163:10-26 13:18:46.490  4366  4366 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+20166:10-26 13:18:46.491  4366  4366 I AndroidRuntime: Using default boot image
+20168:10-26 13:18:46.491  4366  4366 I AndroidRuntime: Leaving lock profiling enabled
+20178:10-26 13:18:46.525  4366  4366 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+20179:10-26 13:18:46.527  4366  4366 D AndroidRuntime: Shutting down VM
+20215:10-26 13:18:52.104  4383  4383 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+20218:10-26 13:18:52.105  4383  4383 I AndroidRuntime: Using default boot image
+20220:10-26 13:18:52.105  4383  4383 I AndroidRuntime: Leaving lock profiling enabled
+20231:10-26 13:18:52.145  4383  4383 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+20232:10-26 13:18:52.148  4383  4383 D AndroidRuntime: Shutting down VM
+20233:10-26 13:18:54.588  4396  4396 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+20236:10-26 13:18:54.589  4396  4396 I AndroidRuntime: Using default boot image
+20238:10-26 13:18:54.589  4396  4396 I AndroidRuntime: Leaving lock profiling enabled
+20249:10-26 13:18:54.623  4396  4396 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+20250:10-26 13:18:54.626  4396  4396 D AndroidRuntime: Shutting down VM
