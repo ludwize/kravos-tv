@@ -1,84 +1,81 @@
 #!/usr/bin/env python3
-"""Probe round 2: FAST services (Pluto TV, Samsung TV Plus, Plex, Roku) playlists and the epgshare01 file list."""
-import gzip, json, os, re, sys, time, urllib.request, urllib.error
-from urllib.parse import urljoin
+"""Probe round 3: official free live streams of Serbian broadcasters (their own sites + YouTube live)."""
+import json, os, re, sys, time, urllib.request, urllib.error
 
 OUT = sys.argv[1]
 os.makedirs(OUT, exist_ok=True)
-UA = "Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 Chrome/129 Mobile Safari/537.36"
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
 log = open(os.path.join(OUT, "index.txt"), "w")
 
 
-def fetch(url, headers=None, limit=None, timeout=25):
-    h = {"User-Agent": UA}
+def fetch(url, headers=None, limit=3_000_000, timeout=20):
+    h = {"User-Agent": UA, "Accept-Language": "sr,en;q=0.8"}
     h.update(headers or {})
     t = time.time()
     try:
         with urllib.request.urlopen(urllib.request.Request(url, headers=h), timeout=timeout) as r:
-            body = r.read(limit) if limit else r.read()
-            return r.status, body, r.geturl(), time.time() - t
+            return r.status, r.read(limit).decode("utf-8", "replace"), r.geturl(), time.time() - t
     except urllib.error.HTTPError as e:
-        return e.code, e.read()[:3000], url, time.time() - t
+        return e.code, e.read()[:2000].decode("utf-8", "replace"), url, time.time() - t
     except Exception as e:
-        return -1, str(e).encode(), url, time.time() - t
+        return -1, str(e), url, time.time() - t
 
 
-def text(b):
-    if b[:2] == b"\x1f\x8b":
-        try:
-            b = gzip.decompress(b)
-        except Exception:
-            pass
-    return b.decode("utf-8", "replace")
-
-
+SITES = {
+    "rts": ["https://www.rts.rs/page/tv/sr/live.html", "https://www.rts.rs/live/", "https://rtsplaneta.rs/", "https://www.rts.rs/tv/"],
+    "rtv": ["https://media.rtv.rs/sr_lat/uzivo/rtv1", "https://www.rtv.rs/sr_lat/uzivo", "https://media.rtv.rs/sr_lat/live"],
+    "n1": ["https://n1info.rs/uzivo/", "https://n1info.rs/live/", "https://n1info.rs/"],
+    "euronews": ["https://www.euronews.rs/uzivo", "https://www.euronews.rs/"],
+    "informer": ["https://informer.rs/informer-tv", "https://informer.rs/uzivo", "https://informer.rs/"],
+    "kurir": ["https://www.kurir.rs/kurir-tv", "https://www.kurir.rs/uzivo", "https://www.kurir.rs/"],
+    "blic": ["https://www.blic.rs/blic-tv", "https://www.blic.rs/uzivo"],
+    "prva": ["https://www.prva.rs/uzivo", "https://www.prva.rs/live", "https://www.prva.rs/"],
+    "b92": ["https://www.b92.net/uzivo", "https://o2tv.rs/uzivo", "https://www.b92.net/"],
+    "pink": ["https://www.pink.rs/uzivo", "https://pink.rs/live", "https://www.pink.rs/"],
+    "happy": ["https://www.happytv.rs/uzivo", "https://www.happytv.rs/live", "https://www.happytv.rs/"],
+    "studiob": ["https://www.studiob.rs/uzivo", "https://www.studiob.rs/live", "https://www.studiob.rs/"],
+    "nova": ["https://nova.rs/uzivo", "https://nova.rs/nova-tv-uzivo"],
+    "insajder": ["https://insajder.net/uzivo", "https://insajder.net/"],
+    "k1": ["https://k1info.rs/uzivo", "https://k1info.rs/"],
+    "tvhram": ["https://tvhram.rs/uzivo"],
+    "rtvbg": ["https://www.tvbeograd.rs/uzivo"],
+}
+PAT = re.compile(r'https?:\\?/\\?/[^"\'\s<>]+?\.(?:m3u8|mpd)[^"\'\s<>]*')
+YT = re.compile(r'(?:youtube(?:-nocookie)?\.com/(?:embed/|watch\?v=|live_stream\?channel=)|youtu\.be/)([A-Za-z0-9_-]{11}|UC[A-Za-z0-9_-]{22})')
+IFR = re.compile(r'<iframe[^>]+src="([^"]+)"', re.I)
 res = {}
-cands = [
-    ("mjh_root", "https://i.mjh.nz/"),
-    ("mjh_pluto_dir", "https://i.mjh.nz/PlutoTV/"),
-    ("mjh_samsung_dir", "https://i.mjh.nz/SamsungTVPlus/"),
-    ("mjh_pluto_us", "https://i.mjh.nz/PlutoTV/us.m3u8"),
-    ("mjh_pluto_de", "https://i.mjh.nz/PlutoTV/de.m3u8"),
-    ("mjh_pluto_gb", "https://i.mjh.nz/PlutoTV/gb.m3u8"),
-    ("mjh_pluto_ca", "https://i.mjh.nz/PlutoTV/ca.m3u8"),
-    ("mjh_samsung_us", "https://i.mjh.nz/SamsungTVPlus/us.m3u8"),
-    ("mjh_samsung_de", "https://i.mjh.nz/SamsungTVPlus/de.m3u8"),
-    ("mjh_samsung_gb", "https://i.mjh.nz/SamsungTVPlus/gb.m3u8"),
-    ("mjh_samsung_app", "https://i.mjh.nz/SamsungTVPlus/.app.json"),
-    ("mjh_pluto_app", "https://i.mjh.nz/PlutoTV/.app.json"),
-    ("mjh_plex", "https://i.mjh.nz/Plex/all.m3u8"),
-    ("mjh_plex_us", "https://i.mjh.nz/Plex/us.m3u8"),
-    ("mjh_roku", "https://i.mjh.nz/Roku/all.m3u8"),
-    ("mjh_rakuten", "https://i.mjh.nz/Rakuten/all.m3u8"),
-    ("pluto_api_boot", "https://boot.pluto.tv/v4/start?appName=web&appVersion=9&deviceVersion=1&deviceModel=web&deviceMake=chrome&deviceType=web&clientID=00000000-0000-0000-0000-000000000000&clientModelNumber=1.0.0&serverSideAds=false"),
-    ("epgshare_dir", "https://epgshare01.online/epgshare01/"),
-    ("epgshare_home", "https://epgshare01.online/"),
-]
-for name, url in cands:
-    code, body, final, dt = fetch(url, limit=30_000_000)
-    t = text(body) if code == 200 else body.decode("utf-8", "replace")
-    info = {"code": code, "bytes": len(body), "final": final, "sec": round(dt, 1), "head": t[:2500]}
-    if "#EXTM3U" in t[:100]:
-        info["entries"] = t.count("#EXTINF")
-        urls = [l for l in t.splitlines() if l.startswith("http")]
-        info["urls_sample"] = urls[:5]
-        info["groups"] = sorted(set(re.findall(r'group-title="([^"]*)"', t)))[:80]
-        info["header"] = t.splitlines()[0][:400]
-        open(os.path.join(OUT, name + ".m3u"), "w").write(t[:300000])
-        # test 3 streams from it
-        tests = []
-        for u in urls[:3]:
-            c2, b2, f2, d2 = fetch(u, limit=100000, timeout=15)
-            tt = b2.decode("utf-8", "replace")
-            hs = [int(h) for h in re.findall(r"RESOLUTION=\d+x(\d+)", tt)]
-            tests.append({"url": u[:150], "code": c2, "final": f2[:200], "max_h": max(hs) if hs else None, "head": tt[:300]})
-        info["tests"] = tests
-    if name.endswith("_dir") or name.endswith("root") or name == "epgshare_home":
-        info["links"] = sorted(set(re.findall(r'href="([^"?#]+)"', t)))[:600]
-    res[name] = info
-    log.write(f"{code}  {len(body):>10}  {dt:5.1f}s  {name}  {url}  entries={info.get('entries')}\n")
-    log.flush()
+for name, urls in SITES.items():
+    out = []
+    for u in urls:
+        code, body, final, dt = fetch(u)
+        found = sorted(set(m.replace("\\/", "/") for m in PAT.findall(body)))[:20]
+        yts = sorted(set(YT.findall(body)))[:10]
+        ifr = sorted(set(IFR.findall(body)))[:15]
+        scripts = sorted(set(re.findall(r'<script[^>]+src="([^"]+)"', body)))[:25]
+        out.append({"url": u, "code": code, "final": final, "len": len(body), "m3u8": found, "youtube": yts, "iframes": ifr,
+                    "players": sorted(set(re.findall(r'(jwplayer|videojs|video\.js|flowplayer|clappr|hls\.js|bitmovin|theoplayer|shaka|dash\.js|vimeo|brightcove|player\.[a-z]+\.[a-z]+)', body, re.I)))[:10],
+                    "scripts": scripts})
+        log.write(f"{code} {len(body):>8} {name} {u} m3u8={len(found)} yt={len(yts)} ifr={len(ifr)}\n")
+        log.flush()
+    res[name] = out
+json.dump(res, open(os.path.join(OUT, "sites.json"), "w"), indent=1, ensure_ascii=False)
 
-json.dump(res, open(os.path.join(OUT, "fast.json"), "w"), indent=1, ensure_ascii=False)
+HANDLES = ["N1info", "N1Srbija", "n1info", "euronewssrbija", "EuronewsSrbija", "InformerTV", "informer", "informer_rs", "KurirTV", "kurirtv",
+           "blictv", "BlicTV", "NovaS", "novas", "insajder", "InsajderTV", "rtsrs", "RTSrs", "rtsmedia", "PrvaTV", "prvatv", "TVPrva",
+           "rtvpink", "PinkTV", "TVHappy", "happytv", "HappyTV", "tvb92", "B92", "o2televizija", "rtvvojvodina", "RTVVojvodina",
+           "studiob", "StudioB", "k1televizija", "K1Info", "tvinsajder", "TVInfo", "NovaRS", "RTSTV", "rtsplaneta"]
+yt = {}
+for h in HANDLES:
+    code, body, final, dt = fetch(f"https://www.youtube.com/@{h}/live", {"Cookie": "CONSENT=YES+1; SOCS=CAI"})
+    cid = re.search(r'"(?:externalId|channelId|browseId)":"(UC[A-Za-z0-9_-]{22})"', body)
+    title = re.search(r'<meta property="og:title" content="([^"]*)"', body)
+    vid = re.search(r'"videoId":"([A-Za-z0-9_-]{11})"', body)
+    live = '"isLive":true' in body or '"isLiveNow":true' in body
+    canon = re.search(r'<link rel="canonical" href="([^"]+)"', body)
+    yt[h] = {"code": code, "channelId": cid.group(1) if cid else None, "title": title.group(1) if title else None,
+             "videoId": vid.group(1) if vid else None, "live": live, "canonical": canon.group(1) if canon else None}
+    log.write(f"yt {code} @{h} {yt[h]['channelId']} live={live} {yt[h]['title']}\n")
+    log.flush()
+json.dump(yt, open(os.path.join(OUT, "youtube.json"), "w"), indent=1, ensure_ascii=False)
 log.close()
 print(open(os.path.join(OUT, "index.txt")).read())
