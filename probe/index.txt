@@ -1,30 +1,19 @@
-200     7957932    0.1s  channels  https://iptv-org.github.io/api/channels.json
-200     3756161    0.1s  streams  https://iptv-org.github.io/api/streams.json
-200     8100495    0.1s  feeds  https://iptv-org.github.io/api/feeds.json
-200     5759862    0.1s  logos  https://iptv-org.github.io/api/logos.json
-200       18955    0.0s  countries  https://iptv-org.github.io/api/countries.json
-200        2773    0.0s  categories  https://iptv-org.github.io/api/categories.json
-200    25619670    0.1s  guides  https://iptv-org.github.io/api/guides.json
-200       86384    0.0s  blocklist  https://iptv-org.github.io/api/blocklist.json
-200      269003    0.1s  languages  https://iptv-org.github.io/api/languages.json
-200        9207    0.0s  regions  https://iptv-org.github.io/api/regions.json
-200       10803    0.0s  pl_rs  https://iptv-org.github.io/iptv/countries/rs.m3u
-200     2575065    0.1s  pl_index  https://iptv-org.github.io/iptv/index.m3u
-probing 319 streams
-200     7157706    0.2s  epg:epgshare_rs  https://epgshare01.online/epgshare01/epg_ripper_RS1.xml.gz
-200     2217376    0.3s  epg:epgshare_ba  https://epgshare01.online/epgshare01/epg_ripper_BA1.xml.gz
-200     1866671    0.2s  epg:epgshare_hr  https://epgshare01.online/epgshare01/epg_ripper_HR1.xml.gz
-200     3557843    0.2s  epg:epgshare_de  https://epgshare01.online/epgshare01/epg_ripper_DE1.xml.gz
-404         419    0.1s  epg:epgshare_us  https://epgshare01.online/epgshare01/epg_ripper_US1.xml.gz
-200     2895290    0.2s  epg:epgshare_uk  https://epgshare01.online/epgshare01/epg_ripper_UK1.xml.gz
-200    17326819    2.2s  epg:openepg_rs  https://www.open-epg.com/files/serbia1.xml
-200     2149405    1.6s  epg:openepg_rs_gz  https://www.open-epg.com/files/serbia1.xml.gz
-404         513    0.4s  epg:epgpw_rs  https://epg.pw/xmltv/epg_RS.xml
-404         513    0.6s  epg:epgpw_rs_gz  https://epg.pw/xmltv/epg_RS.xml.gz
-200        9909    0.1s  epg:iptvorg_epg_raw  https://raw.githubusercontent.com/iptv-org/epg/master/README.md
-200     7403748    0.8s  epg:pluto_epg  https://i.mjh.nz/PlutoTV/all.xml.gz
-404         513    0.1s  epg:pluto_m3u  https://i.mjh.nz/PlutoTV/all.m3u8
-404         513    0.1s  epg:samsung_m3u  https://i.mjh.nz/SamsungTVPlus/all.m3u8
-200     2797138    0.5s  epg:samsung_epg  https://i.mjh.nz/SamsungTVPlus/all.xml.gz
-
-summary: {"MK": {"total": 32, "ok": 10, "hd720+": 1, "fhd1080": 0}, "RS": {"total": 52, "ok": 16, "hd720+": 6, "fhd1080": 2}, "SI": {"total": 25, "ok": 3, "hd720+": 0, "fhd1080": 0}, "BA": {"total": 17, "ok": 6, "hd720+": 2, "fhd1080": 2}, "HR": {"total": 26, "ok": 12, "hd720+": 5, "fhd1080": 4}, "ME": {"total": 7, "ok": 3, "hd720+": 1, "fhd1080": 1}, "DE": {"total": 25, "ok": 16, "hd720+": 9, "fhd1080": 6}, "US": {"total": 40, "ok": 35, "hd720+": 22, "fhd1080": 1}, "CA": {"total": 20, "ok": 13, "hd720+": 10, "fhd1080": 6}, "FR": {"total": 15, "ok": 12, "hd720+": 10, "fhd1080": 5}, "IT": {"total": 15, "ok": 10, "hd720+": 9, "fhd1080": 4}, "ES": {"total": 15, "ok": 9, "hd720+": 3, "fhd1080": 3}, "AT": {"total": 10, "ok": 6, "hd720+": 4, "fhd1080": 0}, "GR": {"total": 10, "ok": 6, "hd720+": 4, "fhd1080": 4}, "NL": {"total": 10, "ok": 9, "hd720+": 4, "fhd1080": 1}}
+200        2850    0.2s  mjh_root  https://i.mjh.nz/  entries=None
+200        3895    0.5s  mjh_pluto_dir  https://i.mjh.nz/PlutoTV/  entries=None
+200        3232    0.5s  mjh_samsung_dir  https://i.mjh.nz/SamsungTVPlus/  entries=None
+404         915    0.5s  mjh_pluto_us  https://i.mjh.nz/PlutoTV/us.m3u8  entries=None
+404         915    0.5s  mjh_pluto_de  https://i.mjh.nz/PlutoTV/de.m3u8  entries=None
+404         915    0.5s  mjh_pluto_gb  https://i.mjh.nz/PlutoTV/gb.m3u8  entries=None
+404         915    0.5s  mjh_pluto_ca  https://i.mjh.nz/PlutoTV/ca.m3u8  entries=None
+404         915    0.5s  mjh_samsung_us  https://i.mjh.nz/SamsungTVPlus/us.m3u8  entries=None
+404         915    0.4s  mjh_samsung_de  https://i.mjh.nz/SamsungTVPlus/de.m3u8  entries=None
+404         915    0.5s  mjh_samsung_gb  https://i.mjh.nz/SamsungTVPlus/gb.m3u8  entries=None
+404         915    0.5s  mjh_samsung_app  https://i.mjh.nz/SamsungTVPlus/.app.json  entries=None
+404         915    0.5s  mjh_pluto_app  https://i.mjh.nz/PlutoTV/.app.json  entries=None
+404         915    0.5s  mjh_plex  https://i.mjh.nz/Plex/all.m3u8  entries=None
+404         915    0.5s  mjh_plex_us  https://i.mjh.nz/Plex/us.m3u8  entries=None
+404         915    0.5s  mjh_roku  https://i.mjh.nz/Roku/all.m3u8  entries=None
+404         915    0.5s  mjh_rakuten  https://i.mjh.nz/Rakuten/all.m3u8  entries=None
+200       15446    0.2s  pluto_api_boot  https://boot.pluto.tv/v4/start?appName=web&appVersion=9&deviceVersion=1&deviceModel=web&deviceMake=chrome&deviceType=web&clientID=00000000-0000-0000-0000-000000000000&clientModelNumber=1.0.0&serverSideAds=false  entries=None
+200       39893    0.3s  epgshare_dir  https://epgshare01.online/epgshare01/  entries=None
+200        2838    0.2s  epgshare_home  https://epgshare01.online/  entries=None
